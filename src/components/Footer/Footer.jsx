@@ -50,7 +50,7 @@ const Footer = () => {
                     <p>{t("fAddress")}</p>
                     <div className="footer__infomain-block">
                         <div className="footer__infomain-box1">
-                            <h2>{t('fP6')}vvvvv</h2>
+                            <h2>{t('fP6')}</h2>
 
                             <p>
                                 <img src={whatsapp} alt="" />
