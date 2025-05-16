@@ -1,0 +1,175 @@
+@mixin media($size) {
+    @media(max-width: #{$size}px) {
+        @content;
+    }
+}
+
+.modal {
+
+    position: fixed;
+    inset: 0; 
+    background: #0000007a;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__block {
+        padding: 15px;
+        background: white;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        button {
+            // padding:0 10px 10px 10px;
+            background: white;
+            font-size: 35px;
+            color: rgb(75, 75, 75);
+        }
+
+        &-video {
+            video {
+                width: 500px;
+                height: 310px;
+            }
+        }
+    }
+
+    video {
+        @include media(550) {
+            width: 370px;
+        }
+    }
+}
+
+.modal2 {
+    position: fixed;
+    inset: 0;
+    background: #0000007a;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__block {
+        padding: 15px;
+        background: white;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        button {
+            // padding:0 10px 10px 10px;
+            background: white;
+            font-size: 35px;
+            color: rgb(75, 75, 75);
+        }
+
+        &-video {
+            video {
+                width: 500px;
+                height: 310px;
+            }
+        }
+    }
+
+    video {
+        @include media(550) {
+            width: 370px;
+        }
+    }
+}
+
+
+
+.modalImg1 {
+    position: fixed;
+    inset: 0;
+    background: #0000007a;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__block {
+        padding: 15px;
+        background: white;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        button {
+            // padding:0 10px 10px 10px;
+            background: white;
+            font-size: 35px;
+            color: rgb(75, 75, 75);
+        }
+    }
+}
+
+.modalSwiper {
+
+    max-width: 580px;
+    height: 500px;
+
+    @include media(650) {
+        width: 340px;
+        height: 320px;
+    }
+
+    img {
+        width: 580px;
+        height: 450px;
+        object-fit: cover;
+
+        @include media(650) {
+            width: 370px;
+            height: 290px;
+        }
+    }
+}
+
+.modal3 {
+
+    position: fixed;
+    inset: 0; 
+    background: #0000007a;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__block {
+        padding: 15px;
+        background: white;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        button {
+            // padding:0 10px 10px 10px;
+            background: white;
+            font-size: 35px;
+            color: rgb(75, 75, 75);
+        }
+
+        &-video {
+            video {
+                height: 550px;
+                width: 100%;
+            }
+            img{
+                max-width: 400px;
+                max-height: 450px;
+            }
+        }
+
+    }
+
+    
+}

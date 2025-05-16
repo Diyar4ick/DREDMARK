@@ -1,0 +1,224 @@
+@mixin media($size) {
+    @media(max-width: #{$size}px) {
+        @content;
+    }
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 998;
+    top: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #0301258c;
+    padding: 0 0 0 20px;
+
+    flex-wrap: wrap;
+
+    @include media(1250) {
+        justify-content: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @include media(1250) {
+            justify-content: center;
+        }
+
+        @include media(670) {
+            display: flex;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            width: 35%;
+            height: 100vh;
+            background: rgba(0, 75, 146, 0.418);
+            backdrop-filter: blur(10px);
+            z-index: 999;
+            transform: translateX(100%);
+            transition: .4s linear;
+            padding: 10px;
+            padding-right: 20px;
+        }
+
+        .link {
+            font-weight: 400;
+            font-size: 18px;
+            padding: 25px 25px;
+            text-align: center;
+            color: white;
+            transition: .3s;
+            background: none;
+            line-height: 19px;
+
+            @include media(1250) {
+                padding: 15px 15px;
+            }
+
+            @include media(670) {
+                text-align: left;
+                padding: 10px 10px;
+            }
+
+            &:hover {
+                background: rgb(3, 3, 81);
+                color: rgb(116, 93, 246);
+            }
+
+            &:focus {
+                background: rgb(3, 3, 81);
+                color: rgb(116, 93, 246);
+            }
+
+        }
+
+        .link__a {
+            font-weight: 400;
+            font-size: 18px;
+            padding: 23px 25px;
+            text-align: center;
+            color: white;
+            transition: .3s;
+            background: rgba(0, 30, 96, 0.632);
+
+            &:hover {
+                background: rgb(44, 0, 131);
+            }
+
+            @include media(1250) {
+                padding: 10px 10px;
+            }
+            
+        }
+    }
+
+    .logo {
+        font-weight: 700;
+        font-size: 30px;
+        color: white;
+        padding: 15px;
+
+        @include media(850) {
+            padding: 5px;
+        }
+        @include media(670) {
+            padding: 20px;
+        }
+    }
+}
+
+.nav__list.open {
+    transform: translateX(0);
+}
+
+.select1 {
+    // display: flex;
+    appearance: none;
+    /* Убираем стандартный стиль */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    // background-repeat: no-repeat;
+    // background-position: right -8px center; /* Подвигаем стрелку ближе */
+    // background-size: 12px;
+
+
+    font-weight: 400;
+    font-size: 18px;
+    padding: 25px 0;
+    text-align: center;
+    color: white;
+    transition: .3s;
+    background: none;
+    max-width: 120px;
+    display: inline-block;
+
+    @include media(1250) {
+        padding: 15px 10px;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    &:hover {
+        background: rgb(3, 3, 81);
+        color: rgb(116, 93, 246);
+    }
+
+    &:focus {
+        background: rgb(3, 3, 81);
+        color: rgb(116, 93, 246);
+
+    }
+
+
+}
+
+.select2 {
+    // display: flex;
+    appearance: none;
+    /* Убираем стандартный стиль */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    // background-repeat: no-repeat;
+    // background-position: right -8px center; /* Подвигаем стрелку ближе */
+    // background-size: 12px;
+
+
+    font-weight: 400;
+    font-size: 18px;
+    padding: 25px 25px;
+    // text-align: center;
+    color: white;
+    transition: .3s;
+    background: none;
+    max-width: 120px;
+    display: inline-block;
+
+    @include media(1250) {
+        padding: 15px 15px 15px 10px;
+        font-size: 16px;
+    }
+
+    &:hover {
+        background: rgb(3, 3, 81);
+        color: rgb(116, 93, 246);
+    }
+
+    &:focus {
+        background: rgb(3, 3, 81);
+        color: rgb(116, 93, 246);
+
+    }
+
+
+}
+
+.option1 {
+    font-size: 15px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    position: fixed;
+    right: 20px;
+    top: 10px;
+    z-index: 1000;
+
+    @include media(670) {
+        display: block;
+    }
+}
