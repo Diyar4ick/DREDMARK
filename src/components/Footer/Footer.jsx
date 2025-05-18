@@ -46,7 +46,6 @@ const Footer = () => {
                     <h1>DREDMARK GROUP</h1>
                     <h3>ООО DREDGER</h3>
                     <p>{t("fAddress")}</p>
-                    <h2>{t('fP6')}</h2>
                     <div className="footer__infomain-block">
 
                         <div className="footer__infomain-box1">
@@ -74,23 +73,25 @@ const Footer = () => {
                                 </span>
                             </p>
                         </div>
-                        <div className="footer__infomain-box1">
-                            <p className="ft4">
-                                <h4 className="ft4__p1">{t("fP1")}</h4>
-                                <span>
-                                    <img src={whatsapp} alt="" />
-                                    <img src={telegram} alt="" />
-                                    <p>+7 910 663-07-33</p>
-                                </span>
-                            </p>
+
+                    </div>
+                    <div className="footer__infomain-box3">
+                        <h3 className="footer__infomain-box3-h3-1">{t('fP6')}</h3>
+                        <div className="footer__infomain-box3-comanies">
+                        <h3 className="footer__infomain-box3-h3-2">ООО DREDGER</h3>
+                        <h3 className="footer__infomain-box3-h3-3">ООО GIDROMEX MONTAJ</h3>
                         </div>
                     </div>
-                        <div className="footer__infomain-box3">
-                            <h3 className="footer__infomain-box3-h3-1">{t('fP6')}</h3>
-                            <h3 className="footer__infomain-box3-h3-2">ООО DREDGER</h3>
-                            <h3 className="footer__infomain-box3-h3-3">ООО GIDROMEX MONTAJ</h3>
-                        </div>
-
+                    <div className="footer__infomain-box1">
+                        <p className="ft4">
+                            <h4 className="ft4__p1">{t("fP1")}</h4>
+                            <span>
+                                <img src={whatsapp} alt="" />
+                                <img src={telegram} alt="" />
+                                <p>+7 910 663-07-33</p>
+                            </span>
+                        </p>
+                    </div>
 
                 </div>
 
