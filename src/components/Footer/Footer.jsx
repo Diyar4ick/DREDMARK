@@ -3,8 +3,6 @@ import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import telegram from '../../assets/images/telegram.svg'
 import whatsapp from '../../assets/images/whatsapp.svg'
-import resume from '../../assets/pdf/resume.pdf'
-import resumeImg from '../../assets/images/resumeImg.jpg'
 const Footer = () => {
     const { t } = useTranslation();
     const [formData, setFormData] = useState({ name: "", message: "", tel: "" });
@@ -48,10 +46,10 @@ const Footer = () => {
                     <h1>DREDMARK GROUP</h1>
                     <h3>ООО DREDGER</h3>
                     <p>{t("fAddress")}</p>
+                    <h2>{t('fP6')}</h2>
                     <div className="footer__infomain-block">
-                        <div className="footer__infomain-box1">
-                            <h2>{t('fP6')}</h2>
 
+                        <div className="footer__infomain-box1">
                             <p>
                                 <img src={whatsapp} alt="" />
                                 <img src={telegram} alt="" />
@@ -77,7 +75,6 @@ const Footer = () => {
                             </p>
                         </div>
                         <div className="footer__infomain-box1">
-                            <h2>{t('fP7')}</h2>
                             <p className="ft4">
                                 <h4 className="ft4__p1">{t("fP1")}</h4>
                                 <span>
@@ -88,6 +85,11 @@ const Footer = () => {
                             </p>
                         </div>
                     </div>
+                        <div className="footer__infomain-box3">
+                            <h3 className="footer__infomain-box3-h3-1">{t('fP6')}</h3>
+                            <h3 className="footer__infomain-box3-h3-2">ООО DREDGER</h3>
+                            <h3 className="footer__infomain-box3-h3-3">ООО GIDROMEX MONTAJ</h3>
+                        </div>
 
 
                 </div>
@@ -124,11 +126,7 @@ const Footer = () => {
                     </form>
                     {status && <p>{status}</p>}
                 </div>
-                <div className="resume">
-                    <a href={resume} target="_blank" rel="noopener noreferrer">
-                        <img src={resumeImg} alt="" className="resume__img" />
-                    </a>
-                </div>
+
             </div>
         </footer>
     );

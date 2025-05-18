@@ -16,7 +16,7 @@ const Header = () => {
   }, [i18n.language]);
 
   // Управление навигацией через select
-  const [selectedPage, setSelectedPage] = useState(""); 
+  const [selectedPage, setSelectedPage] = useState("");
 
   const handlePageChange = (event) => {
     const value = event.target.value;
@@ -63,24 +63,16 @@ const Header = () => {
         <ul ref={menuRef} className={`nav__list ${isOpen ? "open" : ""}`}>
           <NavLink to='/' className='link'>{t('navLink1')}</NavLink>
           <NavLink to='/vozm' className='link'>{t('navLink2')}</NavLink>
-          {/* <NavLink to='/prim' className='link'>{t('navLink3')}</NavLink> */}
-          {/* <NavLink to='/help' className='link'>{t('navLink5')}</NavLink> */}
-          {/* <NavLink to='/Que' className='link'>{t('navLink6')}</NavLink> */}
-
-          {/* Select для перехода между страницами */}
           <select onChange={handlePageChange} value={selectedPage} className="select1">
             <option value="" disabled hidden>{t("gallery")}</option>
-            {/* <option value="/br">{t("brochure")}</option> */}
             <option value="/video">{t("video")}</option>
             <option value="/img">{t("images")}</option>
-            {/* <option value="/prluch">{t("caseExamples")}</option> */}
           </select>
           <NavLink to='/us' className='link'>{t('navLink4')}</NavLink>
 
-          {/* Select для смены языка */}
           <select onChange={handleLanguageChange} value={selectedLang} className="select2">
-            <option value="en">En</option>
             <option value="ru">Ru</option>
+            <option value="en">En</option>
             <option value="uz">Uz</option>
           </select>
 
