@@ -9,6 +9,7 @@ import VozmSection4Img1 from '../../assets/images/vozmSection4Img1.webp'
 import VozmSection5Img1 from '../../assets/images/vozmSection5Img1.webp'
 import VozmSection5Img2 from '../../assets/images/vozmSection5Img2.webp'
 import VozmSection5Img3 from '../../assets/images/vozmSection5Img3.webp'
+import VozmSection5Img4 from '../../assets/images/VozmSection5Img4.jpg'
 import vozmSection6Img1 from '../../assets/images/vozmSection6Img1.webp'
 import vozmSection6Img2 from '../../assets/images/vozmMainSection6Img.jpg'
 import VozmSection7Img1 from '../../assets/images/vozmSection7Img1.webp'
@@ -101,7 +102,7 @@ const VozmMain = () => {
             <h3 className="vozmMain__section5-block1-h3">
               {t('vozmMainSection5H3')}</h3>
             <p className="vozmMain__section5-block1-p1">
-            {t('vozmMainSection5P1')}
+              {t('vozmMainSection5P1')}
             </p>
             <div className="img__box">
               <div className="img__span-block">
@@ -121,7 +122,7 @@ const VozmMain = () => {
 
           </div>
           <div className="vozmMain__section5-block2">
-            <img src={VozmSection2Img} alt="" className="vozmMain__section5-block2-img" />
+            <img src={VozmSection5Img4} alt="" className="vozmMain__section5-block2-img" />
             <p className="img__span"> {t('vozmMainSection5P5')}</p>
 
           </div>
@@ -132,9 +133,9 @@ const VozmMain = () => {
         <div className="container">
           <div className="vozmMain__section6-block1">
             <h3 className="vozmMain__section6-block1-h3">
-            {t('vozmMainSection6H3')}</h3>
+              {t('vozmMainSection6H3')}</h3>
             <p className="vozmMain__section6-block1-p1">
-            {t('vozmMainSection6P1')}
+              {t('vozmMainSection6P1')}
             </p>
             <img src={vozmSection6Img1} alt="" className="vozmMain__section6-block1-img" />
             <p className='img__span'>{t('vozmMainSection6P2')}</p>
@@ -151,9 +152,9 @@ const VozmMain = () => {
         <div className="container">
           <div className="vozmMain__section7-block1">
             <h3 className="vozmMain__section7-block1-h3">
-            {t('vozmMainSection7H3')}</h3>
+              {t('vozmMainSection7H3')}</h3>
             <p className="vozmMain__section7-block1-p1">
-            {t('vozmMainSection7P1')}
+              {t('vozmMainSection7P1')}
             </p>
             <div className="img__box">
               <div className="img__span-block">
@@ -176,9 +177,53 @@ const VozmMain = () => {
         </div>
 
       </div>
-
+      <div className="vozmMain__section8">
+        <h2>Ассортимент амфибий и земснарядов</h2>
+        <table className="styled-table">
+          <thead>
+            <tr>
+              <th>Модель</th>
+              <th>Производительность</th>
+              <th>Тип</th>
+              <th>Цена</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Амфибия 300</td>
+              <td className="number">300 м³/час</td>
+              <td>Бюджетная</td>
+              <td className="number">до 20 млн ₽</td>
+            </tr>
+            <tr>
+              <td>Амфибия 600</td>
+              <td className="number">600 м³/час</td>
+              <td>Стандартная</td>
+              <td className="number">от 25 млн ₽</td>
+            </tr>
+            <tr>
+              <td>Амфибия 900</td>
+              <td className="number">900 м³/час</td>
+              <td>Универсальная</td>
+              <td className="number">от 35 млн ₽</td>
+            </tr>
+            <tr>
+              <td>Амфибия 1300</td>
+              <td className="number">1300 м³/час</td>
+              <td>Производительная</td>
+              <td className="number">до 45 млн ₽</td>
+            </tr>
+            <tr>
+              <td>Земснаряд 2000/63</td>
+              <td className="number">2000 м³/час</td>
+              <td>Регистровый</td>
+              <td className="number">по запросу</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-    
+
   )
 }
 
