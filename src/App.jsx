@@ -12,6 +12,9 @@ import'./i18n'
 function App() {
   const [count, setCount] = useState(0) 
 
+//   git add .
+//   git commit -m "Мои изменения"
+//   git push -u origin master
   return (  
     
     <Router>
