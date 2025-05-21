@@ -75,7 +75,7 @@ const VozmMain = () => {
         <div className="vozmMain__section3 ">
           <h2 className='vozmMain__section3-h2'>{t('vozmMainSection3H2')}</h2>
           <p className='vozmMain__section3-p'>{t('vozmMainSection3P')}</p>
-          <img id='homeEnd' src={VozmSection3Img} alt="" className="vozmMain__section3-img" />
+          <img src={VozmSection3Img} alt="" className="vozmMain__section3-img" />
         </div>
       </div>
       <div className="vozmMain__section4 vozmSection">
@@ -178,7 +178,7 @@ const VozmMain = () => {
 
       </div>
       <div className="vozmMain__section8">
-        <h2>Ассортимент амфибий и земснарядов</h2>
+        <h2 id='homeEnd'>Ассортимент амфибий и земснарядов</h2>
         <table className="styled-table">
           <thead>
             <tr>
