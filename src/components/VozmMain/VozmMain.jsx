@@ -34,7 +34,7 @@ const VozmMain = () => {
           <p className="vozmMain__section1-p">
             {t("vozmMainSection1P")}</p>
         </div>
-      </div>
+      </div> 
       <div className="vozmMain__section2 ">
         <h3 className="vozmMain__section2-h3">{t("vozmMainSection2H3")}</h3>
         <p className="vozmMain__section2-p">{t("vozmMainSection2P")}
@@ -178,46 +178,46 @@ const VozmMain = () => {
 
       </div>
       <div className="vozmMain__section8">
-        <h2 id='homeEnd'>Ассортимент амфибий и земснарядов</h2>
+        <h2 id='homeEnd'>{t('vozmMainSection8H2')}</h2>
         <table className="styled-table">
           <thead>
             <tr>
-              <th>Модель</th>
-              <th>Производительность</th>
-              <th>Тип</th>
-              <th>Цена</th>
+              <th>{t('vozmMainSection8P1')}</th>
+              <th>{t('vozmMainSection8P2')}</th>
+              <th>{t('vozmMainSection8P3')}</th>
+              <th>{t('vozmMainSection8P4')}</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Амфибия 300</td>
-              <td className="number">300 м³/час</td>
-              <td>Бюджетная</td>
-              <td className="number">до 20 млн ₽</td>
+              <td>{t('vozmMainSection8P5')}</td>
+              <td className="number">{t('vozmMainSection8P6')}</td>
+              <td>{t('vozmMainSection8P7')}</td>
+              <td className="number">{t('vozmMainSection8P8')}</td>
             </tr>
             <tr>
-              <td>Амфибия 600</td>
-              <td className="number">600 м³/час</td>
-              <td>Стандартная</td>
-              <td className="number">от 25 млн ₽</td>
+              <td>{t('vozmMainSection8P9')}</td>
+              <td className="number">{t('vozmMainSection8P10')}</td>
+              <td>{t('vozmMainSection8P11')}</td>
+              <td className="number">{t('vozmMainSection8P12')}</td>
             </tr>
             <tr>
-              <td>Амфибия 900</td>
-              <td className="number">900 м³/час</td>
-              <td>Универсальная</td>
-              <td className="number">от 35 млн ₽</td>
+              <td>{t('vozmMainSection8P13')}</td>
+              <td className="number">{t('vozmMainSection8P14')}</td>
+              <td>{t('vozmMainSection8P15')}</td>
+              <td className="number">{t('vozmMainSection8P16')}</td>
             </tr>
             <tr>
-              <td>Амфибия 1300</td>
-              <td className="number">1300 м³/час</td>
-              <td>Производительная</td>
-              <td className="number">до 45 млн ₽</td>
+              <td>{t('vozmMainSection8P17')}</td>
+              <td className="number">{t('vozmMainSection8P18')}</td>
+              <td>{t('vozmMainSection8P19')}</td>
+              <td className="number">{t('vozmMainSection8P20')}</td>
             </tr>
             <tr>
-              <td>Земснаряд 2000/63</td>
-              <td className="number">2000 м³/час</td>
-              <td>Регистровый</td>
-              <td className="number">по запросу</td>
+              <td>{t('vozmMainSection8P21')}</td>
+              <td className="number">{t('vozmMainSection8P22')}</td>
+              <td>{t('vozmMainSection8P23')}</td>
+              <td className="number">{t('vozmMainSection8P24')}</td>
             </tr>
           </tbody>
         </table>
