@@ -22,7 +22,7 @@ import { useTranslation } from 'react-i18next'
 const VozmMain = () => {
   const { t } = useTranslation()
   return (
-    <div className="vozmMain">
+    <div className="vozmMain"> 
       <div className="nav2">
         <Link to="/" className='nav2__a'>{t('vozmMainNav2Text1')}</Link>
         <p className='nav2__p'>{t('vozmMainNav2Text2')}</p>
@@ -178,7 +178,7 @@ const VozmMain = () => {
 
       </div>
       <div className="vozmMain__section8">
-        <h2 id='homeEnd'>{t('vozmMainSection8H2')}</h2>
+        <h2 id='homeEnd'>{t('homeText4Card1')}</h2>
         <table className="styled-table">
           <thead>
             <tr>
@@ -218,6 +218,84 @@ const VozmMain = () => {
               <td className="number">{t('vozmMainSection8P22')}</td>
               <td>{t('vozmMainSection8P23')}</td>
               <td className="number">{t('vozmMainSection8P24')}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div className="vozmMain__section8">
+        <h2 id='homeEnd2'>{t('homeText4Card3')}</h2>
+        <table className="styled-table">
+          <thead>
+            <tr>
+              <th>{t('vozmMainSection8P1')}</th>
+              <th>{t('vozmMainSection8P25')}</th>
+              <th>{t('vozmMainSection8P3')}</th>
+              <th>{t('vozmMainSection8P4')}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{t('vozmMainSection8P26')}</td>
+              <td className="number">{t('vozmMainSection8P27')}</td>
+              <td>{t('vozmMainSection8P28')}</td>
+              <td className="number">{t('vozmMainSection8P24')}</td>
+            </tr>
+            <tr>
+              <td>{t('vozmMainSection8P29')}</td>
+              <td className="number">{t('vozmMainSection8P30')}</td>
+              <td>{t('vozmMainSection8P28')}</td>
+              <td className="number">{t('vozmMainSection8P24')}</td>
+            </tr>
+            <tr>
+              <td>{t('vozmMainSection8P31')}</td>
+              <td className="number">{t('vozmMainSection8P32')}</td>
+              <td>{t('vozmMainSection8P28')}</td>
+              <td className="number">{t('vozmMainSection8P24')}</td>
+            </tr>
+            <tr>
+              <td>{t('vozmMainSection8P33')}</td>
+              <td className="number">{t('vozmMainSection8P34')}</td>
+              <td>{t('vozmMainSection8P28')}</td>
+              <td className="number">{t('vozmMainSection8P24')}</td>
+            </tr>
+            <tr>
+              <td>{t('vozmMainSection8P35')}</td>
+              <td className="number">{t('vozmMainSection8P36')}</td>
+              <td>{t('vozmMainSection8P28')}</td>
+              <td className="number">{t('vozmMainSection8P24')}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div className="vozmMain__section8">
+        <h2 id='homeEnd3'>{t('homeText4Card4')}</h2>
+        <table className="styled-table">
+          <thead>
+            <tr>
+              <th>{t('vozmMainSection8P1')}</th>
+              <th>{t('vozmMainSection8P25')}</th>
+              <th>{t('vozmMainSection8P3')}</th>
+              <th>{t('vozmMainSection8P4')}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{t('vozmMainSection8P33')}</td>
+              <td className="number">{t('vozmMainSection8P34')}</td>
+              <td>{t('vozmMainSection8P28')}</td>
+              <td className="number">{t('vozmMainSection8P24')}</td>
+            </tr>
+            <tr>
+              <td>{t('vozmMainSection8P35')}</td>
+              <td className="number">{t('vozmMainSection8P36')}</td>
+              <td>{t('vozmMainSection8P28')}</td>
+              <td className="number">{t('vozmMainSection8P24')}</td>
+            </tr>
+            <tr>
+              <td>{t('vozmMainSection8P37')}</td>
+              <td className="number">{t('vozmMainSection8P38')}</td>
+              <td>{t('vozmMainSection8P38')}</td>
+              <td className="number">{t('vozmMainSection8P38')}</td>
             </tr>
           </tbody>
         </table>

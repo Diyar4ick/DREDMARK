@@ -63,13 +63,13 @@ const imagesGm3Block2 = [
   block2Img3,
   block2Img5,
   block2Img6,
-];
-const imagesGm3Block3 = [
   block3Img1,
   block3Img2,
   block3Img3,
   block3Img4,
   block3Img5,
+];
+const imagesGm3Block3 = [
   block3Img6,
   block3Img7,
   block3Img8,

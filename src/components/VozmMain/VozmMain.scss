@@ -545,7 +545,8 @@
      display: flex;
      flex-direction: column;
      align-items: center;
-
+ padding: 60px 0;
+     border-bottom: solid 1px black;
      //  gap: 40px;
      h2 {
          font-size: 25px;
@@ -570,7 +571,7 @@
 
  /* Заголовок */
  .styled-table thead th {
-     border: 1px solid #000;
+     border: 1px solid #636262;
      padding: 8px 12px;
      background-color: #dbecff;
      font-weight: 700;
@@ -586,7 +587,7 @@
 
  /* Ячейки */
  .styled-table td {
-     border: 1px solid #000;
+     border: 1px solid #636262;
      padding: 8px 12px;
      text-align: left;
 

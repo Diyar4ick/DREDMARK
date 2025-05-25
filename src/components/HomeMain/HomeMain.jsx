@@ -5,7 +5,7 @@ import mainEndCard5 from '../../assets/images/mainEndCard5Img.jpg'
 import mainEndCard4 from '../../assets/images/mainEndCard1.jpg'
 import mainEndCard2 from '../../assets/images/mainEndCard2Img.jpg'
 import mainEndCard3 from '../../assets/images/mainEndCard3Img.jpg'
-import mainEndCard1 from '../../assets/images/vozmBanner.jpg'
+import mainEndCard1 from '../../assets/images/mainCard3.jpg'
 import homeImgSw1 from '../../assets/images/homeImgSw1.jpg'
 
 import { useTranslation } from "react-i18next";
@@ -81,23 +81,37 @@ const HomeMain = () => {
       <div className="container">
         <h2 className="homeMain__h2">{t("homeText2")}</h2>
         {/* <p className="homeMain__p1"></p> */}
-        <div className="homeMain__box1">
-
-          <div className="homeMain__block1-text1">
-            <h3 className="homeMain__block1-text1-h3">{t('homeCard1Text')}</h3>
-            <h3 className="homeMain__block1-text1-h3">{t('homeCard2Text')}</h3>
-
-          </div>
-          <div className="homeMain__block2-box">
-            <img src={mainEndCard1} alt="" className='homeMain__card1-img' />
-            <p className="homeMain__block2-box-amfibia">{t('homePrice')}</p>
-            <p className="homeMain__block2-box-amfibia">{t("homeMainBlock1Text1")}</p>
-          </div>
-          <div className="homeMain__block2-box">
-            <img src={mainEndCard4} alt="" className='homeMain__card1-img' />
-            <p className="homeMain__block2-box-zemsn">{t('homePrice2')}</p>
-            <p className="homeMain__block2-box-zemsn">{t("homeMainBlock1Text2")}</p>
-          </div>
+        <div className="homeMain__table">
+          <table className="homeMain__table-element">
+            <thead>
+              <tr>
+                <th colSpan="4" className="homeMain__table-element-empty homeMain__table-element-h1">{t('homeCard2Text')}</th>
+              </tr>
+              <tr>
+                <th colSpan="2" className="homeMain__table-element-empty"></th>
+                <th className="homeMain__table-element-header">{t('homeCard1Text')}</th>
+                <th className="homeMain__table-element-header">{t('homeCard3Text')}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="homeMain__table-element-imgCell">
+                  <img src={mainEndCard1} alt="Амфибия" className='homeMain__table-element-img' />
+                </td>
+                <td className="homeMain__table-element-titleCell">{t('homeCardsText1')}</td>
+                <td>{t('homePrice')}</td>
+                <td>{t('homeMainBlock1Text1')}</td>
+              </tr>
+              <tr>
+                <td className="homeMain__table-element-imgCell">
+                  <img src={mainEndCard4} alt="Земснаряд 2000" className='homeMain__table-element-img' />
+                </td>
+                <td className="homeMain__table-element-titleCell">{t('homeCardsText2')}</td>
+                <td>{t('homePrice2')}</td>
+                <td>{t('homeMainBlock1Text2')}</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
 
@@ -128,7 +142,7 @@ const HomeMain = () => {
             <p>{t("homeText4Card3")}</p>
             {isModal3Open && <Modal3 closeModal3={closeModal3Handler} />}
             <button className='homeMain__end-button' onClick={() => openModal3Handler()}>{t("homeText4CardLink")}</button>
-            <Link to="/vozm#homeEnd">{t('homeText4CardLink2')}</Link>
+            <Link to="/vozm#homeEnd2">{t('homeText4CardLink2')}</Link>
 
           </div>
           <div className="homeMain__box3-card2">
@@ -137,7 +151,7 @@ const HomeMain = () => {
             <p>{t("homeText4Card4")}</p>
             {isModalOpen && <Modal closeModal={closeModalHandler} />}
             <button className='homeMain__end-button' onClick={() => openModalHandler()}>{t("homeText4CardLink")}</button>
-            <Link to="/vozm#homeEnd">{t('homeText4CardLink2')}</Link>
+            <Link to="/vozm#homeEnd3">{t('homeText4CardLink2')}</Link>
 
           </div>
           <div className="homeMain__box3-card2">
@@ -159,12 +173,7 @@ const HomeMain = () => {
         </div>
       </div>
 
-      {/* <div className="homeMain__contact">
-        <h2 className='homeMain__contact-h2'>Контакты</h2>
-        <a href={resume} target="_blank" rel="noopener noreferrer">
-          <img src={resumeImg} alt="" className="resumeImg" />
-        </a>
-      </div> */}
+      
     </div>
   )
 }
