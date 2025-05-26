@@ -17,11 +17,32 @@
     &__table {
         width: 100%;
         margin: 20px auto;
-        max-width: 1000px;
+        width: 1000px;
+
+        @include media(1040) {
+            width: 800px;
+        }
+
+        @include media(830) {
+            width: 600px;
+        }
+
+        @include media(630) {
+            width: 450px;
+        }
+
+        @include media(480) {
+            width: 370px;
+        }
+
+        @include media(400) {
+            width: 340px;
+        }
 
         &-element {
             width: 100%;
             border-collapse: collapse;
+            height: 100%;
 
             th,
             td {
@@ -42,6 +63,10 @@
 
                 @include media(450) {
                     font-size: 11px;
+                }
+
+                @include media(400) {
+                    padding: 1px;
                 }
             }
 
@@ -94,7 +119,6 @@
                 // max-width: 200px;
                 object-fit: cover;
                 width: 100%; // чтобы изображение масштабировалось в ячейке
-                height: 100%;
                 border-radius: 1px;
 
 
