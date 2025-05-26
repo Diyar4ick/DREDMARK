@@ -159,7 +159,7 @@ const HomeMain = () => {
             <p>{t("homeText4Card2")}</p>
             {isModal5Open && <Modal5 closeModal5={closeModal5Handler} />}
             <button className='homeMain__end-button' onClick={() => openModal5Handler()}>{t("homeText4CardLink")}</button>
-            <Link to="/vozm#homeEnd">{t('homeText4CardLink2')}</Link>
+            <Link to="/vozm#homeEnd4">{t('homeText4CardLink2')}</Link>
 
           </div>
           <div className="homeMain__box3-card2">
@@ -167,7 +167,7 @@ const HomeMain = () => {
             <p>{t("homeText4Card5")}</p>
             {isModal6Open && <Modal6 closeModal6={closeModal6Handler} />}
             <button className='homeMain__end-button' onClick={() => openModal6Handler()}>{t("homeText4CardLink")}</button>
-            <Link to="/vozm#homeEnd">{t('homeText4CardLink2')}</Link>
+            <Link to="/vozm#homeEnd5">{t('homeText4CardLink2')}</Link>
 
           </div>
         </div>

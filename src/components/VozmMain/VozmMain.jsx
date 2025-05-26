@@ -15,27 +15,39 @@ import vozmSection6Img2 from '../../assets/images/vozmMainSection6Img.jpg'
 import VozmSection7Img1 from '../../assets/images/vozmSection7Img1.webp'
 import VozmSection7Img3 from '../../assets/images/vozmSection7Img2.webp'
 import VozmSection7Img2 from '../../assets/images/vozmMainSection7Img.jpg'
-// import VozmSection4Img2 from '../../assets/images/vozmSection3Img1.webp'
+import VozmSection9Img1 from '../../assets/images/vozmSection9Img1.jpg'
+import VozmSection9Img2 from '../../assets/images/vozmSection9Img2.jpg'
+import VozmSection10Img1 from '../../assets/images/vozmSection10Img1.jpg'
+import VozmSection10Img2 from '../../assets/images/vozmSection10Img2.jpg'
 import section2Video from '../../assets/video/video13.mp4'
 import section2Video2 from '../../assets/video/video9.mp4'
 import { useTranslation } from 'react-i18next'
 const VozmMain = () => {
   const { t } = useTranslation()
   return (
-    <div className="vozmMain"> 
+    <div className="vozmMain">
       <div className="nav2">
         <Link to="/" className='nav2__a'>{t('vozmMainNav2Text1')}</Link>
         <p className='nav2__p'>{t('vozmMainNav2Text2')}</p>
       </div>
 
       <div className="container">
+        <div className="vozmMain__nav">
+          <a href="#homeEnd">{t('vozmNavLink1')} ≥</a>
+          <a href="#homeEnd1">{t('vozmNavLink2')} ≥</a>
+          <a href="#homeEnd2">{t('homeText4Card3')} ≥</a>
+          <a href="#homeEnd3">{t('homeText4Card4')} ≥</a>
+          <a href="#homeEnd4">{t('vozmNavLink5')} ≥</a>
+          <a href="#homeEnd5">{t('vozmNavLink6')} ≥</a>
+        </div>
         <div className="vozmMain__section1 ">
           <h2 className="vozmMain__section1-h2">{t("vozmMainSection1H2")}</h2>
           <p className="vozmMain__section1-p">
             {t("vozmMainSection1P")}</p>
         </div>
-      </div> 
-      <div className="vozmMain__section2 ">
+      </div>
+      <div className="vozmMain__section2">
+        <h1 id='homeEnd' className="vozmMain__section2-h1">{t('vozmNavLink1')}</h1>
         <h3 className="vozmMain__section2-h3">{t("vozmMainSection2H3")}</h3>
         <p className="vozmMain__section2-p">{t("vozmMainSection2P")}
         </p>
@@ -178,7 +190,7 @@ const VozmMain = () => {
 
       </div>
       <div className="vozmMain__section8">
-        <h2 id='homeEnd'>{t('homeText4Card1')}</h2>
+        <h2 id='homeEnd1'>{t('vozmNavLink2')}</h2>
         <table className="styled-table">
           <thead>
             <tr>
@@ -299,6 +311,53 @@ const VozmMain = () => {
             </tr>
           </tbody>
         </table>
+      </div>
+      <div className="vozmMain__section9 vozmSection">
+        <div className="container">
+          <div className="vozmMain__section9-block1">
+            <h1 id='homeEnd4' className="vozmMain__section2-h1">{t('vozmNavLink5')}</h1>
+
+            <p className="vozmMain__section9-block1-p1">
+              {t('vozmSection9Text1')}
+            </p>
+            <Link to='/img#gMainBox4' className='vozmMain__section9-block1-a'>{t('vozmSection9Text2')}</Link>
+          </div>
+          <div className="vozmMain__section9-block2">
+            <img src={VozmSection9Img1} alt="" className="vozmMain__section9-block2-img" />
+            <img src={VozmSection9Img2} alt="" className="vozmMain__section9-block2-img" />
+          </div>
+        </div>
+
+      </div>
+      <div className="vozmMain__section10 vozmSection">
+        <div className="container">
+          <div className="vozmMain__section10-block1">
+            <h3 id='homeEnd5' className="vozmMain__section2-h1">
+              {t('vozmNavLink6')}</h3>
+            <p className="vozmMain__section10-block1-p1">
+              {t('vozmSection10Text1')}
+            </p>
+            <p className="vozmMain__section10-block1-p1">
+              <span className='vozmMain__section4-block1-h3'> {t('vozmSection10Text2')}</span>
+              <ul>
+                <li><p className='vozmMain__section10-block1-p2'>1) {t('vozmSection10List1')}</p></li>
+                <li><p className='vozmMain__section10-block1-p2'>2) {t('vozmSection10List2')}</p></li>
+                <li><p className='vozmMain__section10-block1-p2'>3) {t('vozmSection10List3')}</p></li>
+                <li><p className='vozmMain__section10-block1-p2'>4) {t('vozmSection10List4')}</p></li>
+                <li><p className='vozmMain__section10-block1-p2'>5) {t('vozmSection10List5')}</p></li>
+                <li><p className='vozmMain__section10-block1-p2'>6) {t('vozmSection10List6')}</p></li>
+                <li><p className='vozmMain__section10-block1-p2'>7) {t('vozmSection10List7')}</p></li>
+                <li><p className='vozmMain__section10-block1-p2'>8) {t('vozmSection10List8')}</p></li>
+              </ul>
+            </p>
+
+          </div>
+          <div className="vozmMain__section10-block2">
+            <img src={VozmSection10Img1} alt="" className="vozmMain__section10-block2-img" />
+            <img src={VozmSection10Img2} alt="" className="vozmMain__section10-block2-img" />
+          </div>
+        </div>
+
       </div>
     </div>
 

@@ -162,13 +162,13 @@ const GMain3 = () => {
             </button>
           ))}
         </div>
-        <h2 className="gMain3__h1">{t('homeText4Card2')}</h2>
+        <h2 id='gMainBox4' className="gMain3__h1">{t('homeText4Card2')}</h2>
         <div className="gMain3__images">
 
 
           {imagesGm3Block4.map((img, index) => (
             <button key={index} onClick={() => openModalImg1Handler(index, imagesGm3Block4)}>
-              <img src={img} alt={`Image ${index + 1}`} className="gMain3__img1" />
+              <img src={img} alt={`Image ${index + 1}`} className="gMain3__img1"/>
             </button>
           ))}
         </div>
