@@ -25,7 +25,7 @@ import { useTranslation } from 'react-i18next'
 const VozmMain = () => {
   const { t } = useTranslation()
   return (
-    <div className="vozmMain">
+    <div className="vozmMain" id='vozmMainNav'>
       <div className="nav2">
         <Link to="/" className='nav2__a'>{t('vozmMainNav2Text1')}</Link>
         <p className='nav2__p'>{t('vozmMainNav2Text2')}</p>
@@ -33,12 +33,12 @@ const VozmMain = () => {
 
       <div className="container">
         <div className="vozmMain__nav">
-          <a href="#homeEnd">{t('vozmNavLink1')} ≥</a>
-          <a href="#homeEnd1">{t('vozmNavLink2')} ≥</a>
-          <a href="#homeEnd2">{t('homeText4Card3')} ≥</a>
-          <a href="#homeEnd3">{t('homeText4Card4')} ≥</a>
-          <a href="#homeEnd4">{t('vozmNavLink5')} ≥</a>
-          <a href="#homeEnd5">{t('vozmNavLink6')} ≥</a>
+          <a href="#homeEnd">{t('vozmNavLink1')} »</a>
+          <a href="#homeEnd1">{t('vozmNavLink2')} »</a>
+          <a href="#homeEnd2">{t('homeText4Card3')} »</a>
+          <a href="#homeEnd3">{t('homeText4Card4')} »</a>
+          <a href="#homeEnd4">{t('vozmNavLink5')} »</a>
+          <a href="#homeEnd5">{t('vozmNavLink6')} »</a>
         </div>
         <div className="vozmMain__section1 ">
           <h2 className="vozmMain__section1-h2">{t("vozmMainSection1H2")}</h2>
@@ -79,7 +79,10 @@ const VozmMain = () => {
             <video src={section2Video} controls></video>
             <video src={section2Video2} controls></video>
           </div>
-
+          <div className="vozmBlocksBack1">
+            <Link to="/#vozmBlocksBack" className='nav2__a'>{t('vozmMainNav2Text1')}</Link>
+            <a href="#vozmMainNav" className='nav2__a'>{t('navLink8')} ↑</a>
+          </div>
         </div>
 
       </div>
@@ -233,6 +236,10 @@ const VozmMain = () => {
             </tr>
           </tbody>
         </table>
+          <div className="vozmBlocksBack1">
+            <Link to="/#vozmBlocksBack" className='nav2__a'>{t('vozmMainNav2Text1')}</Link>
+            <a href="#vozmMainNav" className='nav2__a'>{t('navLink8')} ↑</a>
+          </div>
       </div>
       <div className="vozmMain__section8">
         <h2 id='homeEnd2'>{t('homeText4Card3')}</h2>
@@ -278,6 +285,10 @@ const VozmMain = () => {
             </tr>
           </tbody>
         </table>
+          <div className="vozmBlocksBack1">
+            <Link to="/#vozmBlocksBack" className='nav2__a'>{t('vozmMainNav2Text1')}</Link>
+            <a href="#vozmMainNav" className='nav2__a'>{t('navLink8')} ↑</a>
+          </div>
       </div>
       <div className="vozmMain__section8">
         <h2 id='homeEnd3'>{t('homeText4Card4')}</h2>
@@ -311,6 +322,10 @@ const VozmMain = () => {
             </tr>
           </tbody>
         </table>
+          <div className="vozmBlocksBack1">
+            <Link to="/#vozmBlocksBack" className='nav2__a'>{t('vozmMainNav2Text1')}</Link>
+            <a href="#vozmMainNav" className='nav2__a'>{t('navLink8')} ↑</a>
+          </div>
       </div>
       <div className="vozmMain__section9 vozmSection">
         <div className="container">
@@ -325,6 +340,10 @@ const VozmMain = () => {
           <div className="vozmMain__section9-block2">
             <img src={VozmSection9Img1} alt="" className="vozmMain__section9-block2-img" />
             <img src={VozmSection9Img2} alt="" className="vozmMain__section9-block2-img" />
+          </div>
+          <div className="vozmBlocksBack1">
+            <Link to="/#vozmBlocksBack" className='nav2__a'>{t('vozmMainNav2Text1')}</Link>
+            <a href="#vozmMainNav" className='nav2__a'>{t('navLink8')} ↑</a>
           </div>
         </div>
 
@@ -355,6 +374,10 @@ const VozmMain = () => {
           <div className="vozmMain__section10-block2">
             <img src={VozmSection10Img1} alt="" className="vozmMain__section10-block2-img" />
             <img src={VozmSection10Img2} alt="" className="vozmMain__section10-block2-img" />
+          </div>
+            <div className="vozmBlocksBack1">
+            <Link to="/#vozmBlocksBack" className='nav2__a'>{t('vozmMainNav2Text1')}</Link>
+            <a href="#vozmMainNav" className='nav2__a'>{t('navLink8')} ↑</a>
           </div>
         </div>
 

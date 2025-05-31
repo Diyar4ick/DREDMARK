@@ -126,6 +126,43 @@
         }
     }
 
+    .priceButton1 {
+        padding: 4px 8px;
+        background: #6c757d;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+         @include media(800) {
+            font-size: 10px;
+        }
+         @include media(630) {
+            font-size: 9px;
+            padding: 2px 4px;
+        }
+         @include media(400) {
+            font-size: 7px;
+            border-radius: 2px;
+        }
+
+    }
+    .priceButton2 {
+        padding: 4px 8px;
+        background: rgba(0, 120, 200, 0.902);
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+         @include media(800) {
+            font-size: 10px;
+        }
+         @include media(630) {
+            font-size: 9px;
+            padding: 2px 4px;
+        }
+         @include media(400) {
+            font-size: 7px;
+            border-radius: 2px;
+        }
+    }
 }
 
 .home__block2 {

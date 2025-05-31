@@ -1,6 +1,3 @@
-// import cardImg1 from '../../assets/images/mainCard1.jpg'
-// import cardImg2 from '../../assets/images/mainCard2.jpg'
-// import cardImg3 from '../../assets/images/mainCard3.jpg'
 import mainEndCard5 from '../../assets/images/mainEndCard5Img.jpg'
 import mainEndCard4 from '../../assets/images/mainEndCard1.jpg'
 import mainEndCard2 from '../../assets/images/mainEndCard2Img.jpg'
@@ -19,6 +16,7 @@ import Modal3 from '../Modal/Modal3'
 import Modal2 from '../Modal/Modal2'
 import Modal from '../Modal/Modal'
 import { Link } from 'react-router-dom'
+import PriceCell from '../PriceCell/PriceCell'
 
 const HomeMain = () => {
   const [isModalOpen, setisModalOpen] = useState(false)
@@ -99,7 +97,7 @@ const HomeMain = () => {
                   <img src={mainEndCard1} alt="Амфибия" className='homeMain__table-element-img' />
                 </td>
                 <td className="homeMain__table-element-titleCell">{t('homeCardsText1')}</td>
-                <td>{t('homePrice')}</td>
+                <td><PriceCell usdPrice={400000} /></td>
                 <td>{t('homeMainBlock1Text1')}</td>
               </tr>
               <tr>
@@ -107,7 +105,7 @@ const HomeMain = () => {
                   <img src={mainEndCard4} alt="Земснаряд 2000" className='homeMain__table-element-img' />
                 </td>
                 <td className="homeMain__table-element-titleCell">{t('homeCardsText2')}</td>
-                <td>{t('homePrice2')}</td>
+               <td><PriceCell usdPrice={500000} /></td>
                 <td>{t('homeMainBlock1Text2')}</td>
               </tr>
             </tbody>
@@ -127,7 +125,7 @@ const HomeMain = () => {
 
 
       <div className="container">
-        <h3 className="homeMain__box3-h3">{t("homeText4")}</h3>
+        <h3 className="homeMain__box3-h3" id='vozmBlocksBack'>{t("homeText4")}</h3>
         <div className="homeMain__box3">
           <div className="homeMain__box3-card2">
             <img src={mainEndCard1} alt="" className='homeMain__box3-card2-img' />

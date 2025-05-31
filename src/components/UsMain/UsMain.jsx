@@ -8,7 +8,6 @@ import section4Img from '../../assets/images/usMainSection4Img.jpg'
 import video16 from '../../assets/video/video16.mp4'
 import video17 from '../../assets/video/video17.mp4'
 import video18 from '../../assets/video/video18.mp4'
-import video19 from '../../assets/video/video19.mp4'
 import { useTranslation } from "react-i18next"
 const UsMain = () => {
   const { t } = useTranslation()
@@ -64,12 +63,7 @@ const UsMain = () => {
             <img src={section4Img} alt="" />
             <p><h2 className="usMain__h2">{t('usMainSection5H2')}</h2>{t('usMainSection5P')}</p>
           </div>
-          <div className="usMain__block-section5">
-            <video src={video19} controls></video>
-            <div className="usMain__end">
-              <p>{t('usMainSection6')}</p>
-            </div>
-          </div>
+          
 
         </div>
 
