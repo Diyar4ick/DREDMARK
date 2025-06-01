@@ -37,7 +37,7 @@ const PriceCell = ({ usdPrice }) => {
           onClick={() => setShowRub(false)}
           className='priceButton1'
         >
-          {t('navLink8')}
+          {t('navLink9')}
         </button>
       ) : (
         <button
