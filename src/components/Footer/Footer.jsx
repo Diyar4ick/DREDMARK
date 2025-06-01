@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import telegram from '../../assets/images/telegram.svg';
 import whatsapp from '../../assets/images/whatsapp.svg';
+import instagram from '../../assets/images/instagram.svg';
 import { useState } from "react";
 
 const Footer = () => {
@@ -76,6 +77,22 @@ const Footer = () => {
                   <p>+998 90 113-85-44</p>
                 </span>
               </p>
+            </div>
+            <div className="footer__infomain-box2">
+              <a href="https://t.me/TZNMDredmark"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="linkTg">
+                <img src={telegram} alt="" />
+                Telegram
+              </a>
+              <a href="https://www.instagram.com/dredmark.su?igsh=OGxyMGQxMDA3cXhy"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="linkInst">
+                <img src={instagram} alt="" />
+                Instagram
+              </a>
             </div>
           </div>
           <div className="footer__infomain-box3">

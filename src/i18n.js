@@ -11,7 +11,7 @@ const resources = {
       navLink3: "Применение",
       navLink4: "О нас",
       navLink7: "Контакты",
-      navLink8: "Назад",
+      navLink8: "Наверх",
       valute: "Перевести в ₽",
       loading: "Загрузка...",
       gallery: "Галерея ▾",
@@ -175,12 +175,55 @@ const resources = {
       usMainSection3P: "Александр Апареев, директор Ташкентского завода нестандартных машин, в эфире Oʻzbekiston 24 рассказал о миссии компании и перспективах развития. В интервью была подчёркнута уникальность конструкторских решений и растущий спрос на продукцию DREDMARK.",
 
       usMainSection4H2: "Презентация работы земснаряда",
-      usMainSection4P: "Во время демонстрации сотрудники компании детально рассказали о возможностях мини-экскаватора: очистка от водорослей и ила, углубление дна, строительство островов и каналов. Обсуждение происходило на фоне макета, который отражает реальные функции оборудования.",
+      usMainSection4P: "Во время демонстрации сотрудники компании детально рассказали о возможностях мини-экскаватора: очистка от водорослей и ила, углубление дна, строительство островов и каналов. Обсуждение происходило на фоне макета, который отражает реальные функции оборудования.На выставке присутствовал министр промышленности России — Мантуров Денис Валентинович.",
 
       usMainSection5H2: "Завершение сборки в Кыргызстане",
       usMainSection5P: "Компания DREDMARK продолжает расширять своё присутствие за рубежом. В Кыргызстане завершается сборка нового земснаряда, что говорит о доверии к нашей технике и её эффективности в условиях горных и заболоченных местностей. Это ещё один шаг к укреплению международного сотрудничества.",
 
       usMainSection6: "Присоединяйтесь к нам на пути к более чистым, безопасным и лучше функционирующим водным ресурсам с меньшим количеством машин и затрат. Заполните форму ниже и свяжитесь с нами сегодня!",
+
+
+      usMainSection7H2: "География работы нашей компании с 2011 года", //
+      usMainSection7Title1: "Страна", //
+      usMainSection7Title2: "Город", //
+      usMainSection7Title3: "Производительность", //
+      usMainSection7Title4: "Количество", //
+
+      usMainSection7Russia: "Россия", //
+      usMainSection7RussiaCity1: "Калининград", //
+      usMainSection7RussiaCity2: "Норильск", //
+      usMainSection7RussiaCity3: "Омск", //
+      usMainSection7RussiaCity4: "Тобольск", //
+      usMainSection7RussiaCity5: "Норильск", //
+      usMainSection7RussiaCity6: "Москва", //
+      usMainSection7RussiaCity7: "Курган", //
+      usMainSection7RussiaCity8: "Цимлянск", //
+
+      usMainSection7Uz: "Узбекистан", //
+      usMainSection7UzCity1: "Сырдарья", //
+      usMainSection7UzCity2: "Термез", //
+      usMainSection7UzCity3: "Ташкент", //
+      usMainSection7UzCity4: "Бухара", //
+      usMainSection7UzCity5: "Нукус", //
+      usMainSection7UzCity6: "Самарканд", //
+
+      usMainSection7Kz: "Казахстан", //
+      usMainSection7KzCity1: "Караганда", //
+      usMainSection7KzCity2: "Актау", //
+      usMainSection7KzCity3: "Алматы", //
+
+      usMainSection7Tj: "Таджикистан", //
+      usMainSection7TjCity: "Курган-Тюбе", //
+
+      usMainSection7Krg: "Кыргызстан", //
+      usMainSection7KrgCity: "Ала-Бука", //
+
+      usMainSection7P1: "Гидроразмыв", //
+      usMainSection7P2: "Гидромонитор", //
+      usMainSection7P3: "Фреза", //
+      usMainSection7P4: "Фреза PP", //
+      usMainSection7P5: "Амфибия 600м3", //
+      usMainSection7P6: "Морской", //
 
       gMain3Text1: "Изображения",
       gMain3Text2: "многофункциональный земснаряд амфибия",
@@ -196,7 +239,7 @@ const resources = {
       navLink5: "Support",
       navLink6: "Questions and answers",
       navLink7: "Contacts",
-      navLink8: "Back",
+      navLink8: "Top",
       valute: "Convert to ₽",
       loading: "Loading...",
       gallery: "Gallery ▾",
@@ -362,12 +405,54 @@ const resources = {
       usMainSection3P: "Aleksandr Apareev, Director of the Tashkent Factory of Non-Standard Machines, spoke live on Oʻzbekiston 24 about the company's mission and growth prospects. The interview highlighted the uniqueness of the engineering solutions and the growing demand for DREDMARK products.",
 
       usMainSection4H2: "Dredger Operation Presentation",
-      usMainSection4P: "During the demonstration, the company's team explained in detail the capabilities of the mini-excavator: cleaning algae and silt, deepening the bottom, building islands and channels. The discussion took place next to a model that illustrates the actual functionality of the equipment.",
+      usMainSection4P: "During the demonstration, the company's team explained in detail the capabilities of the mini-excavator: cleaning algae and silt, deepening the bottom, building islands and channels. The discussion took place next to a model that illustrates the actual functionality of the equipment. The Minister of Industry of Russia, Denis Valentinovich Manturov, was present at the exhibition.",
 
       usMainSection5H2: "Assembly Completion in Kyrgyzstan",
       usMainSection5P: "DREDMARK continues to expand its international presence. In Kyrgyzstan, the assembly of a new dredger is nearing completion, reflecting trust in our equipment and its effectiveness in mountainous and swampy areas. This marks another step toward strengthening international cooperation.",
 
       usMainSection6: "Join us on the journey to cleaner, safer, and better-functioning water resources with fewer machines and lower costs. Fill out the form below and contact us today!",
+
+      usMainSection7H2: "Geography of our company's operations since 2011",
+      usMainSection7Title1: "Country",
+      usMainSection7Title2: "City",
+      usMainSection7Title3: "Performance",
+      usMainSection7Title4: "Quantity",
+
+      usMainSection7Russia: "Russia",
+      usMainSection7RussiaCity1: "Kaliningrad",
+      usMainSection7RussiaCity2: "Norilsk",
+      usMainSection7RussiaCity3: "Omsk",
+      usMainSection7RussiaCity4: "Tobolsk",
+      usMainSection7RussiaCity5: "Norilsk", // duplicate?
+      usMainSection7RussiaCity6: "Moscow",
+      usMainSection7RussiaCity7: "Kurgan",
+      usMainSection7RussiaCity8: "Tsimlyansk",
+
+      usMainSection7Uz: "Uzbekistan",
+      usMainSection7UzCity1: "Syrdarya",
+      usMainSection7UzCity2: "Termez",
+      usMainSection7UzCity3: "Tashkent",
+      usMainSection7UzCity4: "Bukhara",
+      usMainSection7UzCity5: "Nukus",
+      usMainSection7UzCity6: "Samarkand",
+
+      usMainSection7Kz: "Kazakhstan",
+      usMainSection7KzCity1: "Karaganda",
+      usMainSection7KzCity2: "Aktau",
+      usMainSection7KzCity3: "Almaty",
+
+      usMainSection7Tj: "Tajikistan",
+      usMainSection7TjCity: "Kurgan-Tyube",
+
+      usMainSection7Krg: "Kyrgyzstan", // fixed spelling
+      usMainSection7KrgCity: "Ala-Buka",
+
+      usMainSection7P1: "Hydraulic washing",
+      usMainSection7P2: "Hydromonitor",
+      usMainSection7P3: "Cutter",
+      usMainSection7P4: "Cutter PP",
+      usMainSection7P5: "Amphibian 600 m³",
+      usMainSection7P6: "Marine",
 
       gMain3Text1: "Images",
       gMain3Text2: "multifunctional amphibious dredger",
@@ -384,7 +469,7 @@ const resources = {
       navLink5: "Qo‘llab-quvvatlash",
       navLink6: "Savol-javoblar",
       navLink7: "Kontaktlar",
-      navLink8: "Orqaga",
+      navLink8: "Tepaga",
       valute: "₽ ga aylantirish",
       loading: "Yuklanmoqda...",
       gallery: "Galereya ▾",
@@ -550,12 +635,54 @@ const resources = {
       usMainSection3P: "Toshkentdagi nostandart mashinalar zavodi direktori Aleksandr Apareev “Oʻzbekiston 24” telekanalida kompaniya missiyasi va rivojlanish istiqbollari haqida so‘zlab berdi. Intervyuda muhandislik yechimlarining noyobligi va DREDMARK mahsulotlariga bo‘lgan talabning ortib borayotgani ta’kidlandi.",
 
       usMainSection4H2: "Zemsnaryad ishini namoyish qilish",
-      usMainSection4P: "Namoyish vaqtida kompaniya xodimlari mini-ekskavatorning imkoniyatlari haqida batafsil ma’lumot berdilar: suv o‘tlari va cho‘kmani tozalash, tubni chuqurlashtirish, orollar va kanallar qurish. Suhbat uskunaning real funksiyalarini aks ettiruvchi maket fonida bo‘lib o‘tdi.",
+      usMainSection4P: "Namoyish vaqtida kompaniya xodimlari mini-ekskavatorning imkoniyatlari haqida batafsil ma’lumot berdilar: suv o‘tlari va cho‘kmani tozalash, tubni chuqurlashtirish, orollar va kanallar qurish. Suhbat uskunaning real funksiyalarini aks ettiruvchi maket fonida bo‘lib o‘tdi. Ko'rgazmada Rossiya sanoat vaziri Denis Valentinovich Manturov ishtirok etdi.",
 
       usMainSection5H2: "Qirg‘izistonda yig‘ish yakunlanmoqda",
       usMainSection5P: "DREDMARK kompaniyasi xorijda o‘z faoliyatini kengaytirishda davom etmoqda. Qirg‘izistonda yangi zemsnaryadning yig‘ilishi yakunlanmoqda, bu esa bizning texnikamizga bo‘lgan ishonch va uning tog‘li va botqoqli hududlardagi samaradorligini ko‘rsatadi. Bu xalqaro hamkorlikni mustahkamlash yo‘lida yana bir qadamdir.",
 
       usMainSection6: "Kamroq texnika va kamroq xarajat bilan toza, xavfsiz va samarali ishlaydigan suv resurslari sari biz bilan birga yuring. Quyidagi formani to‘ldiring va bugunoq biz bilan bog‘laning!",
+
+      usMainSection7H2: "Kompaniyamiz faoliyati geografiyasi — 2011 yildan buyon",
+      usMainSection7Title1: "Mamlakat",
+      usMainSection7Title2: "Shahar",
+      usMainSection7Title3: "Ish unumdorligi",
+      usMainSection7Title4: "Soni",
+
+      usMainSection7Russia: "Rossiya",
+      usMainSection7RussiaCity1: "Kaliningrad",
+      usMainSection7RussiaCity2: "Norilsk",
+      usMainSection7RussiaCity3: "Omsk",
+      usMainSection7RussiaCity4: "Tobolsk",
+      usMainSection7RussiaCity5: "Norilsk", // dublikat?
+      usMainSection7RussiaCity6: "Moskva",
+      usMainSection7RussiaCity7: "Kurgan",
+      usMainSection7RussiaCity8: "Tsimlyansk",
+
+      usMainSection7Uz: "O‘zbekiston",
+      usMainSection7UzCity1: "Sirdaryo",
+      usMainSection7UzCity2: "Termiz",
+      usMainSection7UzCity3: "Toshkent",
+      usMainSection7UzCity4: "Buxoro",
+      usMainSection7UzCity5: "Nukus",
+      usMainSection7UzCity6: "Samarqand",
+
+      usMainSection7Kz: "Qozog‘iston",
+      usMainSection7KzCity1: "Qarag‘anda",
+      usMainSection7KzCity2: "Aktau",
+      usMainSection7KzCity3: "Olmaota",
+
+      usMainSection7Tj: "Tojikiston",
+      usMainSection7TjCity: "Qurg‘ontepa", // или "Qurgon-Tyube", в зависимости от предпочтения
+
+      usMainSection7Krg: "Qirg‘iziston", // исправлено
+      usMainSection7KrgCity: "Ala-Buka",
+
+      usMainSection7P1: "Gidro yuvish",
+      usMainSection7P2: "Gidromonitor",
+      usMainSection7P3: "Freza",
+      usMainSection7P4: "Freza PP",
+      usMainSection7P5: "Amfibiya 600 m³",
+      usMainSection7P6: "Dengizga mos",
 
       gMain3Text1: "Rasmlar",
       gMain3Text2: "ko'p funktsiyali amfibiya ekspeditori",

@@ -15,16 +15,19 @@
         font-size: 25px;
         line-height: 20px;
     }
+
     @include media(860) {
         font-size: 20px;
-       }
+    }
 }
 
 .usMain {
     padding: 30px;
+
     @include media(870) {
         padding: 10px;
-         }
+    }
+
     &__h1 {
         font-size: 33px;
         font-weight: 700;
@@ -89,6 +92,10 @@
         background: #efeeee;
         gap: 40px;
 
+        @include media(500) {
+            padding: 15px 15px;
+        }
+
         &-section1 {
             display: flex;
             flex-direction: column;
@@ -125,20 +132,49 @@
                 gap: 10px;
                 max-height: 400px;
                 height: 100%;
-                @include media(800) {
-                    max-height: max-content;
-                    justify-content: center;
-                   }
-                video {
 
-                    max-height: 400px;
-                    height: 100%;
+
+                @include media(1400) {
+                    max-height: max-content;
+                    // align-items: center;
+                    justify-content: center;
                 }
 
-                img {
-                    max-width: 300px;
+                &-box1 {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    @include media(830) {
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+
+                    img {
+                        max-height: 190px;
+                        height: 100%;
+                    }
+                }
+
+                video {
+
+                    max-width: 400px;
+                    height: 100%;
+
+                    @include media(530) {
+                        max-width: 350px;
+                    }
+
+                    @include media(430) {
+                        max-width: 300px;
+                    }
+                }
+
+                &-img {
+                    max-width: 250px;
                     width: 100%;
-                    max-height: 400px;
+                    max-height: 380px;
                     height: 100%;
 
                     @include media(1090) {
@@ -147,6 +183,7 @@
                 }
             }
         }
+
         &-section6 {
             display: flex;
             flex-direction: column;
@@ -183,17 +220,20 @@
                 gap: 10px;
                 max-height: 400px;
                 height: 100%;
+
                 @include media(800) {
                     max-height: max-content;
                     justify-content: center;
-                   }
+                }
+
                 video {
 
                     max-height: 400px;
                     height: 100%;
+
                     @include media(1090) {
                         max-height: 360px;
-                       }
+                    }
                 }
 
                 img {
@@ -215,20 +255,22 @@
             flex-wrap: wrap;
             border-bottom: solid 1px black;
             padding: 30px 0;
-            
+
             .div {
                 display: flex;
                 gap: 30px;
+
                 @include media(770) {
                     flex-wrap: wrap;
-                   justify-content: center;
-                    }
+                    justify-content: center;
+                }
+
                 video {
                     max-width: 300px;
 
                     @include media(1090) {
-                      max-height: 400px;
-                      
+                        max-height: 400px;
+
                     }
                 }
 
@@ -253,11 +295,11 @@
                         line-height: 22px;
                         max-width: 550px;
 
-                        
+
                         @include media(1090) {
                             font-size: 15px;
-                           }
-                        
+                        }
+
 
 
                     }
@@ -274,12 +316,14 @@
             margin: 30px 0;
             border-bottom: solid 1px black;
             padding: 30px 0;
+
             @include media(850) {
                 flex-wrap: wrap;
                 justify-content: center;
-                }
+            }
+
             img {
-                max-width: 500px;
+                max-width: 600px;
                 width: 100%;
 
                 @include media(1000) {
@@ -299,10 +343,11 @@
                 @include media(1320) {
                     text-align: center;
                 }
+
                 @include media(850) {
-                   font-size: 15px;
-                   line-height: 18px;
-                   }
+                    font-size: 15px;
+                    line-height: 18px;
+                }
 
                 h2 {
                     line-height: normal;
@@ -317,10 +362,12 @@
             border-bottom: solid 1px black;
             padding: 30px 0;
             align-items: center;
+
             @include media(850) {
                 flex-wrap: wrap;
                 justify-content: center;
-                }
+            }
+
             video {
                 max-width: 700px;
                 width: 100%;
@@ -328,13 +375,110 @@
                 @include media(1090) {
                     max-width: 500px;
                 }
+
                 @include media(860) {
                     max-width: 400px;
-                   }
+                }
+            }
+        }
+
+        &-section7 {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin: 30px 0;
+            // border-bottom: solid 1px black;
+            padding: 30px 0;
+            justify-content: center;
+            align-items: center;
+
+            &-russia {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 30px 0;
+                border-bottom: solid 1px black;
+                flex-wrap: wrap;
+
+                img {
+                    max-width: 500px;
+
+                    @include media(600) {
+                        max-width: 350px;
+                    }
+                     @include media(410) {
+                        max-width: 330px;
+                    }
+                }
+
+                .russia-table {
+                    border-collapse: collapse;
+                    width: max-content;
+                    margin: 20px;
+                    font-size: 16px;
+                    border: 1px solid rgb(186, 186, 186);
+                    height: max-content;
+                   
+                }
+
+                /* Заголовок */
+                .russia-table thead th {
+                    border: 1px solid rgb(186, 186, 186);
+                    padding: 8px 12px;
+                    background-color: #dbecff;
+                    font-weight: 700;
+                    text-align: center;
+
+                    @include media(700) {
+                        font-size: 14px;
+                    }
+
+                    @include media(600) {
+                        font-size: 13px;
+                    }
+
+                     @include media(460) {
+                        font-size: 10px;
+                    }
+                }
+
+                /* Ячейки */
+                .russia-table td {
+                    border: 1px solid rgb(186, 186, 186);
+                    padding: 8px 12px;
+                    text-align: left;
+                    background: white;
+
+                    @include media(790) {
+                        padding: 5px 10px;
+                        font-size: 13px;
+                    }
+
+                    @include media(700) {
+                        padding: 5px;
+                        font-size: 13px;
+                    }
+
+                    @include media(620) {
+                        padding: 3px;
+                        font-size: 12px;
+                    }
+
+                     @include media(460) {
+                        font-size: 10px;
+                    }
+                }
+
+                /* Центрирование числовых значений */
+                .russia-table td.number {
+                    text-align: center;
+
+                }
+
             }
         }
     }
 
-   
+
 
 }
