@@ -336,7 +336,9 @@
                 color: white;
                 border-radius: 7px;
                 transition: .2s;
-
+                &:hover{
+                    background: rgb(0, 90, 192);
+                }
                 @include media(870) {
                     max-height: 50px;
                 }
