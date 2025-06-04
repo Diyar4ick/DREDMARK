@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    allowedHosts: ['dredmark.com'], // Добавьте ваш домен
+    allowedHosts: ['Dredmark.com'], // Добавьте ваш домен
   },
 })
