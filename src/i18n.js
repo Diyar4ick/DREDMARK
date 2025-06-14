@@ -33,7 +33,7 @@ const resources = {
       homeCardsLink: 'Посмотреть как »',
       homeText3: "БОЛЕЕ 20лет успешной работы на рынке СНГ и ближайшем зарубежье",
       homeText3Link: "Смотреть видео примера проекта",
-      homeText4: "Наши проекты",
+      homeText4: "Производство земснарядов", //
       homeText4Card1: "Многофункциональный земснаряд амфибия от 600м3 и выше",
       homeText4Card2: "Микро ГЭС",
       homeText4Card3: "Земснаряды без регистра судоходства",
@@ -184,47 +184,47 @@ const resources = {
       usMainSection6: "Присоединяйтесь к нам на пути к более чистым, безопасным и лучше функционирующим водным ресурсам с меньшим количеством машин и затрат. Заполните форму ниже и свяжитесь с нами сегодня!",
 
 
-      usMainSection7H2: "География работы нашей компании с 2011 года", //
-      usMainSection7Title1: "Страна", //
-      usMainSection7Title2: "Город", //
-      usMainSection7Title3: "Производительность", //
-      usMainSection7Title4: "Количество", //
+      usMainSection7H2: "География работы нашей компании с 2011 года", 
+      usMainSection7Title1: "Страна", 
+      usMainSection7Title2: "Город", 
+      usMainSection7Title3: "Производительность", 
+      usMainSection7Title4: "Количество", 
 
-      usMainSection7Russia: "Россия", //
-      usMainSection7RussiaCity1: "Калининград", //
-      usMainSection7RussiaCity2: "Норильск", //
-      usMainSection7RussiaCity3: "Омск", //
-      usMainSection7RussiaCity4: "Тобольск", //
-      usMainSection7RussiaCity5: "Норильск", //
-      usMainSection7RussiaCity6: "Москва", //
-      usMainSection7RussiaCity7: "Курган", //
-      usMainSection7RussiaCity8: "Цимлянск", //
+      usMainSection7Russia: "Россия", 
+      usMainSection7RussiaCity1: "Калининград", 
+      usMainSection7RussiaCity2: "Норильск", 
+      usMainSection7RussiaCity3: "Омск", 
+      usMainSection7RussiaCity4: "Тобольск", 
+      usMainSection7RussiaCity5: "Норильск", 
+      usMainSection7RussiaCity6: "Москва", 
+      usMainSection7RussiaCity7: "Курган", 
+      usMainSection7RussiaCity8: "Цимлянск", 
 
-      usMainSection7Uz: "Узбекистан", //
-      usMainSection7UzCity1: "Сырдарья", //
-      usMainSection7UzCity2: "Термез", //
-      usMainSection7UzCity3: "Ташкент", //
-      usMainSection7UzCity4: "Бухара", //
-      usMainSection7UzCity5: "Нукус", //
-      usMainSection7UzCity6: "Самарканд", //
+      usMainSection7Uz: "Узбекистан", 
+      usMainSection7UzCity1: "Сырдарья", 
+      usMainSection7UzCity2: "Термез", 
+      usMainSection7UzCity3: "Ташкент", 
+      usMainSection7UzCity4: "Бухара", 
+      usMainSection7UzCity5: "Нукус", 
+      usMainSection7UzCity6: "Самарканд", 
 
-      usMainSection7Kz: "Казахстан", //
-      usMainSection7KzCity1: "Караганда", //
-      usMainSection7KzCity2: "Актау", //
-      usMainSection7KzCity3: "Алматы", //
+      usMainSection7Kz: "Казахстан", 
+      usMainSection7KzCity1: "Караганда", 
+      usMainSection7KzCity2: "Актау", 
+      usMainSection7KzCity3: "Алматы", 
 
-      usMainSection7Tj: "Таджикистан", //
-      usMainSection7TjCity: "Курган-Тюбе", //
+      usMainSection7Tj: "Таджикистан", 
+      usMainSection7TjCity: "Курган-Тюбе", 
 
-      usMainSection7Krg: "Кыргызстан", //
-      usMainSection7KrgCity: "Ала-Бука", //
+      usMainSection7Krg: "Кыргызстан", 
+      usMainSection7KrgCity: "Ала-Бука", 
 
-      usMainSection7P1: "Гидроразмыв", //
-      usMainSection7P2: "Гидромонитор", //
-      usMainSection7P3: "Фреза", //
-      usMainSection7P4: "Фреза PP", //
-      usMainSection7P5: "Амфибия 600м3", //
-      usMainSection7P6: "Морской", //
+      usMainSection7P1: "Гидроразмыв", 
+      usMainSection7P2: "Гидромонитор", 
+      usMainSection7P3: "Фреза", 
+      usMainSection7P4: "Фреза PP", 
+      usMainSection7P5: "Амфибия 600м3", 
+      usMainSection7P6: "Морской", 
 
       gMain3Text1: "Изображения",
       gMain3Text2: "многофункциональный земснаряд амфибия",
@@ -263,7 +263,7 @@ const resources = {
       homeCardsLink: 'See how »',
       homeText3: "MORE THAN 20 years of successful work in the CIS market and neighboring countries",
       homeText3Link: "Watch a video of an example project",
-      homeText4: "Our projects",
+      homeText4: "Dredger production",
       homeText4Card1: "Multifunctional amphibious dredger from 600m3 and above",
       homeText4Card2: "micro hydroelectric power station",
       homeText4Card3: "Dredgers without a shipping register",
@@ -494,7 +494,7 @@ const resources = {
       homeCardsLink: "Qanday qilib ko'ring »",
       homeText3: "MDH va qo'shni mamlakatlar bozorida 20 yildan ortiq muvaffaqiyatli ish",
       homeText3Link: "Loyihaning namunaviy videosini tomosha qiling",
-      homeText4: "Bizning loyihalarimiz",
+      homeText4: "Dredger ishlab chiqarish",
       homeText4Card1: "Hajmi 600 m3 va undan yuqori bo'lgan ko'p funktsiyali amfibiya drageri",
       homeText4Card2: "mikro gidroelektr stansiyasi",
       homeText4Card3: "Yuk tashish reestriga ega bo'lmagan dredgerlar",
@@ -710,4 +710,4 @@ export const changeLanguage = (lng) => {
   localStorage.setItem("language", lng);
 };
 
-export default i18n;
+export default i18n; 
