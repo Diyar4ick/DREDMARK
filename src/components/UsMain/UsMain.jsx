@@ -138,7 +138,7 @@ const UsMain = () => {
             <div className="usMain__block-section7-russia">
               <table className="russia-table">
                 <thead>
-                 <tr>
+                  <tr>
                     <th>{t('usMainSection7Title1')}</th>
                     <th>{t('usMainSection7Title2')}</th>
                     <th>{t('usMainSection7Title3')}</th>
@@ -182,16 +182,16 @@ const UsMain = () => {
                     <td>400/20 {t('usMainSection7P1')}</td>
                     <td className="">1</td>
                   </tr>
-                 
+
                 </tbody>
               </table>
-              <img src={mapUz} alt=""/>
+              <img src={mapUz} alt="" />
             </div>
             <div className="usMain__block-section7-russia">
               <img src={mapKz} alt="" />
               <table className="russia-table">
                 <thead>
-                <tr>
+                  <tr>
                     <th>{t('usMainSection7Title1')}</th>
                     <th>{t('usMainSection7Title2')}</th>
                     <th>{t('usMainSection7Title3')}</th>
@@ -217,14 +217,14 @@ const UsMain = () => {
                     <td>1800/31 {t('usMainSection7P1')}</td>
                     <td className="">1</td>
                   </tr>
-                 
+
                 </tbody>
               </table>
             </div>
             <div className="usMain__block-section7-russia">
               <table className="russia-table">
                 <thead>
-                 <tr>
+                  <tr>
                     <th>{t('usMainSection7Title1')}</th>
                     <th>{t('usMainSection7Title2')}</th>
                     <th>{t('usMainSection7Title3')}</th>
@@ -246,7 +246,7 @@ const UsMain = () => {
               <img src={mapKrg} alt="" />
               <table className="russia-table">
                 <thead>
-                 <tr>
+                  <tr>
                     <th>{t('usMainSection7Title1')}</th>
                     <th>{t('usMainSection7Title2')}</th>
                     <th>{t('usMainSection7Title3')}</th>
@@ -264,7 +264,12 @@ const UsMain = () => {
               </table>
             </div>
           </div>
-
+          <div className="about-seo-info">
+            <h3>{t('seoText6')}</h3>
+            <p>
+              {t('seoText7')}
+            </p>
+          </div>
 
         </div>
 

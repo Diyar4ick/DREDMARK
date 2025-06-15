@@ -482,3 +482,40 @@
 
 
 }
+
+.about-seo-info {
+  margin-top: 60px;
+  padding: 30px;
+  background-color: #f0f4f8;
+  border-left: 6px solid #0074d9;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+
+  h3 {
+    font-size: 20px;
+    color: #002a5e;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+
+    strong {
+      color: #0074d9;
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 20px;
+
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}

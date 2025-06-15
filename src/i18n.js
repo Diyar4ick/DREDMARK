@@ -184,51 +184,59 @@ const resources = {
       usMainSection6: "Присоединяйтесь к нам на пути к более чистым, безопасным и лучше функционирующим водным ресурсам с меньшим количеством машин и затрат. Заполните форму ниже и свяжитесь с нами сегодня!",
 
 
-      usMainSection7H2: "География работы нашей компании с 2011 года", 
-      usMainSection7Title1: "Страна", 
-      usMainSection7Title2: "Город", 
-      usMainSection7Title3: "Производительность", 
-      usMainSection7Title4: "Количество", 
+      usMainSection7H2: "География работы нашей компании с 2011 года",
+      usMainSection7Title1: "Страна",
+      usMainSection7Title2: "Город",
+      usMainSection7Title3: "Производительность",
+      usMainSection7Title4: "Количество",
 
-      usMainSection7Russia: "Россия", 
-      usMainSection7RussiaCity1: "Калининград", 
-      usMainSection7RussiaCity2: "Норильск", 
-      usMainSection7RussiaCity3: "Омск", 
-      usMainSection7RussiaCity4: "Тобольск", 
-      usMainSection7RussiaCity5: "Норильск", 
-      usMainSection7RussiaCity6: "Москва", 
-      usMainSection7RussiaCity7: "Курган", 
-      usMainSection7RussiaCity8: "Цимлянск", 
+      usMainSection7Russia: "Россия",
+      usMainSection7RussiaCity1: "Калининград",
+      usMainSection7RussiaCity2: "Норильск",
+      usMainSection7RussiaCity3: "Омск",
+      usMainSection7RussiaCity4: "Тобольск",
+      usMainSection7RussiaCity5: "Норильск",
+      usMainSection7RussiaCity6: "Москва",
+      usMainSection7RussiaCity7: "Курган",
+      usMainSection7RussiaCity8: "Цимлянск",
 
-      usMainSection7Uz: "Узбекистан", 
-      usMainSection7UzCity1: "Сырдарья", 
-      usMainSection7UzCity2: "Термез", 
-      usMainSection7UzCity3: "Ташкент", 
-      usMainSection7UzCity4: "Бухара", 
-      usMainSection7UzCity5: "Нукус", 
-      usMainSection7UzCity6: "Самарканд", 
+      usMainSection7Uz: "Узбекистан",
+      usMainSection7UzCity1: "Сырдарья",
+      usMainSection7UzCity2: "Термез",
+      usMainSection7UzCity3: "Ташкент",
+      usMainSection7UzCity4: "Бухара",
+      usMainSection7UzCity5: "Нукус",
+      usMainSection7UzCity6: "Самарканд",
 
-      usMainSection7Kz: "Казахстан", 
-      usMainSection7KzCity1: "Караганда", 
-      usMainSection7KzCity2: "Актау", 
-      usMainSection7KzCity3: "Алматы", 
+      usMainSection7Kz: "Казахстан",
+      usMainSection7KzCity1: "Караганда",
+      usMainSection7KzCity2: "Актау",
+      usMainSection7KzCity3: "Алматы",
 
-      usMainSection7Tj: "Таджикистан", 
-      usMainSection7TjCity: "Курган-Тюбе", 
+      usMainSection7Tj: "Таджикистан",
+      usMainSection7TjCity: "Курган-Тюбе",
 
-      usMainSection7Krg: "Кыргызстан", 
-      usMainSection7KrgCity: "Ала-Бука", 
+      usMainSection7Krg: "Кыргызстан",
+      usMainSection7KrgCity: "Ала-Бука",
 
-      usMainSection7P1: "Гидроразмыв", 
-      usMainSection7P2: "Гидромонитор", 
-      usMainSection7P3: "Фреза", 
-      usMainSection7P4: "Фреза PP", 
-      usMainSection7P5: "Амфибия 600м3", 
-      usMainSection7P6: "Морской", 
+      usMainSection7P1: "Гидроразмыв",
+      usMainSection7P2: "Гидромонитор",
+      usMainSection7P3: "Фреза",
+      usMainSection7P4: "Фреза PP",
+      usMainSection7P5: "Амфибия 600м3",
+      usMainSection7P6: "Морской",
 
       gMain3Text1: "Изображения",
       gMain3Text2: "многофункциональный земснаряд амфибия",
       gMain3Text3: "Производственный цех и перевозка",
+
+      seoText1: "Часто ищут:",
+      seoText2: "Земснаряд для драгирования и добычи песка",
+      seoText3: "Передвижной и мини земснаряд на шасси",
+      seoText4: "Гидравлический земснаряд под заказ",
+      seoText5: "Купить земснаряд в Узбекистане России и т.д",
+      seoText6: "Оборудование DREDMARK подходит для:",
+      seoText7: "Драгирования рек, очистки озёр, добычи песка, углубления каналов, технических работ на водоёмах. Мы производим земснаряды с гидравлическим приводом, мини-модели, земснаряды-амфибии и установки на шасси. Доступна доставка по Узбекистану, Казахстану, России, Таджикистану, и Кыргызстану.",
     }
   },
   en: {
@@ -459,6 +467,15 @@ const resources = {
       gMain3Text1: "Images",
       gMain3Text2: "multifunctional amphibious dredger",
       gMain3Text3: "Production shop and transportation",
+
+      seoText1: "Popular searches:",
+      seoText2: "Dredger for dredging and sand extraction",
+      seoText3: "Mobile and mini dredger on chassis",
+      seoText4: "Hydraulic dredger made to order",
+      seoText5: "Buy a dredger in Uzbekistan, Russia, etc.",
+      seoText6: "DREDMARK equipment is suitable for:",
+      seoText7: "River dredging, lake cleaning, sand extraction, channel deepening, and technical operations on water bodies. We manufacture hydraulic dredgers, mini dredgers, amphibious dredgers, and chassis-mounted units. Delivery available to Uzbekistan, Kazakhstan, Russia, Tajikistan, and Kyrgyzstan.",
+
     }
   },
 
@@ -690,6 +707,15 @@ const resources = {
       gMain3Text1: "Rasmlar",
       gMain3Text2: "ko'p funktsiyali amfibiya ekspeditori",
       gMain3Text3: "Ishlab chiqarish sexi va transport",
+
+      seoText1: "Ko‘p izlanadiganlar:",
+      seoText2: "Qum qazish va daryo tubini tozalash uchun zemsyornyad",
+      seoText3: "Shassidagi mobil va mini zemsyornyad",
+      seoText4: "Buyurtma asosida gidravlik zemsyornyad",
+      seoText5: "Zemsyornyadni O‘zbekistonda, Rossiyada va boshqa davlatlarda xarid qilish",
+      seoText6: "DREDMARK uskunalari quyidagilar uchun mos:",
+      seoText7: "Daryolarni chuqurlashtirish, ko‘llarni tozalash, qum qazib olish, kanallarni kengaytirish va suv havzalarida texnik ishlar uchun. Biz gidravlik zemsyornyadlar, mini modellari, amfibiyali va shassiga o‘rnatiladigan uskunalarni ishlab chiqaramiz. Yetkazib berish O‘zbekiston, Qozog‘iston, Rossiya, Tojikiston va Qirg‘izistonga mavjud.",
+
     }
   }
 };
@@ -710,4 +736,4 @@ export const changeLanguage = (lng) => {
   localStorage.setItem("language", lng);
 };
 
-export default i18n; 
+export default i18n;
