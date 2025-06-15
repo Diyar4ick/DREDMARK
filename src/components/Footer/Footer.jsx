@@ -80,16 +80,16 @@ const Footer = () => {
             </div>
             <div className="footer__infomain-box2">
               <a href="https://t.me/TZNMDredmark"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 className="linkTg">
+                target="_blank"
+                rel="noopener noreferrer"
+                className="linkTg">
                 <img src={telegram} alt="" />
                 Telegram
               </a>
               <a href="https://www.instagram.com/dredmark.su?igsh=OGxyMGQxMDA3cXhy"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 className="linkInst">
+                target="_blank"
+                rel="noopener noreferrer"
+                className="linkInst">
                 <img src={instagram} alt="" />
                 Instagram
               </a>
@@ -145,6 +145,14 @@ const Footer = () => {
           </form>
         </div>
       </div>
+      <div className="seo">
+        <h2>• земснаряд Ташкент</h2>
+        <h2>• земснаряд Узбекистан</h2>
+        <h2>• земснаряд Казахстан</h2>
+        <h2>• доставка земснаряда в СНГ</h2>
+        <h2>• производство земснарядов Центральная Азия</h2>
+      </div>
+
     </footer>
   );
 };

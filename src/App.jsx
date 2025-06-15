@@ -30,7 +30,7 @@ function App() {
       <Footer/>
     </Router>
   ) 
-}
+} 
 
 function ScrollToElement() {
   const { pathname, hash } = useLocation()

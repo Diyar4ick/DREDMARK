@@ -30,7 +30,7 @@ const VozmMain = () => {
         <Link to="/" className='nav2__a'>{t('vozmMainNav2Text1')}</Link>
         <p className='nav2__p'>{t('vozmMainNav2Text2')}</p>
       </div>
- 
+
       <div className="container">
         <div className="vozmMain__nav">
           <a href="#homeEnd">{t('vozmNavLink1')} »</a>
@@ -376,10 +376,10 @@ const VozmMain = () => {
             <img src={VozmSection10Img2} alt="" className="vozmMain__section10-block2-img" />
           </div>
         </div>
-          <div className="vozmBlocksBack1">
-            <Link to="/#vozmBlocksBack" className='nav2__a'>{t('vozmMainNav2Text1')}</Link>
-            <a href="#vozmMainNav" className='nav2__a'>{t('navLink8')} ↑</a>
-          </div>
+        <div className="vozmBlocksBack1">
+          <Link to="/#vozmBlocksBack" className='nav2__a'>{t('vozmMainNav2Text1')}</Link>
+          <a href="#vozmMainNav" className='nav2__a'>{t('navLink8')} ↑</a>
+        </div>
 
       </div>
       <div className="vozmMain__section11">
@@ -390,6 +390,23 @@ const VozmMain = () => {
           <li>{t('seoText4')}</li>
           <li>{t('seoText5')}</li>
         </ul>
+      </div>
+      <div className="seo">
+        <h2>производитель земснарядов Узбекистан</h2>
+        <h2>• земснаряд под заказ</h2>
+        <h2>• как работает земснаряд</h2>
+        <h2>• земснаряд для реки</h2>
+        <h2>• земснаряд для озера</h2>
+        <h2>• насосный земснаряд</h2>
+        <h2>• шланг для земснаряда</h2>
+        <h2>• дизельный земснаряд</h2>
+        <h2>• китайский земснаряд против местного</h2>
+        <h2>• аренда земснаряда</h2>
+        <h2>• чертеж земснаряда</h2>
+        <h2>• земснаряд с гидроразмывом</h2>
+        <h2>• земснаряд на гусеницах</h2>
+        <h2>• земснаряд своими руками (для статьи-приманки)</h2>
+
       </div>
     </div>
 

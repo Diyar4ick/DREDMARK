@@ -105,7 +105,7 @@ const HomeMain = () => {
                   <img src={mainEndCard4} alt="Земснаряд 2000" className='homeMain__table-element-img' />
                 </td>
                 <td className="homeMain__table-element-titleCell">{t('homeCardsText2')}</td>
-               <td><PriceCell usdPrice={500000} /></td>
+                <td><PriceCell usdPrice={500000} /></td>
                 <td>{t('homeMainBlock1Text2')}</td>
               </tr>
             </tbody>
@@ -171,7 +171,18 @@ const HomeMain = () => {
         </div>
       </div>
 
-      
+      <div className="seo">
+        <h1>• земснаряд купить</h1>
+        <h2>• производство земснарядов</h2>
+        <h2>• земснаряд цена</h2>
+        <h3>• земснаряд для драгирования</h3>
+        <h2>• передвижной земснаряд</h2>
+        <h3>• земснаряд для добычи песка</h3>
+        <h2>• земснаряд с гидравлическим приводом</h2>
+        <h2>• мини земснаряд</h2>
+        <h2>• плавающий земснаряд</h2>
+        <h2>• земснаряд на шасси</h2>
+      </div>
     </div>
   )
 }
