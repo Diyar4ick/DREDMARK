@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import telegram from '../../assets/images/telegram.svg';
 import whatsapp from '../../assets/images/whatsapp.svg';
 import instagram from '../../assets/images/instagram.svg';
+import youTube from '../../assets/images/youtube.svg';
 import { useState } from "react";
 
 const Footer = () => {
@@ -92,6 +93,13 @@ const Footer = () => {
                 className="linkInst">
                 <img src={instagram} alt="" />
                 Instagram
+              </a>
+              <a href="https://youtube.com/@dredmark4824?si=wk15PrfzJCvJzkMI"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="linkInst">
+                <img src={youTube} alt="" />
+                YouTube
               </a>
             </div>
           </div>
