@@ -59,6 +59,8 @@ const resources = {
       fP5: 'Финансовый отдел:',
       fP6: 'Группа компаний DREDMARK:',
       fP7: 'DREDGER компания и гидромехмонтаж:',
+      fP8: 'Коммерческий директор:',
+      fP9: 'Технический директор:',
 
       vozmBannerH1: "Многофункциональный Земснаряд-Амфибия DREDMARK",
       vozmBannerP: "Универсальный, мобильный, надежный",
@@ -296,6 +298,8 @@ const resources = {
       fP5: 'Finance department:',
       fP6: "DREDMARK Group of Companies:",
       fP7: "DREDGER Company and Hydromechmontazh:",
+      fP8: 'Commercial Director:',
+      fP9: 'Technical Director:',
 
       vozmBannerH1: "Multifunctional Amphibious Dredger DREDMARK",
       vozmBannerP: "Universal, mobile, reliable",
@@ -536,6 +540,10 @@ const resources = {
       fP5: "Moliya bo'limi",
       fP6: "DREDMARK kompaniyalar guruhi:",
       fP7: "DREDGER kompaniyasi va Gidromexmontaj:",
+      fP8: 'Tijorat direktori:',
+      fP9: 'Texnik direktor:',
+
+
       vozmBannerH1: "Ko‘p funksiyali DREDMARK Amfibiya Tipidagi Drenaj Qurilmasi",
       vozmBannerP: "Universal, mobil, ishonchli",
 
