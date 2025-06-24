@@ -3,6 +3,8 @@ import telegram from '../../assets/images/telegram.svg';
 import whatsapp from '../../assets/images/whatsapp.svg';
 import instagram from '../../assets/images/instagram.svg';
 import youTube from '../../assets/images/youtube.svg';
+import sertifikat from '../../assets/pdf/sertifikat.pdf';
+import sertifikatImg from '../../assets/images/pdfImg.jpg'
 import { useState } from "react";
 
 const Footer = () => {
@@ -110,34 +112,38 @@ const Footer = () => {
               <h3 className="footer__infomain-box3-h3-3">ООО GIDROMEX MONTAJ</h3>
             </div>
           </div>
-          <div className="footer__infomain-box1">
+          <div className="footer__infomain-box4">
             <div className="russiaOfficalBox1">
-            <p className="ft4 officalRussia">
-              <h4 className="ft4__p1">{t("fP1")}</h4>
-              <span>
-                <img src={whatsapp} alt="" />
-                <img src={telegram} alt="" />
-                <p>+7 910 663-07-33</p>
-              </span>
-            </p>
-            <p className="ft4">
-              <p className="ft4__p1">{t('fP8')}</p>
-              <span>
-                <img src={whatsapp} alt="" />
-                <img src={telegram} alt="" />
-                <p>+7 909 718-33-47</p>
-              </span>
-            </p>
-            <p className="ft4">
-              <p className="ft4__p1">{t('fP9')}</p>
-              <span>
-                <img src={whatsapp} alt="" />
-                <img src={telegram} alt="" />
-                <p>+7 982 329-49-49</p>
-              </span>
-            </p>
+              <p className="ft4 officalRussia">
+                <h4 className="ft4__p1">{t("fP1")}</h4>
+                <span>
+                  <img src={whatsapp} alt="" />
+                  <img src={telegram} alt="" />
+                  <p>+7 910 663-07-33</p>
+                </span>
+              </p>
+              <p className="ft4">
+                <p className="ft4__p1">{t('fP8')}</p>
+                <span>
+                  <img src={whatsapp} alt="" />
+                  <img src={telegram} alt="" />
+                  <p>+7 909 718-33-47</p>
+                </span>
+              </p>
+              <p className="ft4">
+                <p className="ft4__p1">{t('fP9')}</p>
+                <span>
+                  <img src={whatsapp} alt="" />
+                  <img src={telegram} alt="" />
+                  <p>+7 982 329-49-49</p>
+                </span>
+              </p>
             </div>
-            {/* <a href=""></a> */}
+            <div className="pdf-link">
+              <a href={sertifikat} target="_blank" rel="noopener noreferrer">
+                <img src={sertifikatImg} alt="PDF" style={{ width: '130px', padding: '10px'}} />
+              </a>
+            </div>
           </div>
         </div>
 

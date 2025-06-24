@@ -165,6 +165,11 @@
             //     ||
             //    ()()
         }
+        &-box4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
         h1 {
             color: white;
@@ -368,6 +373,19 @@
     }
 }
 
-.officalRussia{
-    padding-bottom: 15px;
+.pdf-link{
+    max-width: max-content;
+}
+.pdf-link img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.pdf-link img:hover {
+  transform: scale(1.1);
+}
+
+
+.russiaOfficalBox1{
+    max-width: max-content;
 }
