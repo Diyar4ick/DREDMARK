@@ -116,6 +116,7 @@ const Footer = () => {
             <div className="russiaOfficalBox1">
               <p className="ft4 officalRussia">
                 <h4 className="ft4__p1">{t("fP1")}</h4>
+                <p className="ft4__p1">{t('fP9')}</p>
                 <span>
                   <img src={whatsapp} alt="" />
                   <img src={telegram} alt="" />
@@ -128,14 +129,6 @@ const Footer = () => {
                   <img src={whatsapp} alt="" />
                   <img src={telegram} alt="" />
                   <p>+7 909 718-33-47</p>
-                </span>
-              </p>
-              <p className="ft4">
-                <p className="ft4__p1">{t('fP9')}</p>
-                <span>
-                  <img src={whatsapp} alt="" />
-                  <img src={telegram} alt="" />
-                  <p>+7 982 329-49-49</p>
                 </span>
               </p>
             </div>
