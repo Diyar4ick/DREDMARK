@@ -13,7 +13,7 @@ function App() {
   const [count, setCount] = useState(0) 
 
 //   git add .
-//   git commit -m "Мои изменения"
+//   git commit -m ""
 //   git push -u origin master
   return (  
     
