@@ -33,7 +33,7 @@ const resources = {
       homeCardsLink: 'Посмотреть как »',
       homeText3: "БОЛЕЕ 20лет успешной работы на рынке СНГ и ближайшем зарубежье",
       homeText3Link: "Смотреть видео примера проекта",
-      homeText4: "Производство земснарядов", //
+      homeText4: "Производство земснарядов", 
       homeText4Card1: "Многофункциональный земснаряд амфибия от 600м3 и выше",
       homeText4Card2: "Микро ГЭС",
       homeText4Card3: "Земснаряды без регистра судоходства",
@@ -131,7 +131,7 @@ const resources = {
       vozmMainSection8P21: "Земснаряд 2000/63",
       vozmMainSection8P22: "2000 м³/час",
       vozmMainSection8P23: "Регистровый",
-      vozmMainSection8P24: "по запросу",
+      vozmMainSection8P24: "От ХХХ руб.",
 
       vozmMainSection8P25: "Производительность по воде",
       vozmMainSection8P26: "Земснаряд 400",
@@ -170,12 +170,12 @@ const resources = {
       usMainNav2Text2: "» О нас",
       usMainH1: "О компании DREDMARK",
       usMainSection1P1: "DREDMARK — это команда профессионалов, специализирующихся на производстве и внедрении многофункциональных земснарядов и плавающих мини-экскаваторов для очистки, углубления и восстановления водоёмов. Наша техника применяется для экосанации прудов, озёр, рек, болот, а также для строительных задач на воде.",
-      usMainSection1P2: "Мы гордимся тем, что наша продукция создаётся в Узбекистане на базе Ташкентского завода нестандартных машин, и уже сегодня востребована не только в регионах республики, но и за её пределами — в Кыргызстане, Казахстане и других странах СНГ.",
+      usMainSection1P2: "Мы гордимся тем, что наша продукция создаётся в Узбекистане на базе компании Dredger, и уже сегодня востребована не только в регионах республики, но и за её пределами — в Кыргызстане, Казахстане и других странах СНГ.", //
 
       usMainSection2H2: "Участие в выставке с Президентом Узбекистана",
       usMainSection2P: "Во время престижной выставки в Ташкентском технопарке наши разработки были представлены лично Президенту Республики Узбекистан — Шавкату Миромоновичу Мирзиёеву. Макет земснаряда вызвал живой интерес, а специалисты компании наглядно показали, как наша техника решает актуальные экологические задачи.",
       usMainSection3H2: "Интервью директора компании",
-      usMainSection3P: "Александр Апареев, директор Ташкентского завода нестандартных машин, в эфире Oʻzbekiston 24 рассказал о миссии компании и перспективах развития. В интервью была подчёркнута уникальность конструкторских решений и растущий спрос на продукцию DREDMARK.",
+      usMainSection3P: "Александр Апареев, директор компании Dredger, в эфире Oʻzbekiston 24 рассказал о миссии компании и перспективах развития. В интервью была подчёркнута уникальность конструкторских решений и растущий спрос на продукцию DREDMARK.",//
 
       usMainSection4H2: "Презентация работы земснаряда",
       usMainSection4P: "Во время демонстрации сотрудники компании детально рассказали о возможностях мини-экскаватора: очистка от водорослей и ила, углубление дна, строительство островов и каналов. Обсуждение происходило на фоне макета, который отражает реальные функции оборудования.На выставке присутствовал министр промышленности России — Мантуров Денис Валентинович.",
@@ -370,7 +370,7 @@ const resources = {
       vozmMainSection8P21: "Dredger 2000/63",
       vozmMainSection8P22: "2000 m³/hour",
       vozmMainSection8P23: "Registered",
-      vozmMainSection8P24: "on request",
+      vozmMainSection8P24: "From XXX rub.",
 
       vozmMainSection8P25: "Water Performance",
       vozmMainSection8P26: "Dredger 400",
@@ -410,13 +410,13 @@ const resources = {
       usMainH1: "About DREDMARK",
 
       usMainSection1P1: "DREDMARK is a team of professionals specializing in the production and implementation of multifunctional dredgers and floating mini-excavators for cleaning, deepening, and restoring water bodies. Our equipment is used for eco-rehabilitation of ponds, lakes, rivers, and wetlands, as well as for construction tasks on water.",
-      usMainSection1P2: "We are proud that our products are manufactured in Uzbekistan at the Tashkent Factory of Non-Standard Machines and are already in demand not only across the regions of the country but also beyond — in Kyrgyzstan, Kazakhstan, and other CIS countries.",
+      usMainSection1P2: "We are proud that our products are created in Uzbekistan on the basis of the Dredger company, and today they are already in demand not only in the regions of the republic, but also beyond its borders - in Kyrgyzstan, Kazakhstan and other CIS countries.",
 
       usMainSection2H2: "Participation in the Exhibition with the President of Uzbekistan",
       usMainSection2P: "During a prestigious exhibition at the Tashkent Technopark, our developments were personally presented to the President of the Republic of Uzbekistan — Shavkat Mirziyoyev. The dredger model sparked great interest, and our specialists clearly demonstrated how our technology solves current environmental challenges.",
 
       usMainSection3H2: "Interview with the Company Director",
-      usMainSection3P: "Aleksandr Apareev, Director of the Tashkent Factory of Non-Standard Machines, spoke live on Oʻzbekiston 24 about the company's mission and growth prospects. The interview highlighted the uniqueness of the engineering solutions and the growing demand for DREDMARK products.",
+      usMainSection3P: "Alexander Apareyev, Director of Dredger, spoke on Oʻzbekiston 24 about the company's mission and development prospects. The interview emphasized the uniqueness of design solutions and the growing demand for DREDMARK products.",
 
       usMainSection4H2: "Dredger Operation Presentation",
       usMainSection4P: "During the demonstration, the company's team explained in detail the capabilities of the mini-excavator: cleaning algae and silt, deepening the bottom, building islands and channels. The discussion took place next to a model that illustrates the actual functionality of the equipment. The Minister of Industry of Russia, Denis Valentinovich Manturov, was present at the exhibition.",
@@ -614,7 +614,7 @@ const resources = {
       vozmMainSection8P21: "Zemsnaryad 2000/63",
       vozmMainSection8P22: "2000 m³/soat",
       vozmMainSection8P23: "Ro‘yxatga olingan",
-      vozmMainSection8P24: "so‘rov bo‘yicha",
+      vozmMainSection8P24: "XXX rub. dan",
 
       vozmMainSection8P25: "Suv bo‘yicha unumdorlik",
       vozmMainSection8P26: "Zemsnaryad 400",

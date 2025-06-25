@@ -87,49 +87,49 @@ const UsMain = () => {
                     <td>{t('usMainSection7Russia')}</td>
                     <td className="">{t('usMainSection7RussiaCity1')}</td>
                     <td>2000/63 {t('usMainSection7P1')}</td>
-                    <td className="">1</td>
+                    <td className="">6</td>
                   </tr>
                   <tr>
                     <td></td>
                     <td className="">{t('usMainSection7RussiaCity2')}</td>
                     <td>{t('usMainSection7P2')}</td>
-                    <td className="">1</td>
+                    <td className="">5</td>
                   </tr>
                   <tr>
                     <td></td>
                     <td className="">{t('usMainSection7RussiaCity3')}</td>
                     <td>1800/31 {t('usMainSection7P3')}</td>
-                    <td className="">1</td>
+                    <td className="">4</td>
                   </tr>
                   <tr>
                     <td></td>
                     <td className="">{t('usMainSection7RussiaCity4')}</td>
                     <td>3000/71 {t('usMainSection7P1')}</td>
-                    <td className="">1</td>
+                    <td className="">3</td>
                   </tr>
                   <tr>
                     <td></td>
                     <td className="">{t('usMainSection7RussiaCity5')}</td>
                     <td>1800/31 {t('usMainSection7P3')}</td>
-                    <td className="">2</td>
+                    <td className="">7</td>
                   </tr>
                   <tr>
                     <td></td>
                     <td className="">{t('usMainSection7RussiaCity6')}</td>
                     <td>1800/31 {t('usMainSection7P1')}</td>
-                    <td className="">1</td>
+                    <td className="">4</td>
                   </tr>
                   <tr>
                     <td></td>
                     <td className="">{t('usMainSection7RussiaCity7')}</td>
                     <td>1800/31 {t('usMainSection7P1')}</td>
-                    <td className="">1</td>
+                    <td className="">3</td>
                   </tr>
                   <tr>
                     <td></td>
                     <td className="">{t('usMainSection7RussiaCity8')}</td>
                     <td>1600/25 {t('usMainSection7P1')}</td>
-                    <td className="">1</td>
+                    <td className="">6</td>
                   </tr>
 
                 </tbody>
@@ -156,31 +156,31 @@ const UsMain = () => {
                     <td></td>
                     <td className="">{t('usMainSection7UzCity2')}</td>
                     <td>2000/63 {t('usMainSection7P4')}</td>
-                    <td className="">2</td>
+                    <td className="">10</td>
                   </tr>
                   <tr>
                     <td></td>
                     <td className="">{t('usMainSection7UzCity3')}</td>
                     <td>{t('usMainSection7P5')}</td>
-                    <td className="">1</td>
+                    <td className="">9</td>
                   </tr>
                   <tr>
                     <td></td>
                     <td className="">{t('usMainSection7UzCity4')}</td>
                     <td>400/20 {t('usMainSection7P1')}</td>
-                    <td className="">1</td>
+                    <td className="">5</td>
                   </tr>
                   <tr>
                     <td></td>
                     <td className="">{t('usMainSection7UzCity5')}</td>
                     <td>400/20 {t('usMainSection7P1')}</td>
-                    <td className="">1</td>
+                    <td className="">7</td>
                   </tr>
                   <tr>
                     <td></td>
                     <td className="">{t('usMainSection7UzCity6')}</td>
                     <td>400/20 {t('usMainSection7P1')}</td>
-                    <td className="">1</td>
+                    <td className="">6</td>
                   </tr>
 
                 </tbody>
@@ -203,19 +203,19 @@ const UsMain = () => {
                     <td>{t('usMainSection7Kz')}</td>
                     <td className="">{t('usMainSection7KzCity1')}</td>
                     <td>1600/25 {t('usMainSection7P1')}</td>
-                    <td className="">1</td>
+                    <td className="">5</td>
                   </tr>
                   <tr>
                     <td></td>
                     <td className="">{t('usMainSection7KzCity2')}</td>
                     <td>{t('usMainSection7P6')} 1800/31</td>
-                    <td className="">1</td>
+                    <td className="">6</td>
                   </tr>
                   <tr>
                     <td></td>
                     <td className="">{t('usMainSection7KzCity3')}</td>
                     <td>1800/31 {t('usMainSection7P1')}</td>
-                    <td className="">1</td>
+                    <td className="">3</td>
                   </tr>
 
                 </tbody>
@@ -236,7 +236,7 @@ const UsMain = () => {
                     <td>{t('usMainSection7Tj')}</td>
                     <td className="">{t('usMainSection7TjCity')}</td>
                     <td>1800/31 {t('usMainSection7P1')}</td>
-                    <td className="">1</td>
+                    <td className="">3</td>
                   </tr>
                 </tbody>
               </table>
@@ -258,7 +258,7 @@ const UsMain = () => {
                     <td>{t('usMainSection7Krg')}</td>
                     <td className="">{t('usMainSection7KrgCity')}</td>
                     <td>800/40 {t('usMainSection7P3')}</td>
-                    <td className="">1</td>
+                    <td className="">5</td>
                   </tr>
                 </tbody>
               </table>

@@ -4,21 +4,29 @@ import VozmSection2Img1 from '../../assets/images/mainCard3.jpg'
 import VozmSection2Img2 from '../../assets/images/mainEndCard2.jpg'
 import VozmMainSection4Img2 from '../../assets/images/vozmSection2Img2.jpg'
 import VozmSection2Img3 from '../../assets/images/mainCard1.jpg'
-import VozmSection3Img from '../../assets/images/vozmSection3Img1.webp'
+
+import VozmSection3Img from '../../assets/images/vozmSection3Img1.png'
+
 import VozmSection4Img1 from '../../assets/images/vozmSection4Img1.webp'
+
 import VozmSection5Img1 from '../../assets/images/vozmSection5Img1.webp'
 import VozmSection5Img2 from '../../assets/images/vozmSection5Img2.webp'
 import VozmSection5Img3 from '../../assets/images/vozmSection5Img3.webp'
 import VozmSection5Img4 from '../../assets/images/VozmSection5Img4.jpg'
+
 import vozmSection6Img1 from '../../assets/images/vozmSection6Img1.webp'
 import vozmSection6Img2 from '../../assets/images/vozmMainSection6Img.jpg'
+
 import VozmSection7Img1 from '../../assets/images/vozmSection7Img1.webp'
 import VozmSection7Img3 from '../../assets/images/vozmSection7Img2.webp'
-import VozmSection7Img2 from '../../assets/images/vozmMainSection7Img.jpg'
+import VozmSection7Img2 from '../../assets/images/mainEndCard2.jpg'
+
 import VozmSection9Img1 from '../../assets/images/vozmSection9Img1.jpg'
 import VozmSection9Img2 from '../../assets/images/vozmSection9Img2.jpg'
+
 import VozmSection10Img1 from '../../assets/images/vozmSection10Img1.jpg'
 import VozmSection10Img2 from '../../assets/images/vozmSection10Img2.jpg'
+
 import section2Video from '../../assets/video/video13.mp4'
 import section2Video2 from '../../assets/video/video9.mp4'
 import { useTranslation } from 'react-i18next'
@@ -166,8 +174,8 @@ const VozmMain = () => {
       <div className="vozmMain__section7 vozmSection">
         <div className="container">
           <div className="vozmMain__section7-block1">
-            <h3 className="vozmMain__section7-block1-h3">
-              {t('vozmMainSection7H3')}</h3>
+            {/* <h3 className="vozmMain__section7-block1-h3">
+              {t('vozmMainSection7H3')}</h3> */}
             <p className="vozmMain__section7-block1-p1">
               {t('vozmMainSection7P1')}
             </p>
