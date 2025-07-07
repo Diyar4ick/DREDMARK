@@ -69,7 +69,7 @@ const Header = () => {
             <option value="/img">{t("images")}</option>
           </select>
           <NavLink to='/us' className='link'>{t('navLink4')}</NavLink>
-
+          <NavLink to='/us#fresh-projects' className='freshBtn'>{t('gM3FreshH2')}</NavLink>
           <select onChange={handleLanguageChange} value={selectedLang} className="select2">
             <option value="ru">Ru</option>
             <option value="en">En</option>

@@ -14,6 +14,15 @@ import mapUz from '../../assets/images/mapUz.jpg'
 import mapKz from '../../assets/images/mapKz.jpg'
 import mapTj from '../../assets/images/mapTj.jpg'
 import mapKrg from '../../assets/images/mapKrg.jpg'
+
+import fabricImg1 from '../../assets/images/fabricImg1.jpg'
+import fabricImg2 from '../../assets/images/fabricImg2.jpg'
+import fabricImg3 from '../../assets/images/fabricImg3.jpg'
+import fabricImg4 from '../../assets/images/fabricImg4.jpg'
+import fabricImg5 from '../../assets/images/fabricImg5.jpg'
+import fabricImg6 from '../../assets/images/fabricImg6.jpg'
+import fabricImg7 from '../../assets/images/fabricImg7.jpg'
+
 import { useTranslation } from "react-i18next"
 const UsMain = () => {
   const { t } = useTranslation()
@@ -33,8 +42,20 @@ const UsMain = () => {
             {t('usMainSection1P2')}
           </p>
         </div>
-
+        <div className="usMain__fabric">
+          <h2 className="usMain__fabric-title">{t('usMainFabricP1')}</h2>
+          <div className="usMain__fabric-images">
+            <img src={fabricImg1} alt="" />
+            <img src={fabricImg2} alt="" />
+            <img src={fabricImg3} alt="" />
+            <img src={fabricImg4} alt="" />
+            <img src={fabricImg5} alt="" />
+            <img src={fabricImg6} alt="" />
+            <img src={fabricImg7} alt="" />
+          </div>
+        </div>
         <div className="usMain__block">
+
           <div className="usMain__block-section1">
             <h2 className="usMain__h2">{t('usMainSection2H2')}</h2>
             <div className="usMain__block-section1-images">
@@ -263,6 +284,27 @@ const UsMain = () => {
                 </tbody>
               </table>
             </div>
+          </div>
+          <div id='fresh-projects' className="freshBlock">
+            <h2 className="usMain__h2">{t('usMainFreshH2')}</h2>
+            <div className="freshBlock__info">
+              <table className="freshBlock__info-table">
+                <tr>
+                  <td><h3 className="freshBlock__info-title">{t('usMainFreshP1')}</h3></td>
+                  <td><h3 className="freshBlock__info-title">{t('usMainFreshP2')}</h3></td>
+                  <td rowSpan="3"> <Link to="/img#gMainBox6" className="freshBlock__btn">{t('usMainFreshP3')} »</Link></td>
+                </tr>
+                <tr>
+                  <td>Text</td>
+                  <td>text</td>
+                </tr>
+                <tr>
+                  <td>text</td>
+                  <td>text</td>
+                </tr>
+              </table>
+            </div>
+           
           </div>
           <div className="about-seo-info">
             <h3>{t('seoText6')}</h3>

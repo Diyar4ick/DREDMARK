@@ -33,7 +33,7 @@ const resources = {
       homeCardsLink: 'Посмотреть как »',
       homeText3: "БОЛЕЕ 20лет успешной работы на рынке СНГ и ближайшем зарубежье",
       homeText3Link: "Смотреть видео примера проекта",
-      homeText4: "Производство земснарядов", 
+      homeText4: "Производство земснарядов",
       homeText4Card1: "Многофункциональный земснаряд амфибия от 600м3 и выше",
       homeText4Card2: "Микро ГЭС",
       homeText4Card3: "Земснаряды без регистра судоходства",
@@ -132,7 +132,6 @@ const resources = {
       vozmMainSection8P22: "2000 м³/час",
       vozmMainSection8P23: "Регистровый",
       vozmMainSection8P24: "От ХХХ руб.",
-
       vozmMainSection8P25: "Производительность по воде",
       vozmMainSection8P26: "Земснаряд 400",
       vozmMainSection8P27: "400 м³/час",
@@ -147,6 +146,7 @@ const resources = {
       vozmMainSection8P36: "4000 м³/час",
       vozmMainSection8P37: "Индивидуальная комплектация",
       vozmMainSection8P38: "Тех. задание клиента",
+      vozmMainSection8P39: "По запросу",
 
       vozmNavLink1: "многофункциональные земснаряды амфибия", //
       vozmNavLink2: "Модельный ряд многофункционального земснаряда амфибия",
@@ -175,7 +175,7 @@ const resources = {
       usMainSection2H2: "Участие в выставке с Президентом Узбекистана",
       usMainSection2P: "Во время престижной выставки в Ташкентском технопарке наши разработки были представлены лично Президенту Республики Узбекистан — Шавкату Миромоновичу Мирзиёеву. Макет земснаряда вызвал живой интерес, а специалисты компании наглядно показали, как наша техника решает актуальные экологические задачи.",
       usMainSection3H2: "Интервью директора компании",
-      usMainSection3P: "Александр Апареев, директор компании Dredger, в эфире Oʻzbekiston 24 рассказал о миссии компании и перспективах развития. В интервью была подчёркнута уникальность конструкторских решений и растущий спрос на продукцию DREDMARK.",//
+      usMainSection3P: "Александр Апареев, директор компании Dredger, в эфире Oʻzbekiston 24 рассказал о миссии компании и перспективах развития. В интервью была подчёркнута уникальность конструкторских решений и растущий спрос на продукцию DREDMARK.", //
 
       usMainSection4H2: "Презентация работы земснаряда",
       usMainSection4P: "Во время демонстрации сотрудники компании детально рассказали о возможностях мини-экскаватора: очистка от водорослей и ила, углубление дна, строительство островов и каналов. Обсуждение происходило на фоне макета, который отражает реальные функции оборудования.На выставке присутствовал министр промышленности России — Мантуров Денис Валентинович.",
@@ -228,6 +228,15 @@ const resources = {
       usMainSection7P5: "Амфибия 600м3",
       usMainSection7P6: "Морской",
 
+      usMainFreshH2: "Свежие проекты 2025 года", //
+      gM3FreshH2: "Свежие проекты", //
+      gM3FreshH1: "Галерея свежих проектов 2025 года", //
+      usMainFreshP1: "Земснаряд", //
+      usMainFreshP2: "Дислокация", //
+      usMainFreshP3: "Галерея свежих проектов", //
+
+      usMainFabricP1: "Наши производственные площади", //
+
       gMain3Text1: "Изображения",
       gMain3Text2: "многофункциональный земснаряд амфибия",
       gMain3Text3: "Производственный цех и перевозка",
@@ -238,7 +247,7 @@ const resources = {
       seoText4: "Гидравлический земснаряд под заказ",
       seoText5: "Купить земснаряд в Узбекистане России и т.д",
       seoText6: "Оборудование DREDMARK подходит для:",
-      seoText7: "Драгирования рек, очистки озёр, добычи песка, углубления каналов, технических работ на водоёмах. Мы производим земснаряды с гидравлическим приводом, мини-модели, земснаряды-амфибии и установки на шасси. Доступна доставка по Узбекистану, Казахстану, России, Таджикистану, и Кыргызстану.",
+      seoText7: "Углубление рек, очистки озёр, добычи песка, углубления каналов, технических работ на водоёмах. Мы производим земснаряды с гидравлическим приводом, мини-модели, земснаряды-амфибии и установки на шасси. Доступна доставка по Узбекистану, Казахстану, России, Таджикистану, и Кыргызстану.",
     }
   },
   en: {
@@ -386,6 +395,7 @@ const resources = {
       vozmMainSection8P36: "4000 m³/hour",
       vozmMainSection8P37: "Custom Configuration",
       vozmMainSection8P38: "Client's Technical Specifications",
+      vozmMainSection8P39: "On request",
 
       vozmNavLink1: "multifunctional amphibious dredgers",
       vozmNavLink2: "Model range of multifunctional amphibious dredgers",
@@ -468,6 +478,15 @@ const resources = {
       usMainSection7P5: "Amphibian 600 m³",
       usMainSection7P6: "Marine",
 
+      usMainFreshH2: "Fresh Projects of 2025", //
+      gM3FreshH2: "Fresh Projects", //
+      gM3FreshH1: "Gallery of Fresh Projects of 2025", //
+      usMainFreshP1: "Dredger", //
+      usMainFreshP2: "Location", //
+      usMainFreshP3: "Gallery of Fresh Projects", //
+
+      usMainFabricP1: "Our Production Facilities", //
+
       gMain3Text1: "Images",
       gMain3Text2: "multifunctional amphibious dredger",
       gMain3Text3: "Production shop and transportation",
@@ -478,7 +497,7 @@ const resources = {
       seoText4: "Hydraulic dredger made to order",
       seoText5: "Buy a dredger in Uzbekistan, Russia, etc.",
       seoText6: "DREDMARK equipment is suitable for:",
-      seoText7: "River dredging, lake cleaning, sand extraction, channel deepening, and technical operations on water bodies. We manufacture hydraulic dredgers, mini dredgers, amphibious dredgers, and chassis-mounted units. Delivery available to Uzbekistan, Kazakhstan, Russia, Tajikistan, and Kyrgyzstan.",
+      seoText7: "River deepening, lake cleaning, sand extraction, channel deepening, and technical operations on water bodies. We manufacture hydraulic dredgers, mini dredgers, amphibious dredgers, and chassis-mounted units. Delivery available to Uzbekistan, Kazakhstan, Russia, Tajikistan, and Kyrgyzstan.",
 
     }
   },
@@ -630,6 +649,7 @@ const resources = {
       vozmMainSection8P36: "4000 m³/soat",
       vozmMainSection8P37: "Individual konfiguratsiya",
       vozmMainSection8P38: "Mijozning texnik topshirig‘i",
+      vozmMainSection8P39: "So‘rov bo‘yicha",
 
       vozmNavLink1: "ko‘p funksiyali amfibiya tipidagi zemsnaryadlar",
       vozmNavLink2: "Ko‘p funksiyali amfibiya tipidagi zemsnaryadlar modellari",
@@ -712,6 +732,15 @@ const resources = {
       usMainSection7P5: "Amfibiya 600 m³",
       usMainSection7P6: "Dengizga mos",
 
+      usMainFreshH2: "2025-yilgi yangi loyihalar", 
+      gM3FreshH2: "Yangi loyihalar", 
+      gM3FreshH1: "2025-yilgi yangi loyihalar galereyasi", 
+      usMainFreshP1: "Zemsnaryad", 
+      usMainFreshP2: "Joylashuv", 
+      usMainFreshP3: "Yangi loyihalar galereyasi", 
+
+      usMainFabricP1: "Bizning ishlab chiqarish maydonlarimiz", 
+
       gMain3Text1: "Rasmlar",
       gMain3Text2: "ko'p funktsiyali amfibiya ekspeditori",
       gMain3Text3: "Ishlab chiqarish sexi va transport",
@@ -722,7 +751,7 @@ const resources = {
       seoText4: "Buyurtma asosida gidravlik zemsyornyad",
       seoText5: "Zemsyornyadni O‘zbekistonda, Rossiyada va boshqa davlatlarda xarid qilish",
       seoText6: "DREDMARK uskunalari quyidagilar uchun mos:",
-      seoText7: "Daryolarni chuqurlashtirish, ko‘llarni tozalash, qum qazib olish, kanallarni kengaytirish va suv havzalarida texnik ishlar uchun. Biz gidravlik zemsyornyadlar, mini modellari, amfibiyali va shassiga o‘rnatiladigan uskunalarni ishlab chiqaramiz. Yetkazib berish O‘zbekiston, Qozog‘iston, Rossiya, Tojikiston va Qirg‘izistonga mavjud.",
+      seoText7: "Daryo chuqurlashtirish, ko‘llarni tozalash, qum qazib olish, kanallarni kengaytirish va suv havzalarida texnik ishlar uchun. Biz gidravlik zemsyornyadlar, mini modellari, amfibiyali va shassiga o‘rnatiladigan uskunalarni ishlab chiqaramiz. Yetkazib berish O‘zbekiston, Qozog‘iston, Rossiya, Tojikiston va Qirg‘izistonga mavjud.",
 
     }
   }

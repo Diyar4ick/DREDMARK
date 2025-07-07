@@ -97,7 +97,7 @@ const HomeMain = () => {
                   <img src={mainEndCard1} alt="Амфибия" className='homeMain__table-element-img' />
                 </td>
                 <td className="homeMain__table-element-titleCell">{t('homeCardsText1')}</td>
-                <td><PriceCell usdPrice={400000} /></td>
+                <td>{t('vozmMainSection8P39')}</td>
                 <td>{t('homeMainBlock1Text1')}</td>
               </tr>
               <tr>
@@ -105,7 +105,7 @@ const HomeMain = () => {
                   <img src={mainEndCard4} alt="Земснаряд 2000" className='homeMain__table-element-img' />
                 </td>
                 <td className="homeMain__table-element-titleCell">{t('homeCardsText2')}</td>
-                <td><PriceCell usdPrice={500000} /></td>
+                <td><PriceCell usdPrice={650000} /></td>
                 <td>{t('homeMainBlock1Text2')}</td>
               </tr>
             </tbody>

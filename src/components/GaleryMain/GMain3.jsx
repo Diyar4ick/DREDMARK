@@ -7,12 +7,14 @@ import cardImg4 from '../../assets/images/vozmMainSection6Img.jpg'
 import cardImg5 from '../../assets/images/vozmMainSection7Img.jpg'
 import cardImg6 from '../../assets/images/vozmSection2Img2.jpg'
 import cardImg7 from '../../assets/images/mainEndCard2.jpg'
+
 import block2Img1 from '../../assets/images/gM3Block2Img1.jpg'
 import block2Img2 from '../../assets/images/gM3Block2Img2.jpg'
 import block2Img3 from '../../assets/images/gM3Block2Img3.jpg'
 import block2Img4 from '../../assets/images/mainEndCard3Img.jpg'
 import block2Img5 from '../../assets/images/gM3Block2Img4.jpg'
 import block2Img6 from '../../assets/images/gM3Block2Img5.jpg'
+
 import block3Img1 from '../../assets/images/gM3Block3Img1.jpg'
 import block3Img2 from '../../assets/images/gM3Block3Img2.jpg'
 import block3Img3 from '../../assets/images/gM3Block3Img3.jpg'
@@ -21,6 +23,7 @@ import block3Img5 from '../../assets/images/gM3Block3Img5.jpg'
 import block3Img6 from '../../assets/images/gM3Block3Img6.jpg'
 import block3Img7 from '../../assets/images/gM3Block3Img7.jpg'
 import block3Img8 from '../../assets/images/mainEndCard1.jpg'
+
 import block4Img1 from '../../assets/images/gM3Block4Img1.jpg'
 import block4Img2 from '../../assets/images/gM3Block4Img2.jpg'
 import block4Img3 from '../../assets/images/gM3Block4Img3.jpg'
@@ -30,6 +33,7 @@ import block4Img6 from '../../assets/images/gM3Block4Img6.jpg'
 import block4Img7 from '../../assets/images/gM3Block4Img7.jpg'
 import block4Img8 from '../../assets/images/gM3Block4Img8.jpg'
 import block4Img9 from '../../assets/images/mainEndCard2Img.jpg'
+
 import block5Img1 from '../../assets/images/gM3Block5Img1.jpg'
 import block5Img2 from '../../assets/images/gM3Block5Img2.jpg'
 import block5Img3 from '../../assets/images/gM3Block5Img3.jpg'
@@ -43,6 +47,18 @@ import block5Img10 from '../../assets/images/gM3Block5Img10.jpg'
 import block5Img11 from '../../assets/images/gM3Block5Img11.jpg'
 import block5Img12 from '../../assets/images/gM3Block5Img12.jpg'
 
+import block6Img1 from '../../assets/images/gM3Block6Img1.jpg'
+import block6Img2 from '../../assets/images/gM3Block6Img2.jpg'
+import block6Img3 from '../../assets/images/gM3Block6Img3.jpg'
+import block6Img4 from '../../assets/images/gM3Block6Img4.jpg'
+import block6Img5 from '../../assets/images/gM3Block6Img5.jpg'
+import block6Img6 from '../../assets/images/gM3Block6Img6.jpg'
+import block6Img7 from '../../assets/images/gM3Block6Img7.jpg'
+import block6Img8 from '../../assets/images/gM3Block6Img8.jpg'
+import block6Img9 from '../../assets/images/gM3Block6Img9.jpg'
+import block6Img10 from '../../assets/images/gM3Block6Img10.jpg'
+import block6Img11 from '../../assets/images/gM3Block6Img11.jpg'
+import block6Img12 from '../../assets/images/gM3Block6Img12.jpg'
 
 
 import { Link } from "react-router-dom"
@@ -98,6 +114,21 @@ const imagesGm3Block5 = [
   block5Img10,
   block5Img11,
   block5Img12,
+];
+const imagesGm3Block6 = [
+  block6Img1,
+  block6Img2,
+  block6Img3,
+  block6Img4,
+  block6Img5,
+  block6Img6,
+  block6Img7,
+  block6Img8,
+  block6Img9,
+  block6Img10,
+  block6Img11,
+  block6Img12,
+
 ];
 
 const GMain3 = () => {
@@ -179,6 +210,15 @@ const GMain3 = () => {
               <img src={img} alt={`Image ${index + 1}`} className="gMain3__img1" />
             </button>
           ))}
+        </div>
+        <h2 id='gMainBox6' className="gMain3__h1">{t('gM3FreshH1')}</h2>
+        <div className="gMain3__images">
+          {imagesGm3Block6.map((img, index) => (
+            <button key={index} onClick={() => openModalImg1Handler(index, imagesGm3Block6)}>
+              <img src={img} alt={`Image ${index + 1}`} className="gMain3__img1" />
+            </button>
+          ))}
+          <Link to='/us#fresh-projects' className="nav2__a">« {t('gM3FreshH2')}</Link>
         </div>
       </div>
     </div>

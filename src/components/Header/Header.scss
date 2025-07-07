@@ -101,8 +101,58 @@
             @include media(1250) {
                 padding: 10px 10px;
             }
-            
+
         }
+
+        .freshBtn {
+            --clr-font-main: hsla(0 0% 20% / 100);
+            --btn-bg-1: hsla(194, 100%, 50%, 1);
+            /* ярче чем 40% */
+            --btn-bg-2: hsla(217, 100%, 45%, 1);
+            /* ярче чем 35% */
+            --btn-bg-color: hsla(360, 100%, 95%, 1);
+            /* ближе к белому */
+            --radii: 0.5em;
+            cursor: pointer;
+            padding: 0.9em 1.4em;
+            min-width: 120px;
+            min-height: 44px;
+            font-size: var(--size, 1rem);
+            font-weight: 500;
+            transition: 0.8s;
+            background-size: 280% auto;
+            background-image: linear-gradient(325deg,
+                    var(--btn-bg-2) 0%,
+                    var(--btn-bg-1) 55%,
+                    var(--btn-bg-2) 90%);
+            border: none;
+            border-radius: var(--radii);
+            color: var(--btn-bg-color);
+            box-shadow:
+                0px 0px 20px rgba(50, 150, 210, 0.4),
+                0px 5px 5px -1px rgba(40, 100, 180, 0.25),
+                inset 4px 4px 8px rgba(130, 200, 240, 0.4),
+                inset -4px -4px 8px rgba(20, 80, 190, 0.3);
+        }
+
+        .freshBtn:hover {
+            background-position: right top;
+        }
+
+        .freshBtn:is(:focus, :focus-visible, :active) {
+            outline: none;
+            box-shadow:
+                0 0 0 3px var(--btn-bg-color),
+                0 0 0 6px var(--btn-bg-2);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .freshBtn {
+                transition: linear;
+            }
+        }
+
+
     }
 
     .logo {
@@ -114,6 +164,7 @@
         @include media(850) {
             padding: 5px;
         }
+
         @include media(670) {
             padding: 20px;
         }

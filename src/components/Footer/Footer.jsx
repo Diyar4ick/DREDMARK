@@ -59,11 +59,7 @@ const Footer = () => {
           <p>{t("fAddress")}</p>
           <div className="footer__infomain-block">
             <div className="footer__infomain-box1">
-              <p>
-                <img src={whatsapp} alt="" />
-                <img src={telegram} alt="" />
-                <p> +998 99 851-60-74 </p>
-              </p>
+             
               <p className="ft4">
                 <h4 className="ft4__p1">{t("fP4")}</h4>
                 <span>
