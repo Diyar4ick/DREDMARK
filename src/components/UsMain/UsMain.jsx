@@ -290,17 +290,18 @@ const UsMain = () => {
             <div className="freshBlock__info">
               <table className="freshBlock__info-table">
                 <tr>
-                  <td><h3 className="freshBlock__info-title">{t('usMainFreshP1')}</h3></td>
-                  <td><h3 className="freshBlock__info-title">{t('usMainFreshP2')}</h3></td>
-                  <td rowSpan="3"> <Link to="/img#gMainBox6" className="freshBlock__btn">{t('usMainFreshP3')} »</Link></td>
+                  <th><h3 className="freshBlock__info-title">{t('usMainFreshP1')}</h3></th>
+                  <th><h3 className="freshBlock__info-title">{t('usMainFreshP2')}</h3></th>
+                  <td rowSpan="2"> <Link to="/img#gMainBox6" className="freshBlock__btn">{t('usMainFreshP3')} »</Link></td>
                 </tr>
                 <tr>
-                  <td>Text</td>
-                  <td>text</td>
+                  <td>{t('usMainFreshP4')}</td> 
+                  <td>{t('usMainFreshP5')}</td>
                 </tr>
                 <tr>
-                  <td>text</td>
-                  <td>text</td>
+                  <td>4000/65</td>
+                  <td>{t('usMainFreshP6')}</td>
+                  <td>{t('usMainFreshP7')}</td>
                 </tr>
               </table>
             </div>

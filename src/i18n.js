@@ -228,14 +228,18 @@ const resources = {
       usMainSection7P5: "Амфибия 600м3",
       usMainSection7P6: "Морской",
 
-      usMainFreshH2: "Свежие проекты 2025 года", //
-      gM3FreshH2: "Свежие проекты", //
-      gM3FreshH1: "Галерея свежих проектов 2025 года", //
-      usMainFreshP1: "Земснаряд", //
-      usMainFreshP2: "Дислокация", //
-      usMainFreshP3: "Галерея свежих проектов", //
+      usMainFreshH2: "Свежие проекты 2025 года",
+      gM3FreshH2: "Свежие проекты",
+      gM3FreshH1: "Галерея свежих проектов 2025 года",
+      usMainFreshP1: "Земснаряд",
+      usMainFreshP2: "География поставки", //
+      usMainFreshP3: "Галерея свежих проектов",
+      usMainFreshP4: "2000/63 дизельный с Узбекским регистром судоходства",
+      usMainFreshP5: "Город Термез, Сурхандарьинская область, порт Термез",
+      usMainFreshP6: "Туябугузское водохранилище",
+      usMainFreshP7: "Ожидается заливка фото, видео материала...",
 
-      usMainFabricP1: "Наши производственные площади", //
+      usMainFabricP1: "Наши производственные площади",
 
       gMain3Text1: "Изображения",
       gMain3Text2: "многофункциональный земснаряд амфибия",
@@ -482,8 +486,13 @@ const resources = {
       gM3FreshH2: "Fresh Projects", //
       gM3FreshH1: "Gallery of Fresh Projects of 2025", //
       usMainFreshP1: "Dredger", //
-      usMainFreshP2: "Location", //
+      usMainFreshP2: "Geography of Delivery", //
       usMainFreshP3: "Gallery of Fresh Projects", //
+      usMainFreshP4: "2000/63 diesel with registration in the Uzbekistan Maritime Register", //
+      usMainFreshP5: "Termiz City, Surkhandarya Region, Termiz Port", //
+      usMainFreshP6: "Tuyabuguz Reservoir", //
+      usMainFreshP7: "Photo and video materials coming soon...", //
+
 
       usMainFabricP1: "Our Production Facilities", //
 
@@ -732,14 +741,18 @@ const resources = {
       usMainSection7P5: "Amfibiya 600 m³",
       usMainSection7P6: "Dengizga mos",
 
-      usMainFreshH2: "2025-yilgi yangi loyihalar", 
-      gM3FreshH2: "Yangi loyihalar", 
-      gM3FreshH1: "2025-yilgi yangi loyihalar galereyasi", 
-      usMainFreshP1: "Zemsnaryad", 
-      usMainFreshP2: "Joylashuv", 
-      usMainFreshP3: "Yangi loyihalar galereyasi", 
+      usMainFreshH2: "2025-yilgi yangi loyihalar",
+      gM3FreshH2: "Yangi loyihalar",
+      gM3FreshH1: "2025-yilgi yangi loyihalar galereyasi",
+      usMainFreshP1: "Zemsnaryad",
+      usMainFreshP2: "Yetkazib berish geografiyasi", //
+      usMainFreshP3: "Yangi loyihalar galereyasi", //
+      usMainFreshP4: "2000/63 dizelli, O‘zbekiston dengiz reestridan o‘tgan", //
+      usMainFreshP5: "Termiz shahri, Surxondaryo viloyati, Termiz porti", //
+      usMainFreshP6: "Tuyabo'g'iz suv ombori", //
+      usMainFreshP7: "Foto va video materiallar tez orada yuklanadi...", //
 
-      usMainFabricP1: "Bizning ishlab chiqarish maydonlarimiz", 
+      usMainFabricP1: "Bizning ishlab chiqarish maydonlarimiz",
 
       gMain3Text1: "Rasmlar",
       gMain3Text2: "ko'p funktsiyali amfibiya ekspeditori",
