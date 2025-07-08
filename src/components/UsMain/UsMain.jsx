@@ -300,7 +300,7 @@ const UsMain = () => {
                 </tr>
                 <tr>
                   <td>4000/65</td>
-                  <td>{t('usMainFreshP6')}</td>
+                  <td>{t('usMainFreshP6')}</td> 
                   <td>{t('usMainFreshP7')}</td>
                 </tr>
               </table>
