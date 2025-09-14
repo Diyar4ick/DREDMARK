@@ -298,10 +298,10 @@ const UsMain = () => {
                   <td>{t('usMainFreshP4')}</td> 
                   <td>{t('usMainFreshP5')}</td>
                 </tr>
-                <tr>
+                <tr> 
                   <td>4000/65</td>
-                  <td>{t('usMainFreshP6')}</td> 
-                  <td>{t('usMainFreshP7')}</td>
+                  <td>{t('usMainFreshP6')}</td>  
+                  <td><Link to="/img#gMainBox7" className="freshBlock__btn">{t('usMainFreshP3')} »</Link></td>
                 </tr>
               </table>
             </div>

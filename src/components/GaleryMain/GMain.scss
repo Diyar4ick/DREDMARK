@@ -21,6 +21,7 @@
      }
      video{
         max-height: 600px;
+        max-width: 600px;
         height: 100%;
         @include media(650) {
          max-width: 380px;
@@ -45,6 +46,7 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
+        align-items: center;
         
     }
    

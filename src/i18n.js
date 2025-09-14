@@ -230,9 +230,10 @@ const resources = {
 
       usMainFreshH2: "Свежие проекты 2025 года",
       gM3FreshH2: "Свежие проекты",
-      gM3FreshH1: "Галерея свежих проектов 2025 года",
+      gM3FreshH1: "Галерея свежих проектов в Термезе 2025 года", //
+      gM3FreshH3: "Галерея свежих проектов в Туябугузском водохранилище 2025 года", //
       usMainFreshP1: "Земснаряд",
-      usMainFreshP2: "География поставки", //
+      usMainFreshP2: "География поставки", 
       usMainFreshP3: "Галерея свежих проектов",
       usMainFreshP4: "2000/63 дизельный с Узбекским регистром судоходства",
       usMainFreshP5: "Город Термез, Сурхандарьинская область, порт Термез",
@@ -482,19 +483,20 @@ const resources = {
       usMainSection7P5: "Amphibian 600 m³",
       usMainSection7P6: "Marine",
 
-      usMainFreshH2: "Fresh Projects of 2025", //
-      gM3FreshH2: "Fresh Projects", //
-      gM3FreshH1: "Gallery of Fresh Projects of 2025", //
-      usMainFreshP1: "Dredger", //
-      usMainFreshP2: "Geography of Delivery", //
-      usMainFreshP3: "Gallery of Fresh Projects", //
-      usMainFreshP4: "2000/63 diesel with registration in the Uzbekistan Maritime Register", //
-      usMainFreshP5: "Termiz City, Surkhandarya Region, Termiz Port", //
-      usMainFreshP6: "Tuyabuguz Reservoir", //
-      usMainFreshP7: "Photo and video materials coming soon...", //
+      usMainFreshH2: "Fresh Projects of 2025", 
+      gM3FreshH2: "Fresh Projects", 
+      gM3FreshH1: "Gallery of Fresh Projects in Termez of 2025", 
+      gM3FreshH3: "Gallery of fresh projects in Tuyabuguz reservoir 2025", 
+      usMainFreshP1: "Dredger", 
+      usMainFreshP2: "Geography of Delivery", 
+      usMainFreshP3: "Gallery of Fresh Projects", 
+      usMainFreshP4: "2000/63 diesel with registration in the Uzbekistan Maritime Register", 
+      usMainFreshP5: "Termiz City, Surkhandarya Region, Termiz Port", 
+      usMainFreshP6: "Tuyabuguz Reservoir", 
+      usMainFreshP7: "Photo and video materials coming soon...", 
 
 
-      usMainFabricP1: "Our Production Facilities", //
+      usMainFabricP1: "Our Production Facilities", 
 
       gMain3Text1: "Images",
       gMain3Text2: "multifunctional amphibious dredger",
@@ -743,7 +745,8 @@ const resources = {
 
       usMainFreshH2: "2025-yilgi yangi loyihalar",
       gM3FreshH2: "Yangi loyihalar",
-      gM3FreshH1: "2025-yilgi yangi loyihalar galereyasi",
+      gM3FreshH1: "Termizdagi 2025 yilgi yangi loyihalar galereyasi", 
+      gM3FreshH3: "Tuyabuguz suv omboridagi yangi loyihalar galereyasi 2025",
       usMainFreshP1: "Zemsnaryad",
       usMainFreshP2: "Yetkazib berish geografiyasi", //
       usMainFreshP3: "Yangi loyihalar galereyasi", //
