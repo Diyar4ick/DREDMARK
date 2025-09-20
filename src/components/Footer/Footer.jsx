@@ -3,8 +3,8 @@ import telegram from '../../assets/images/telegram.svg';
 import whatsapp from '../../assets/images/whatsapp.svg';
 import instagram from '../../assets/images/instagram.svg';
 import youTube from '../../assets/images/youtube.svg';
-import sertifikat from '../../assets/pdf/sertifikat.pdf';
-import sertifikatImg from '../../assets/images/pdfImg.jpg'
+// import sertifikat from '../../assets/pdf/sertifikat.pdf';
+// import sertifikatImg from '../../assets/images/pdfImg.jpg'
 import { useState } from "react";
 
 const Footer = () => {
@@ -128,11 +128,11 @@ const Footer = () => {
                 </span>
               </p>
             </div>
-            <div className="pdf-link">
+            {/* <div className="pdf-link">
               <a href={sertifikat} target="_blank" rel="noopener noreferrer">
                 <img src={sertifikatImg} alt="PDF" style={{ width: '130px', padding: '10px'}} />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 
