@@ -4,8 +4,8 @@ import sertifikat3 from '../../assets/pdf/sertifikat-3.pdf';
 import sertifikat4 from '../../assets/pdf/sertifikat-4.pdf';
 import sertifikatImg from '../../assets/images/pdfImg.jpg'
 import sertifikatImg2 from '../../assets/images/pdfImg2.jpg'
-import sertifikatImg3 from '../../assets/images/pdfImg3.jpg'
-import sertifikatImg4 from '../../assets/images/pdfImg4.jpg'
+import sertifikatImg3 from '../../assets/images/resumeImg3.jpg'
+import sertifikatImg4 from '../../assets/images/resumeImg4.jpg'
 const Sert = () => {
   return (
     <div className="container">

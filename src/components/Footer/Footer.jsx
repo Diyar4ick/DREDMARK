@@ -3,6 +3,7 @@ import telegram from '../../assets/images/telegram.svg';
 import whatsapp from '../../assets/images/whatsapp.svg';
 import instagram from '../../assets/images/instagram.svg';
 import youTube from '../../assets/images/youtube.svg';
+import email from '../../assets/images/email.svg';
 // import sertifikat from '../../assets/pdf/sertifikat.pdf';
 // import sertifikatImg from '../../assets/images/pdfImg.jpg'
 import { useState } from "react";
@@ -12,7 +13,7 @@ const Footer = () => {
   const [formData, setFormData] = useState({
     name: "",
     tel: "",
-    message: "",
+    message: "", 
   });
 
   const handleChange = (e) => {
@@ -65,7 +66,7 @@ const Footer = () => {
                 <span>
                   <img src={whatsapp} alt="" />
                   <img src={telegram} alt="" />
-                  <p>+998 90 062-99-39</p>
+                  <p>+998 97 407-57-93</p>
                 </span>
               </p>
               <p className="ft4">
@@ -99,6 +100,11 @@ const Footer = () => {
                 <img src={youTube} alt="" />
                 YouTube
               </a>
+              <a href=""
+                className="linkInst">
+                <img src={email} alt="" />
+                dredmark.websites@gmail.com
+              </a>
             </div>
           </div>
           <div className="footer__infomain-box3">
@@ -110,7 +116,7 @@ const Footer = () => {
           </div>
           <div className="footer__infomain-box4">
             <div className="russiaOfficalBox1">
-              <p className="ft4 officalRussia">
+              <p className="ft4 officalRussia"> 
                 <h4 className="ft4__p1">{t("fP1")}</h4>
                 <p className="ft4__p1">{t('fP9')}</p>
                 <span>

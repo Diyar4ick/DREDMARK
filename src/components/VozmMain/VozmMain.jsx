@@ -353,7 +353,7 @@ const VozmMain = () => {
             <Link to="/#vozmBlocksBack" className='nav2__a'>{t('vozmMainNav2Text1')}</Link>
             <a href="#vozmMainNav" className='nav2__a'>{t('navLink8')} ↑</a>
           </div>
-        </div>
+        </div> 
 
       </div>
       <div className="vozmMain__section10 vozmSection">

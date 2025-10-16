@@ -777,12 +777,12 @@ i18n
   .init({
     resources,
     lng: localStorage.getItem("language") || "ru",
-    fallbackLng: "ru",
+    // fallbackLng: "ru",
     interpolation: {
       escapeValue: false
     }
   });
-
+ 
 export const changeLanguage = (lng) => {
   i18n.changeLanguage(lng);
   localStorage.setItem("language", lng);

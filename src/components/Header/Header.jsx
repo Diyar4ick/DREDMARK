@@ -3,16 +3,17 @@ import { NavLink, useNavigate } from "react-router-dom";
 import burger from '../../assets/images/burger.svg';
 import { useTranslation } from "react-i18next";
 import { changeLanguage } from "../../i18n";
-
+import language from '../../assets/images/language.svg'
 const Header = () => {
   const { t, i18n } = useTranslation();
   const navigate = useNavigate();
 
   // Управление состоянием языка
   const [selectedLang, setSelectedLang] = useState(i18n.language);
+  const [openLng, setOpenLng] = useState(false)
 
   useEffect(() => {
-    setSelectedLang(i18n.language);
+    setSelectedLang(i18n.language); 
   }, [i18n.language]);
 
   // Управление навигацией через select
@@ -27,10 +28,15 @@ const Header = () => {
   };
 
   // Обработчик смены языка
-  const handleLanguageChange = (event) => {
-    const newLang = event.target.value;
+  // const handleLanguageChange = (event) => {
+  //   const newLang = event.target.value;
+  //   setSelectedLang(newLang);
+  //   changeLanguage(newLang);
+  // };
+  const handleLanguageChange = (newLang) => {
     setSelectedLang(newLang);
     changeLanguage(newLang);
+    setOpenLng(false)
   };
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null)
@@ -52,6 +58,15 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav">
+         <div className="lng-wrapper">
+          <button type='submit' onClick={() => setOpenLng(!openLng)} className="lng-button"><img src={language} alt="" /></button>
+          {openLng ? 
+          <ul className={`lng-list ${openLng ? 'open' : ''}`}>
+            <li><button className="lng-item" onClick={() => handleLanguageChange('ru')}>Ru</button></li>
+            <li><button className="lng-item" onClick={() => handleLanguageChange('en')}>En</button></li>
+            <li><button className="lng-item" onClick={() => handleLanguageChange('uz')}>Uz</button></li>
+          </ul> : ''}
+          </div>
         <NavLink to='/' className='logo'>DREDMARK</NavLink>
         <div className="burger" onClick={() => {
           if (!isOpen) {
@@ -60,6 +75,7 @@ const Header = () => {
         }}>
           <img src={burger} alt="" />
         </div>
+
         <ul ref={menuRef} className={`nav__list ${isOpen ? "open" : ""}`}>
           <NavLink to='/' className='link'>{t('navLink1')}</NavLink>
           <NavLink to='/vozm' className='link'>{t('navLink2')}</NavLink>
@@ -71,11 +87,13 @@ const Header = () => {
           <NavLink to='/us' className='link'>{t('navLink4')}</NavLink>
           <NavLink to='/us#fresh-projects' className='freshBtn'>{t('gM3FreshH2')}</NavLink>
           <NavLink to='/sertificates' className='link'>{t('navLink5')}</NavLink>
-          <select onChange={handleLanguageChange} value={selectedLang} className="select2">
+
+          {/* <select onChange={handleLanguageChange} value={selectedLang} className="select2">
             <option value="ru">Ru</option>
             <option value="en">En</option>
             <option value="uz">Uz</option>
-          </select>
+          </select> */}
+         
 
           <a href="#footer" className='link__a'>{t("navLink7")}</a>
         </ul>
