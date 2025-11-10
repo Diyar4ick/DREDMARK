@@ -1,0 +1,370 @@
+@mixin media($size) {
+  @media (max-width: #{$size}px) {
+    @content;
+  }
+}
+
+.footer {
+  background: #002d46;
+  padding: 70px 0 40px;
+
+ 
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // flex-wrap: wrap;
+
+    gap: 30px;
+
+    @include media(1300) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include media(1040) {
+      justify-content: center;
+    }
+
+    @include media(400) {
+      padding: 10px;
+    }
+  }
+
+  &__infomain {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &-block {
+      display: flex;
+      gap: 20px;
+
+      @include media(400) {
+        gap: 1px;
+      }
+    }
+
+    &-box2 {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .linkInst {
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      font-weight: 400;
+      color: white;
+      transition: 0.2s;
+      white-space: normal; /* разрешаем перенос строк */
+      word-break: break-word;
+      &:hover {
+        color: rgb(0, 109, 219);
+      }
+    }
+    
+    &-box3 {
+      display: flex;
+      margin-top: 25px;
+      align-items: center;
+      justify-content: center;
+
+      &-companies {
+        display: flex;
+        flex-direction: column;
+      }
+
+      h3 {
+        @include media(550) {
+          font-size: 16px;
+        }
+      }
+
+      &-h3-1 {
+        max-width: 170px;
+        padding-right: 10px;
+        border-right: solid 2px rgb(208, 208, 208);
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &::after {
+          content: "";
+          position: absolute;
+          height: 0.2px;
+          background: rgb(208, 208, 208);
+          width: 10px;
+          padding: 1px;
+          right: 0;
+        }
+      }
+
+      &-h3-2 {
+        position: relative;
+        display: flex;
+        padding-left: 50px;
+        align-items: center;
+
+        &::before {
+          position: absolute;
+          content: "";
+          height: 0.2px;
+          background: rgb(208, 208, 208);
+          width: 40px;
+          padding: 1px;
+          left: 3px;
+        }
+      }
+
+      &-h3-3 {
+        text-align: center;
+        margin-top: 40px;
+        position: relative;
+        display: flex;
+        padding-left: 50px;
+        align-items: center;
+
+        &::before {
+          position: absolute;
+          content: "";
+          height: 0.2px;
+          background: rgb(208, 208, 208);
+          width: 40px;
+          padding: 1px;
+          left: 3px;
+
+          @include media(425) {
+            bottom: 10px;
+          }
+        }
+
+        @include media(425) {
+          text-align: left;
+          margin-top: 20px;
+        }
+      }
+
+      //     {}
+      //     ||
+      //     ||
+      //     ||
+      //    ()()
+    }
+ 
+
+    h1 {
+      color: white;
+      font-weight: 700;
+      padding-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      color: white;
+      font-weight: 700;
+    }
+
+    h4 {
+      color: white;
+      font-weight: 700;
+
+      @include media(480) {
+        font-size: 16px;
+      }
+    }
+
+    h2 {
+      color: white;
+      font-weight: 700;
+      padding-top: 20px;
+
+      text-align: center;
+
+      @include media(480) {
+        font-size: 19px;
+      }
+    }
+
+    p {
+      color: white;
+      font-size: 16px;
+      font-weight: 400;
+      max-width: 270px;
+      color: white;
+      display: flex;
+      padding-top: 6px;
+
+      @include media(480) {
+        font-size: 15px;
+
+        img {
+          @include media(480) {
+            max-width: 20px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  &__a {
+    margin-bottom: 20px;
+  }
+
+  &__p2 {
+    padding-top: 20px;
+    border-top: solid 1px white;
+  }
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__block3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 670px;
+
+    @include media(870) {
+      flex-direction: column;
+    }
+
+    h3 {
+      color: white;
+      font-size: 25px;
+      padding-bottom: 30px;
+      text-align: center;
+    }
+
+    p {
+      color: white;
+      font-size: 20px;
+      padding-bottom: 30px;
+      text-align: left;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 650px;
+      gap: 20px;
+
+      @include media(870) {
+        align-items: center;
+        flex-direction: column;
+      }
+
+      textarea {
+        resize: vertical;
+        width: 650px;
+        height: 300px;
+        border: solid 1px rgb(0, 90, 192);
+        background: #002d46;
+        padding: 10px 15px;
+        font-size: 18px;
+        font-weight: 400;
+        color: white;
+        transition: 0.2s;
+
+        border-radius: 7px;
+
+        @include media(870) {
+          width: 500px;
+        }
+
+        @include media(550) {
+          width: 360px;
+          padding: none;
+        }
+
+        &:hover {
+          border: solid 1px rgb(0, 132, 255);
+        }
+      }
+
+      input {
+        width: 300px;
+        border: solid 1px rgb(0, 90, 192);
+        background: #002d46;
+        padding: 10px 15px;
+        font-size: 18px;
+        font-weight: 400;
+        color: white;
+        border-radius: 7px;
+        transition: 0.2s;
+
+        @include media(550) {
+          width: 360px;
+          padding: none;
+        }
+
+        &:hover {
+          border: solid 1px rgb(0, 132, 255);
+        }
+      }
+
+      button {
+        border: solid 1px rgb(0, 90, 192);
+        background: #002d46;
+        padding: 10px 15px;
+        font-size: 18px;
+        font-weight: 400;
+        color: white;
+        border-radius: 7px;
+        transition: 0.2s;
+        &:hover {
+          background: rgb(0, 90, 192);
+        }
+        @include media(870) {
+          max-height: 50px;
+        }
+      }
+    }
+  }
+}
+
+.ft4 {
+  display: flex;
+  flex-direction: column;
+
+  @include media(450) {
+    width: 180px;
+  }
+
+  &__p1 {
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  span {
+    display: flex;
+  }
+}
+
+// .pdf-link{
+//     max-width: max-content;
+// }
+// .pdf-link img {
+//   cursor: pointer;
+//   transition: transform 0.2s ease;
+// }
+
+// .pdf-link img:hover {
+//   transform: scale(1.1);
+// }
+
+.russiaOfficalBox1 {
+  max-width: max-content;
+}

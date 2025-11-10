@@ -1,0 +1,49 @@
+@mixin media($size) {
+  @media (max-width: #{$size}px) {
+    @content;
+  }
+}
+
+.nav__contacts {
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  padding: 20px 10px;
+  margin-top: 10px;
+  background-color: #0e3481;
+  max-width: 300px;
+  width: 100%;
+  color: white;
+  border: solid 5px white;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  @include media(930) {
+    display: block;
+    position: relative;
+    top: inherit;
+    right: inherit;
+    box-shadow: none;
+    border: none;
+    max-width: max-content;
+    border-radius: none;
+    margin: 100px auto 10px;
+  }
+
+  &-title {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  &-item {
+    padding: 10px 0;
+    span {
+      display: flex;
+      padding: 10px;
+      align-items: center;
+      p{
+        font-weight: 700;
+      }
+    }
+  }
+}
