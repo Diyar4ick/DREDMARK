@@ -15,7 +15,7 @@ const Header = () => {
   const [selectedLang, setSelectedLang] = useState(i18n.language);
   const [openLng, setOpenLng] = useState(false)
 
-  useEffect(() => {
+  useEffect(() => { 
     setSelectedLang(i18n.language); 
   }, [i18n.language]);
 
@@ -80,6 +80,7 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav">
+        
          <div className="lng-wrapper">
           <button type='submit' onClick={() => setOpenLng(!openLng)} className="lng-button"><img src={language} alt="" /></button>
           {openLng ? 
@@ -89,7 +90,7 @@ const Header = () => {
             <li><button className="lng-item" onClick={() => handleLanguageChange('uz')}>Uz</button></li>
           </ul> : ''}
           </div>
-        <NavLink to='/' className='logo'>DREDMARK</NavLink>
+        <NavLink to='/' className='logo'>DREDMARKsss</NavLink>
         <div className="burger" onClick={() => {
           if (!isOpen) {
             setIsOpen(true)
