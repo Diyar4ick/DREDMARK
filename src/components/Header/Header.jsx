@@ -90,7 +90,7 @@ const Header = () => {
             <li><button className="lng-item" onClick={() => handleLanguageChange('uz')}>Uz</button></li>
           </ul> : ''}
           </div>
-        <NavLink to='/' className='logo'>DREDMARKsss</NavLink>
+        <NavLink to='/' className='logo'>DREDMARK</NavLink>
         <div className="burger" onClick={() => {
           if (!isOpen) {
             setIsOpen(true)
