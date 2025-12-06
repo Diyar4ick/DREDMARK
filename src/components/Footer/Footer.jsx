@@ -77,7 +77,7 @@ const Footer = () => {
                 </span>
               </p>
             </div>
-            <div className="footer__infomain-box2">
+            {/* <div className="footer__infomain-box2">
               <a
                 href="https://t.me/TZNMDredmark"
                 target="_blank"
@@ -105,7 +105,7 @@ const Footer = () => {
                 <img src={youTube} alt="" />
                 YouTube
               </a>
-            </div>
+            </div> */}
           </div>
           <a href="#" className="linkInst">
             {/* <img src={email} alt="" /> */}
