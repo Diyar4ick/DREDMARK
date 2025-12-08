@@ -208,7 +208,6 @@ const VozmMain = () => {
               <th>{t('vozmMainSection8P1')}</th>
               <th>{t('vozmMainSection8P2')}</th>
               <th>{t('vozmMainSection8P3')}</th>
-              <th>{t('vozmMainSection8P4')}</th>
             </tr>
           </thead>
           <tbody>
@@ -216,31 +215,26 @@ const VozmMain = () => {
               <td>{t('vozmMainSection8P5')}</td>
               <td className="number">{t('vozmMainSection8P6')}</td>
               <td>{t('vozmMainSection8P7')}</td>
-              <td className="number">{t('vozmMainSection8P8')}</td>
             </tr>
             <tr>
               <td>{t('vozmMainSection8P9')}</td>
               <td className="number">{t('vozmMainSection8P10')}</td>
               <td>{t('vozmMainSection8P11')}</td>
-              <td className="number">{t('vozmMainSection8P12')}</td>
             </tr>
             <tr>
               <td>{t('vozmMainSection8P13')}</td>
               <td className="number">{t('vozmMainSection8P14')}</td>
               <td>{t('vozmMainSection8P15')}</td>
-              <td className="number">{t('vozmMainSection8P16')}</td>
             </tr>
             <tr>
               <td>{t('vozmMainSection8P17')}</td>
               <td className="number">{t('vozmMainSection8P18')}</td>
               <td>{t('vozmMainSection8P19')}</td>
-              <td className="number">{t('vozmMainSection8P20')}</td>
             </tr>
             <tr>
               <td>{t('vozmMainSection8P21')}</td>
               <td className="number">{t('vozmMainSection8P22')}</td>
               <td>{t('vozmMainSection8P23')}</td>
-              <td className="number">{t('vozmMainSection8P24')}</td>
             </tr>
           </tbody>
         </table>

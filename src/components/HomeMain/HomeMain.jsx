@@ -81,11 +81,9 @@ const HomeMain = () => {
         <table className="homeMain__table-styled">
           <thead>
             <tr>
-              
               <th colSpan={2}>{t('vozmMainSection8P1')}</th>
               <th>Производительность</th>
               <th>Глубина</th>
-              <th>Цена</th>
             </tr>
           </thead>
           <tbody>
@@ -94,42 +92,36 @@ const HomeMain = () => {
               <td>DREDMARK 200/20 — компактный земснаряд</td>
               <td className="number">300–500 м³/ч</td>
               <td> 4–6 м</td>
-              <td className="number">от $75 000</td>
             </tr>
             <tr>
               <td><img src={tableImg1} alt="" /></td>
               <td>DREDMARK 250/25 — универсальный земснаряд</td>
               <td className="number">700–900 м³/ч</td>
               <td>6-8 м</td>
-              <td className="number">от $95 000</td>
             </tr>
             <tr>
               <td><img src={tableImg1} alt="" /></td>
               <td>DREDMARK 300/30 — промышленный</td>
               <td className="number">1200–1500 м³/ч</td>
               <td>8-10 м</td>
-              <td className="number">от $135 000</td>
             </tr>
             <tr>
               <td><img src={tableImg1} alt="" /></td>
               <td>DREDMARK 350C — фрезерный земснаряд</td>
               <td className="number">1800–2200 м³/ч</td>
               <td>до 12 м</td>
-              <td className="number">от $185 000</td>
             </tr>
             <tr>
               <td><img src={tableImg1} alt="" /></td>
               <td>DREDMARK 400/65 — для тяжелых условий</td>
               <td className="number">2600–3200 м³/ч</td>
               <td>-</td>
-              <td className="number">от $245 000</td>
             </tr>
             <tr>
               <td><img src={tableImg1} alt="" /></td>
               <td>DREDMARK 450/70 — high productivity</td>
               <td className="number">3500–4200 м³/ч</td>
               <td>-</td>
-              <td className="number">от $290 000</td>
             </tr>
           </tbody>
         </table>
