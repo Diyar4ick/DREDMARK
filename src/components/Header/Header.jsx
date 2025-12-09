@@ -43,6 +43,7 @@ const Header = () => {
   };
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null)
+  
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -110,6 +111,8 @@ const Header = () => {
           </select>
           <NavLink to='/us' className='link'>{t('navLink4')}</NavLink>
           <NavLink to='/us#fresh-projects' className='freshBtn'>{t('gM3FreshH2')}</NavLink>
+          <NavLink to='#footer' className='freshBtn'>Связаться</NavLink>
+          {/* <NavLink to='/us#fresh-projects' className='freshBtn'></NavLink> */}
           <NavLink to='/sertificates' className='link'>{t('navLink5')}</NavLink>
 
           {/* <select onChange={handleLanguageChange} value={selectedLang} className="select2">
@@ -129,3 +132,4 @@ const Header = () => {
 };
 
 export default Header;
+ 
