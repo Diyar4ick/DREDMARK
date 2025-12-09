@@ -76,56 +76,56 @@ const HomeMain = () => {
       </div>
 
       <div className="container">
-        <h2 className="homeMain__h2">Модельный ряд земснарядов</h2>
+        <h2 className="homeMain__h2">{t('homeModelTitle')}</h2>
         <div className="homeMain__table">
         <table className="homeMain__table-styled">
           <thead>
             <tr>
               <th colSpan={2}>{t('vozmMainSection8P1')}</th>
-              <th>Производительность</th>
-              <th>Глубина</th>
+              <th>{t('homeTableTitle1')}</th>
+              <th>{t('homeTableTitle2')}</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><img src={tableImg1} alt="" /></td>
-              <td>DREDMARK 200/20 — компактный земснаряд</td>
+              <td>DREDMARK 200/20 — {t('homeTableText1')}</td>
               <td className="number">300–500 м³/ч</td>
               <td> 4–6 м</td>
             </tr>
             <tr>
               <td><img src={tableImg1} alt="" /></td>
-              <td>DREDMARK 250/25 — универсальный земснаряд</td>
+              <td>DREDMARK 250/25 — {t('homeTableText2')}</td>
               <td className="number">700–900 м³/ч</td>
               <td>6-8 м</td>
             </tr>
             <tr>
               <td><img src={tableImg1} alt="" /></td>
-              <td>DREDMARK 300/30 — промышленный</td>
+              <td>DREDMARK 300/30 — {t('homeTableText3')}</td>
               <td className="number">1200–1500 м³/ч</td>
               <td>8-10 м</td>
             </tr>
             <tr>
               <td><img src={tableImg1} alt="" /></td>
-              <td>DREDMARK 350C — фрезерный земснаряд</td>
+              <td>DREDMARK 350C — {t('homeTableText4')}</td>
               <td className="number">1800–2200 м³/ч</td>
               <td>до 12 м</td>
             </tr>
             <tr>
               <td><img src={tableImg1} alt="" /></td>
-              <td>DREDMARK 400/65 — для тяжелых условий</td>
+              <td>DREDMARK 400/65 — {t('homeTableText5')}</td>
               <td className="number">2600–3200 м³/ч</td>
               <td>-</td>
             </tr>
             <tr>
               <td><img src={tableImg1} alt="" /></td>
-              <td>DREDMARK 450/70 — high productivity</td>
+              <td>DREDMARK 450/70 — {t('homeTableText6')}</td>
               <td className="number">3500–4200 м³/ч</td>
               <td>-</td>
             </tr>
           </tbody>
         </table>
-       <button className="homeMain__table-btn">Получить цену на нужную модель</button>
+       <button className="homeMain__table-btn">{t('homeTableBtn')}</button>
         </div>
       </div>
 
@@ -135,32 +135,32 @@ const HomeMain = () => {
           <img src={homeImgSw1} alt="" />
           <div className="home__block2-box">
             <h5 className="home__block2-subtitle">{t("homeText3")}</h5>
-            <h4 className="home__block2-h4">Почему выбирают DREDMARK</h4>
+            <h4 className="home__block2-h4">{t('homeAdvTitle')}</h4>
             {isModal2Open && <Modal2 closeModal2={closeModal2Handler} />}
             <div className="home__block2-content">
 
           
               <ul className="home__block2-adv">
                 <li>
-                  <p className="home__block2-adv-text"><span>✓</span>Собственное производство в Узбекистане </p>
-                  <p className="home__block2-adv-subtext">Контроль качества, прямые цены без посредников</p>
+                  <p className="home__block2-adv-text"><span>✓</span>{t('homeAdvText1')} </p>
+                  <p className="home__block2-adv-subtext">{t('homeAdvText2')}</p>
                 </li>
                
                 <li>
-                  <p className="home__block2-adv-text"><span>✓</span>Двигатели Weichai / Sinotruk / Cummins</p>
-                  <p  className="home__block2-adv-subtext">Легкий сервис и доступные запчасти.</p>
+                  <p className="home__block2-adv-text"><span>✓</span>{t('homeAdvText3')}</p>
+                  <p  className="home__block2-adv-subtext">{t('homeAdvText4')}</p>
                 </li>
                 <li>
-                  <p className="home__block2-adv-text"><span>✓</span>Сборка “под проект”</p>
-                  <p  className="home__block2-adv-subtext">Можно изменить: фрезу, длину понтонов, насос, дизель, гидросистему.</p>
+                  <p className="home__block2-adv-text"><span>✓</span>{t('homeAdvText5')}</p>
+                  <p  className="home__block2-adv-subtext">{t('homeAdvText6')}</p>
                 </li>
                 <li>
-                  <p className="home__block2-adv-text"><span>✓</span> Доставка в Казахстан, Таджикистан, Афганистан, ОАЭ, Африку</p>
-                  <p  className="home__block2-adv-subtext">Авто и контейнерные перевозки</p>
+                  <p className="home__block2-adv-text"><span>✓</span> {t('homeAdvText7')}</p>
+                  <p  className="home__block2-adv-subtext">{t('homeAdvText8')}</p>
                 </li>
                 <li>
-                  <p className="home__block2-adv-text"><span>✓</span> Монтаж, обучение, запуск</p>
-                  <p  className="home__block2-adv-subtext">Инженер DREDMARK выезжает на объект.</p>
+                  <p className="home__block2-adv-text"><span>✓</span> {t('homeAdvText9')}</p>
+                  <p  className="home__block2-adv-subtext">{t('homeAdvText10')}</p>
                 </li>
              
               </ul>
