@@ -17,45 +17,98 @@
       border-collapse: collapse;
       margin: 30px auto;
       font-size: 18px;
-      border: 1px solid #000;
+      // border: 1px solid #000;
       @include media(950) {
         font-size: 16px;
       }
       @include media(480) {
         font-size: 13px;
       }
-    }
-    &-styled thead th {
-      border: 1px solid #636262;
-      padding: 8px 12px;
-      background-color: #dbecff;
-      font-weight: 700;
-      text-align: center;
-    }
-    &-styled td {
-      border: 1px solid #636262;
-      padding: 10px 15px;
-      max-width: 350px;
-      text-align: center;
-      img {
-        max-width: 350px;
-        width: 100%;
-      }
 
-      @include media(950) {
-        max-width: 300px;
-        padding: 5px 10px;
-      }
-
-      @include media(650) {
-        &:nth-child(1) {
-          width: 0;
-          padding: 0;
+      thead th {
+        // border: 1px solid #636262;
+        padding: 8px 12px;
+        background-color: #dbecff;
+        font-weight: 700;
+        text-align: center;
+        @include media(560) {
+          font-size: 14px;
+        }
+        &:nth-child(2) {
+          @include media(560) {
+            font-size: 12px;
+          }
         }
       }
-    }
-    &-styled td.number {
-      text-align: center;
+      td {
+        // border: 1px solid #636262;
+        // padding: 10px ;
+        width: 340px;
+        height: 180px;
+        text-align: center;
+
+        @include media(750) {
+          width: 250px;
+        }
+        @include media(560) {
+          width: 150px;
+        }
+
+        img {
+          width: 340px;
+          height: 100%;
+          object-fit: cover;
+          @include media(750) {
+            width: 250px;
+          }
+          @include media(560) {
+            width: 150px;
+          }
+          @include media(400) {
+            width: 130px;
+          }
+        }
+
+        &:nth-child(1) {
+          p {
+            position: absolute;
+            max-width: 340px;
+            z-index: 100;
+            top: 70%;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            @include media(750) {
+              max-width: 240px;
+            }
+            @include media(560) {
+              width: 130px;
+              font-size: 12px;
+              padding-left: 10px;
+            }
+          }
+        }
+        &:nth-child(2) {
+          position: relative;
+          &::after {
+            content: "";
+            background: #40404057;
+            height: 160px;
+            width: 1px;
+            right: 0;
+            position: absolute;
+            top: 13px;
+          }
+        }
+      }
+
+      tr {
+        position: relative;
+        &:nth-child(even) {
+          td:nth-child(n + 2) {
+            background-color: lightgray;
+          }
+        }
+      }
     }
     &-btn {
       color: rgb(0, 83, 191);
@@ -71,6 +124,64 @@
         color: white;
         background: rgb(0, 83, 191);
         border: solid 2px rgb(0, 83, 191);
+      }
+    }
+  }
+
+  &__realProjects {
+    .container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    &-title {
+      text-align: center;
+      font-weight: 700;
+      padding-top: 30px;
+    }
+
+    &-project1 {
+      max-width: 400px;
+      width: 100%;
+      height: 330px;
+      position: relative;
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover &-list {
+        transform: translateY(-50%);
+        opacity: 1;
+      }
+      &:hover {
+        background: #00000030;
+      }
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -100;
+      }
+      h3 {
+        color: white;
+      }
+      &-list {
+        display: flex;
+        flex-direction: column;
+        transform: translateY(100%);
+        transition: transform 0.6s, opacity 0.2s;
+        opacity: 0;
+        p {
+          color: white;
+          font-size: 16px;
+          text-shadow: 2px 2px 4px #000000;
+          span {
+            font-weight: 700;
+          }
+        }
       }
     }
   }
@@ -130,7 +241,6 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-  
   }
 
   &-btn {

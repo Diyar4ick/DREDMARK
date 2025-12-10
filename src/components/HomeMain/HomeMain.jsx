@@ -4,7 +4,11 @@ import mainEndCard2 from "../../assets/images/mainEndCard2Img.jpg";
 import mainEndCard3 from "../../assets/images/mainEndCard3Img.jpg";
 import mainEndCard1 from "../../assets/images/mainCard3.jpg";
 import homeImgSw1 from "../../assets/images/homeImgSw1.jpg";
-import tableImg1 from "../../assets/images/gM3Block2Img5.jpg";
+import tableImg1 from "../../assets/images/dredger-200to20.jpg";
+import tableImg2 from "../../assets/images/dredger-250to25.jpg";
+import tableImg3 from "../../assets/images/dredger-300to30.jpg";
+import tableImg4 from "../../assets/images/dredger-400to65.jpg";
+import tableImg5 from "../../assets/images/dredger-450to70.jpg";
 
 import { useTranslation } from "react-i18next";
 
@@ -81,46 +85,46 @@ const HomeMain = () => {
         <table className="homeMain__table-styled">
           <thead>
             <tr>
-              <th colSpan={2}>{t('vozmMainSection8P1')}</th>
+              <th>{t('vozmMainSection8P1')}</th>
               <th>{t('homeTableTitle1')}</th>
               <th>{t('homeTableTitle2')}</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td><img src={tableImg1} alt="" /></td>
-              <td>DREDMARK 200/20 — {t('homeTableText1')}</td>
-              <td className="number">300–500 м³/ч</td>
+            <tr> 
+              {/* <td></td> */}
+              <td><img src={tableImg1} alt="" /> <p>DREDMARK 200/20 — {t('homeTableText1')}</p></td>
+              <td>300–500 м³/ч</td>
               <td> 4–6 м</td>
             </tr>
             <tr>
-              <td><img src={tableImg1} alt="" /></td>
-              <td>DREDMARK 250/25 — {t('homeTableText2')}</td>
-              <td className="number">700–900 м³/ч</td>
+              {/* <td></td> */}
+              <td><img src={tableImg2} alt="" /><p>DREDMARK 250/25 — {t('homeTableText2')}</p></td>
+              <td>700–900 м³/ч</td>
               <td>6-8 м</td>
             </tr>
             <tr>
-              <td><img src={tableImg1} alt="" /></td>
-              <td>DREDMARK 300/30 — {t('homeTableText3')}</td>
-              <td className="number">1200–1500 м³/ч</td>
+              {/* <td></td> */}
+              <td><img src={tableImg3} alt="" /><p>DREDMARK 300/30 — {t('homeTableText3')}</p></td>
+              <td>1200–1500 м³/ч</td>
               <td>8-10 м</td>
             </tr>
-            <tr>
-              <td><img src={tableImg1} alt="" /></td>
+            {/* <tr>
+              <td><img src={tableImg4} alt="" /></td>
               <td>DREDMARK 350C — {t('homeTableText4')}</td>
-              <td className="number">1800–2200 м³/ч</td>
+              <td>1800–2200 м³/ч</td>
               <td>до 12 м</td>
-            </tr>
+            </tr> */}
             <tr>
-              <td><img src={tableImg1} alt="" /></td>
-              <td>DREDMARK 400/65 — {t('homeTableText5')}</td>
-              <td className="number">2600–3200 м³/ч</td>
+              {/* <td></td> */}
+              <td><img src={tableImg4} alt="" /><p>DREDMARK 400/65 — {t('homeTableText5')}</p></td>
+              <td>2600–3200 м³/ч</td>
               <td>-</td>
             </tr>
             <tr>
-              <td><img src={tableImg1} alt="" /></td>
-              <td>DREDMARK 450/70 — {t('homeTableText6')}</td>
-              <td className="number">3500–4200 м³/ч</td>
+              {/* <td></td> */}
+              <td><img src={tableImg5} alt="" /><p>DREDMARK 450/70 — {t('homeTableText6')}</p></td>
+              <td>3500–4200 м³/ч</td>
               <td>-</td>
             </tr>
           </tbody>
@@ -258,6 +262,48 @@ const HomeMain = () => {
               {t("homeText4CardLink")}
             </button>
             <Link to="/vozm#homeEnd5">{t("homeText4CardLink2")}</Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="homeMain__realProjects">
+        <h2 className="homeMain__realProjects-title">Реальные проекты</h2>
+        <div className="container">
+          <div className="homeMain__realProjects-project1">
+            <img src={tableImg1} alt="" />
+            <ul className="homeMain__realProjects-project1-list">
+              <li>
+                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
+                <p>Производительность: <span>2000 м³/ч</span></p>
+                <p>Объём работ: <span>126 000 м³</span></p>
+                <p>Срок: <span>38 дней</span></p>
+                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+              </li>
+            </ul>
+          </div>
+          <div className="homeMain__realProjects-project1">
+            <img src={tableImg1} alt="" />
+            <ul className="homeMain__realProjects-project1-list">
+              <li>
+                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
+                <p>Производительность: <span>2000 м³/ч</span></p>
+                <p>Объём работ: <span>126 000 м³</span></p>
+                <p>Срок: <span>38 дней</span></p>
+                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+              </li>
+            </ul>
+          </div>
+          <div className="homeMain__realProjects-project1">
+            <img src={tableImg1} alt="" />
+            <ul className="homeMain__realProjects-project1-list">
+              <li>
+                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
+                <p>Производительность: <span>2000 м³/ч</span></p>
+                <p>Объём работ: <span>126 000 м³</span></p>
+                <p>Срок: <span>38 дней</span></p>
+                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
