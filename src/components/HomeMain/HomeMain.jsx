@@ -10,6 +10,20 @@ import tableImg3 from "../../assets/images/dredger-300to30.jpg";
 import tableImg4 from "../../assets/images/dredger-400to65.jpg";
 import tableImg5 from "../../assets/images/dredger-450to70.jpg";
 
+import realProject1 from "../../assets/images/realProject1.jpg";
+import realProject2 from "../../assets/images/realProject2.jpg";
+import realProject3 from "../../assets/images/realProject3.jpg";
+import realProject4 from "../../assets/images/realProject4.jpg";
+import realProject5 from "../../assets/images/realProject5.jpg";
+import realProject6 from "../../assets/images/realProject6.jpg";
+import realProject7 from "../../assets/images/realProject7.jpg";
+import realProject8 from "../../assets/images/realProject8.jpg";
+import realProject9 from "../../assets/images/realProject9.jpg";
+import realProject10 from "../../assets/images/realProject10.jpg";
+import realProject11 from "../../assets/images/realProject11.jpg";
+import realProject12 from "../../assets/images/realProject12.jpg";
+import realProject13 from "../../assets/images/realProject13.jpg";
+
 import { useTranslation } from "react-i18next";
 
 import { useState } from "react";
@@ -270,7 +284,7 @@ const HomeMain = () => {
         <h2 className="homeMain__realProjects-title">Реальные проекты</h2>
         <div className="container">
           <div className="homeMain__realProjects-project1">
-            <img src={tableImg1} alt="" />
+            <img src={realProject1} alt="" />
             <ul className="homeMain__realProjects-project1-list">
               <li>
                 <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
@@ -282,7 +296,7 @@ const HomeMain = () => {
             </ul>
           </div>
           <div className="homeMain__realProjects-project1">
-            <img src={tableImg1} alt="" />
+            <img src={realProject2} alt="" />
             <ul className="homeMain__realProjects-project1-list">
               <li>
                 <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
@@ -294,7 +308,127 @@ const HomeMain = () => {
             </ul>
           </div>
           <div className="homeMain__realProjects-project1">
-            <img src={tableImg1} alt="" />
+            <img src={realProject3} alt="" />
+            <ul className="homeMain__realProjects-project1-list">
+              <li>
+                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
+                <p>Производительность: <span>2000 м³/ч</span></p>
+                <p>Объём работ: <span>126 000 м³</span></p>
+                <p>Срок: <span>38 дней</span></p>
+                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+              </li>
+            </ul>
+          </div>
+          <div className="homeMain__realProjects-project1">
+            <img src={realProject4} alt="" />
+            <ul className="homeMain__realProjects-project1-list">
+              <li>
+                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
+                <p>Производительность: <span>2000 м³/ч</span></p>
+                <p>Объём работ: <span>126 000 м³</span></p>
+                <p>Срок: <span>38 дней</span></p>
+                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+              </li>
+            </ul>
+          </div>
+          <div className="homeMain__realProjects-project1">
+            <img src={realProject5} alt="" />
+            <ul className="homeMain__realProjects-project1-list">
+              <li>
+                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
+                <p>Производительность: <span>2000 м³/ч</span></p>
+                <p>Объём работ: <span>126 000 м³</span></p>
+                <p>Срок: <span>38 дней</span></p>
+                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+              </li>
+            </ul>
+          </div>
+          <div className="homeMain__realProjects-project1">
+            <img src={realProject6} alt="" />
+            <ul className="homeMain__realProjects-project1-list">
+              <li>
+                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
+                <p>Производительность: <span>2000 м³/ч</span></p>
+                <p>Объём работ: <span>126 000 м³</span></p>
+                <p>Срок: <span>38 дней</span></p>
+                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+              </li>
+            </ul>
+          </div>
+          <div className="homeMain__realProjects-project1">
+            <img src={realProject7} alt="" />
+            <ul className="homeMain__realProjects-project1-list">
+              <li>
+                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
+                <p>Производительность: <span>2000 м³/ч</span></p>
+                <p>Объём работ: <span>126 000 м³</span></p>
+                <p>Срок: <span>38 дней</span></p>
+                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+              </li>
+            </ul>
+          </div>
+          <div className="homeMain__realProjects-project1">
+            <img src={realProject8} alt="" />
+            <ul className="homeMain__realProjects-project1-list">
+              <li>
+                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
+                <p>Производительность: <span>2000 м³/ч</span></p>
+                <p>Объём работ: <span>126 000 м³</span></p>
+                <p>Срок: <span>38 дней</span></p>
+                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+              </li>
+            </ul>
+          </div>
+          <div className="homeMain__realProjects-project1">
+            <img src={realProject9} alt="" />
+            <ul className="homeMain__realProjects-project1-list">
+              <li>
+                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
+                <p>Производительность: <span>2000 м³/ч</span></p>
+                <p>Объём работ: <span>126 000 м³</span></p>
+                <p>Срок: <span>38 дней</span></p>
+                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+              </li>
+            </ul>
+          </div>
+          <div className="homeMain__realProjects-project1">
+            <img src={realProject10} alt="" />
+            <ul className="homeMain__realProjects-project1-list">
+              <li>
+                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
+                <p>Производительность: <span>2000 м³/ч</span></p>
+                <p>Объём работ: <span>126 000 м³</span></p>
+                <p>Срок: <span>38 дней</span></p>
+                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+              </li>
+            </ul>
+          </div>
+          <div className="homeMain__realProjects-project1">
+            <img src={realProject11} alt="" />
+            <ul className="homeMain__realProjects-project1-list">
+              <li>
+                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
+                <p>Производительность: <span>2000 м³/ч</span></p>
+                <p>Объём работ: <span>126 000 м³</span></p>
+                <p>Срок: <span>38 дней</span></p>
+                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+              </li>
+            </ul>
+          </div>
+          <div className="homeMain__realProjects-project1">
+            <img src={realProject12} alt="" />
+            <ul className="homeMain__realProjects-project1-list">
+              <li>
+                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
+                <p>Производительность: <span>2000 м³/ч</span></p>
+                <p>Объём работ: <span>126 000 м³</span></p>
+                <p>Срок: <span>38 дней</span></p>
+                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+              </li>
+            </ul>
+          </div>
+          <div className="homeMain__realProjects-project1">
+            <img src={realProject13} alt="" />
             <ul className="homeMain__realProjects-project1-list">
               <li>
                 <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
