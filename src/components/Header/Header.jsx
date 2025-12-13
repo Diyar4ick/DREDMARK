@@ -4,7 +4,6 @@ import burger from '../../assets/images/burger.svg';
 import { useTranslation } from "react-i18next";
 import { changeLanguage } from "../../i18n";
 import language from '../../assets/images/language.svg'
-import Contacts from "../Contacts/Contacts";
 import email from '../../assets/images/email.svg'
 
 const Header = () => {
@@ -60,23 +59,7 @@ const Header = () => {
     };
   }, [isOpen]);
 
-  const [contact, setContact] = useState(false)
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 930);
-
-    useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 930);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const handleContactClick = () => {
-    if (isMobile) {
-      navigate("/contacts"); // на телефоне или планшете → отдельная страница
-    } else {
-      setContact(!contact); // на десктопе → модальное окно
-    }
-  };
-
+  
 
   return (
     <header className="header">
@@ -111,7 +94,7 @@ const Header = () => {
           </select>
           <NavLink to='/us' className='link'>{t('navLink4')}</NavLink>
           <NavLink to='/us#fresh-projects' className='freshBtn'>{t('gM3FreshH2')}</NavLink>
-          <NavLink to='#footer' className='freshBtn'>Связаться</NavLink>
+          <NavLink to='#forma' className='freshBtn'>Связаться</NavLink>
           {/* <NavLink to='/us#fresh-projects' className='freshBtn'></NavLink> */}
           <NavLink to='/sertificates' className='link'>{t('navLink5')}</NavLink>
 
@@ -122,9 +105,8 @@ const Header = () => {
           </select> */} 
          
 
-          <button className='link__a' onClick={() => handleContactClick()}>{t("navLink7")}</button>
+          <NavLink to="#footer" className='link__a'>{t("navLink7")}</NavLink>
 
-            {!isMobile && contact && <Contacts/>}
         </ul>
       </nav>
     </header>

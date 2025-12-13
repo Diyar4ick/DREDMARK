@@ -10,7 +10,6 @@ import GMain2 from './components/GaleryMain/GMain2'
 import GMain3 from './components/GaleryMain/GMain3'
 import'./i18n'
 import Sert from './components/Serts/Sert'
-import Contacts from './components/Contacts/Contacts'
 function App() {
 //   git add .
 //   git commit -m ""
@@ -25,7 +24,6 @@ function App() {
       <Route path='/vozm' element={<Vozm/>}/>
       <Route path='/us' element={<Us/>}/>
       <Route path='/sertificates' element={<Sert/>}/>
-      <Route path='/contacts' element={<Contacts/>}/>
       <Route path='/video' element={<GMain2/>}/>
       <Route path='/img' element={<GMain3/>}/>
       </Routes>

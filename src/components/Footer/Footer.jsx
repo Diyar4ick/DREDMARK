@@ -3,50 +3,9 @@ import telegram from "../../assets/images/telegram.svg";
 import whatsapp from "../../assets/images/whatsapp.svg";
 // import instagram from "../../assets/images/instagram.svg";
 // import youTube from "../../assets/images/youtube.svg";
-import { useState } from "react";
 
 const Footer = () => {
   const { t } = useTranslation();
-  const [formData, setFormData] = useState({
-    name: "",
-    tel: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const onSubmit = async (e) => {
-    e.preventDefault();
-
-    const now = new Date().toLocaleString();
-    const dataToSend = {
-      ...formData,
-      subject: `Новое сообщение от ${formData.name} (${now})`,
-    };
-
-    try {
-      const response = await fetch("https://formspree.io/f/mvganqgv", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(dataToSend),
-      });
-
-      if (response.ok) {
-        alert("Сообщение отправлено");
-        setFormData({ name: "", tel: "", message: "" });
-      } else {
-        alert("Ошибка при отправке. Попробуйте позже.");
-      }
-    } catch (error) {
-      alert("Ошибка сети. Проверьте подключение.");
-    }
-  };
 
   return (
     <footer className="footer" id="footer">
@@ -118,36 +77,24 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        <div className="footer__block3">
-          <h3>{t("fH1")}</h3>
-          <p>{t("fP2")}</p>
-          <form onSubmit={onSubmit}>
-            <input
-              type="text"
-              name="name"
-              placeholder={t("fName")}
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-            <input
-              type="text"
-              name="tel"
-              placeholder={t("fTel")}
-              value={formData.tel}
-              onChange={handleChange}
-              required
-            />
-            <textarea
-              name="message"
-              placeholder={t("fP3")}
-              value={formData.message}
-              onChange={handleChange}
-              required
-            ></textarea>
-            <button type="submit">{t("fButton")}</button>
-          </form>
+        <div className="footer__partners">
+          <h3 className="footer__partners-title">{t("fP1")}</h3>
+          <p className="footer__partners-item">
+            <h4 className="footer__partners-subtitle">{t("fP9")}</h4>
+            <span>
+              <img src={whatsapp} alt="" />
+              <img src={telegram} alt="" />
+              <p>+7 910 663-07-33</p>
+            </span>
+          </p>
+          <p className="footer__partners-item">
+            <h4 className="footer__partners-subtitle">{t("fP8")}</h4>
+            <span>
+              <img src={whatsapp} alt="" />
+              <img src={telegram} alt="" />
+              <p>+7 909 718-33-47</p>
+            </span>
+          </p>
         </div>
       </div>
       <div className="seo">

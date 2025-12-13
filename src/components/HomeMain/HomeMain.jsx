@@ -87,110 +87,185 @@ const HomeMain = () => {
   //
   const { t } = useTranslation();
 
+  const [formData, setFormData] = useState({
+    name: "",
+    tel: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+
+    const now = new Date().toLocaleString();
+    const dataToSend = {
+      ...formData,
+      subject: `Новое сообщение от ${formData.name} (${now})`,
+    };
+
+    try {
+      const response = await fetch("https://formspree.io/f/mvganqgv", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(dataToSend),
+      });
+
+      if (response.ok) {
+        alert("Сообщение отправлено");
+        setFormData({ name: "", tel: "", message: "" });
+      } else {
+        alert("Ошибка при отправке. Попробуйте позже.");
+      }
+    } catch (error) {
+      alert("Ошибка сети. Проверьте подключение.");
+    }
+  };
+
   return (
     <div className="homeMain">
       <div className="homeBannerText">
         <p>{t("homeText1")}</p>
       </div>
-
       <div className="container">
-        <h2 className="homeMain__h2">{t('homeModelTitle')}</h2>
+        <h2 className="homeMain__h2">{t("homeModelTitle")}</h2>
         <div className="homeMain__table">
-        <table className="homeMain__table-styled">
-          <thead>
-            <tr>
-              <th>{t('vozmMainSection8P1')}</th>
-              <th>{t('homeTableTitle1')}</th>
-              <th>{t('homeTableTitle2')}</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr> 
-              {/* <td></td> */}
-              <td><img src={tableImg1} alt="" /> <p>DREDMARK 200/20 — {t('homeTableText1')}</p></td>
-              <td>300–500 м³/ч</td>
-              <td> 4–6 м</td>
-            </tr>
-            <tr>
-              {/* <td></td> */}
-              <td><img src={tableImg2} alt="" /><p>DREDMARK 250/25 — {t('homeTableText2')}</p></td>
-              <td>700–900 м³/ч</td>
-              <td>6-8 м</td>
-            </tr>
-            <tr>
-              {/* <td></td> */}
-              <td><img src={tableImg3} alt="" /><p>DREDMARK 300/30 — {t('homeTableText3')}</p></td>
-              <td>1200–1500 м³/ч</td>
-              <td>8-10 м</td>
-            </tr>
-            {/* <tr>
+          <table className="homeMain__table-styled">
+            <thead>
+              <tr>
+                <th>{t("vozmMainSection8P1")}</th>
+                <th>{t("homeTableTitle1")}</th>
+                <th>{t("homeTableTitle2")}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                {/* <td></td> */}
+                <td>
+                  <img src={tableImg1} alt="" />{" "}
+                  <p>DREDMARK 200/20 — {t("homeTableText1")}</p>
+                </td>
+                <td>300–500 м³/ч</td>
+                <td> 4–6 м</td>
+              </tr>
+              <tr>
+                {/* <td></td> */}
+                <td>
+                  <img src={tableImg2} alt="" />
+                  <p>DREDMARK 250/25 — {t("homeTableText2")}</p>
+                </td>
+                <td>700–900 м³/ч</td>
+                <td>6-8 м</td>
+              </tr>
+              <tr>
+                {/* <td></td> */}
+                <td>
+                  <img src={tableImg3} alt="" />
+                  <p>DREDMARK 300/30 — {t("homeTableText3")}</p>
+                </td>
+                <td>1200–1500 м³/ч</td>
+                <td>8-10 м</td>
+              </tr>
+              {/* <tr>
               <td><img src={tableImg4} alt="" /></td>
               <td>DREDMARK 350C — {t('homeTableText4')}</td>
               <td>1800–2200 м³/ч</td>
               <td>до 12 м</td>
             </tr> */}
-            <tr>
-              {/* <td></td> */}
-              <td><img src={tableImg4} alt="" /><p>DREDMARK 400/65 — {t('homeTableText5')}</p></td>
-              <td>2600–3200 м³/ч</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              {/* <td></td> */}
-              <td><img src={tableImg5} alt="" /><p>DREDMARK 450/70 — {t('homeTableText6')}</p></td>
-              <td>3500–4200 м³/ч</td>
-              <td>-</td>
-            </tr>
-          </tbody>
-        </table>
-       <button className="homeMain__table-btn">{t('homeTableBtn')}</button>
+              <tr>
+                {/* <td></td> */}
+                <td>
+                  <img src={tableImg4} alt="" />
+                  <p>DREDMARK 400/65 — {t("homeTableText5")}</p>
+                </td>
+                <td>2600–3200 м³/ч</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                {/* <td></td> */}
+                <td>
+                  <img src={tableImg5} alt="" />
+                  <p>DREDMARK 450/70 — {t("homeTableText6")}</p>
+                </td>
+                <td>3500–4200 м³/ч</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+          <button className="homeMain__table-btn">{t("homeTableBtn")}</button>
         </div>
       </div>
-
       <div>
-       
         <div className="home__block2">
           <img src={homeImgSw1} alt="" />
           <div className="home__block2-box">
             <h5 className="home__block2-subtitle">{t("homeText3")}</h5>
-            <h4 className="home__block2-h4">{t('homeAdvTitle')}</h4>
+            <h4 className="home__block2-h4">{t("homeAdvTitle")}</h4>
             {isModal2Open && <Modal2 closeModal2={closeModal2Handler} />}
             <div className="home__block2-content">
-
-          
               <ul className="home__block2-adv">
                 <li>
-                  <p className="home__block2-adv-text"><span>✓</span>{t('homeAdvText1')} </p>
-                  <p className="home__block2-adv-subtext">{t('homeAdvText2')}</p>
+                  <p className="home__block2-adv-text">
+                    <span>✓</span>
+                    {t("homeAdvText1")}{" "}
+                  </p>
+                  <p className="home__block2-adv-subtext">
+                    {t("homeAdvText2")}
+                  </p>
                 </li>
-               
+
                 <li>
-                  <p className="home__block2-adv-text"><span>✓</span>{t('homeAdvText3')}</p>
-                  <p  className="home__block2-adv-subtext">{t('homeAdvText4')}</p>
+                  <p className="home__block2-adv-text">
+                    <span>✓</span>
+                    {t("homeAdvText3")}
+                  </p>
+                  <p className="home__block2-adv-subtext">
+                    {t("homeAdvText4")}
+                  </p>
                 </li>
                 <li>
-                  <p className="home__block2-adv-text"><span>✓</span>{t('homeAdvText5')}</p>
-                  <p  className="home__block2-adv-subtext">{t('homeAdvText6')}</p>
+                  <p className="home__block2-adv-text">
+                    <span>✓</span>
+                    {t("homeAdvText5")}
+                  </p>
+                  <p className="home__block2-adv-subtext">
+                    {t("homeAdvText6")}
+                  </p>
                 </li>
                 <li>
-                  <p className="home__block2-adv-text"><span>✓</span> {t('homeAdvText7')}</p>
-                  <p  className="home__block2-adv-subtext">{t('homeAdvText8')}</p>
+                  <p className="home__block2-adv-text">
+                    <span>✓</span> {t("homeAdvText7")}
+                  </p>
+                  <p className="home__block2-adv-subtext">
+                    {t("homeAdvText8")}
+                  </p>
                 </li>
                 <li>
-                  <p className="home__block2-adv-text"><span>✓</span> {t('homeAdvText9')}</p>
-                  <p  className="home__block2-adv-subtext">{t('homeAdvText10')}</p>
+                  <p className="home__block2-adv-text">
+                    <span>✓</span> {t("homeAdvText9")}
+                  </p>
+                  <p className="home__block2-adv-subtext">
+                    {t("homeAdvText10")}
+                  </p>
                 </li>
-             
               </ul>
 
-            <button className="home__block2-btn" onClick={() => openModal2Handler()}>
-              {t("homeText3Link")}
-            </button>
-              </div>
+              <button
+                className="home__block2-btn"
+                onClick={() => openModal2Handler()}
+              >
+                {t("homeText3Link")}
+              </button>
+            </div>
           </div>
         </div>
       </div>
-
       <div className="container">
         <h3 className="homeMain__box3-h3" id="vozmBlocksBack">
           {t("homeText4")}
@@ -279,19 +354,30 @@ const HomeMain = () => {
           </div>
         </div>
       </div>
-
       <div className="homeMain__realProjects">
         <h2 className="homeMain__realProjects-title">Реальные проекты</h2>
-        <div className="container"> 
+        <div className="container">
           <div className="homeMain__realProjects-project1">
             <img src={realProject1} alt="" />
             <ul className="homeMain__realProjects-project1-list">
               <li>
-                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
-                <p>Производительность: <span>2000 м³/ч</span></p>
-                <p>Объём работ: <span>126 000 м³</span></p>
-                <p>Срок: <span>38 дней</span></p>
-                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+                <p>
+                  <h3>
+                    Модель: <span>DREDMARK 350C</span>
+                  </h3>
+                </p>
+                <p>
+                  Производительность: <span>2000 м³/ч</span>
+                </p>
+                <p>
+                  Объём работ: <span>126 000 м³</span>
+                </p>
+                <p>
+                  Срок: <span>38 дней</span>
+                </p>
+                <p>
+                  Результат: <span>расчистка и углубление 4,6 км канала.</span>
+                </p>
               </li>
             </ul>
           </div>
@@ -299,11 +385,23 @@ const HomeMain = () => {
             <img src={realProject2} alt="" />
             <ul className="homeMain__realProjects-project1-list">
               <li>
-                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
-                <p>Производительность: <span>2000 м³/ч</span></p>
-                <p>Объём работ: <span>126 000 м³</span></p>
-                <p>Срок: <span>38 дней</span></p>
-                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+                <p>
+                  <h3>
+                    Модель: <span>DREDMARK 350C</span>
+                  </h3>
+                </p>
+                <p>
+                  Производительность: <span>2000 м³/ч</span>
+                </p>
+                <p>
+                  Объём работ: <span>126 000 м³</span>
+                </p>
+                <p>
+                  Срок: <span>38 дней</span>
+                </p>
+                <p>
+                  Результат: <span>расчистка и углубление 4,6 км канала.</span>
+                </p>
               </li>
             </ul>
           </div>
@@ -311,11 +409,23 @@ const HomeMain = () => {
             <img src={realProject3} alt="" />
             <ul className="homeMain__realProjects-project1-list">
               <li>
-                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
-                <p>Производительность: <span>2000 м³/ч</span></p>
-                <p>Объём работ: <span>126 000 м³</span></p>
-                <p>Срок: <span>38 дней</span></p>
-                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+                <p>
+                  <h3>
+                    Модель: <span>DREDMARK 350C</span>
+                  </h3>
+                </p>
+                <p>
+                  Производительность: <span>2000 м³/ч</span>
+                </p>
+                <p>
+                  Объём работ: <span>126 000 м³</span>
+                </p>
+                <p>
+                  Срок: <span>38 дней</span>
+                </p>
+                <p>
+                  Результат: <span>расчистка и углубление 4,6 км канала.</span>
+                </p>
               </li>
             </ul>
           </div>
@@ -323,11 +433,23 @@ const HomeMain = () => {
             <img src={realProject4} alt="" />
             <ul className="homeMain__realProjects-project1-list">
               <li>
-                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
-                <p>Производительность: <span>2000 м³/ч</span></p>
-                <p>Объём работ: <span>126 000 м³</span></p>
-                <p>Срок: <span>38 дней</span></p>
-                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+                <p>
+                  <h3>
+                    Модель: <span>DREDMARK 350C</span>
+                  </h3>
+                </p>
+                <p>
+                  Производительность: <span>2000 м³/ч</span>
+                </p>
+                <p>
+                  Объём работ: <span>126 000 м³</span>
+                </p>
+                <p>
+                  Срок: <span>38 дней</span>
+                </p>
+                <p>
+                  Результат: <span>расчистка и углубление 4,6 км канала.</span>
+                </p>
               </li>
             </ul>
           </div>
@@ -335,11 +457,23 @@ const HomeMain = () => {
             <img src={realProject5} alt="" />
             <ul className="homeMain__realProjects-project1-list">
               <li>
-                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
-                <p>Производительность: <span>2000 м³/ч</span></p>
-                <p>Объём работ: <span>126 000 м³</span></p>
-                <p>Срок: <span>38 дней</span></p>
-                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+                <p>
+                  <h3>
+                    Модель: <span>DREDMARK 350C</span>
+                  </h3>
+                </p>
+                <p>
+                  Производительность: <span>2000 м³/ч</span>
+                </p>
+                <p>
+                  Объём работ: <span>126 000 м³</span>
+                </p>
+                <p>
+                  Срок: <span>38 дней</span>
+                </p>
+                <p>
+                  Результат: <span>расчистка и углубление 4,6 км канала.</span>
+                </p>
               </li>
             </ul>
           </div>
@@ -347,11 +481,23 @@ const HomeMain = () => {
             <img src={realProject6} alt="" />
             <ul className="homeMain__realProjects-project1-list">
               <li>
-                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
-                <p>Производительность: <span>2000 м³/ч</span></p>
-                <p>Объём работ: <span>126 000 м³</span></p>
-                <p>Срок: <span>38 дней</span></p>
-                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+                <p>
+                  <h3>
+                    Модель: <span>DREDMARK 350C</span>
+                  </h3>
+                </p>
+                <p>
+                  Производительность: <span>2000 м³/ч</span>
+                </p>
+                <p>
+                  Объём работ: <span>126 000 м³</span>
+                </p>
+                <p>
+                  Срок: <span>38 дней</span>
+                </p>
+                <p>
+                  Результат: <span>расчистка и углубление 4,6 км канала.</span>
+                </p>
               </li>
             </ul>
           </div>
@@ -359,11 +505,23 @@ const HomeMain = () => {
             <img src={realProject7} alt="" />
             <ul className="homeMain__realProjects-project1-list">
               <li>
-                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
-                <p>Производительность: <span>2000 м³/ч</span></p>
-                <p>Объём работ: <span>126 000 м³</span></p>
-                <p>Срок: <span>38 дней</span></p>
-                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+                <p>
+                  <h3>
+                    Модель: <span>DREDMARK 350C</span>
+                  </h3>
+                </p>
+                <p>
+                  Производительность: <span>2000 м³/ч</span>
+                </p>
+                <p>
+                  Объём работ: <span>126 000 м³</span>
+                </p>
+                <p>
+                  Срок: <span>38 дней</span>
+                </p>
+                <p>
+                  Результат: <span>расчистка и углубление 4,6 км канала.</span>
+                </p>
               </li>
             </ul>
           </div>
@@ -371,11 +529,23 @@ const HomeMain = () => {
             <img src={realProject8} alt="" />
             <ul className="homeMain__realProjects-project1-list">
               <li>
-                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
-                <p>Производительность: <span>2000 м³/ч</span></p>
-                <p>Объём работ: <span>126 000 м³</span></p>
-                <p>Срок: <span>38 дней</span></p>
-                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+                <p>
+                  <h3>
+                    Модель: <span>DREDMARK 350C</span>
+                  </h3>
+                </p>
+                <p>
+                  Производительность: <span>2000 м³/ч</span>
+                </p>
+                <p>
+                  Объём работ: <span>126 000 м³</span>
+                </p>
+                <p>
+                  Срок: <span>38 дней</span>
+                </p>
+                <p>
+                  Результат: <span>расчистка и углубление 4,6 км канала.</span>
+                </p>
               </li>
             </ul>
           </div>
@@ -383,11 +553,23 @@ const HomeMain = () => {
             <img src={realProject9} alt="" />
             <ul className="homeMain__realProjects-project1-list">
               <li>
-                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
-                <p>Производительность: <span>2000 м³/ч</span></p>
-                <p>Объём работ: <span>126 000 м³</span></p>
-                <p>Срок: <span>38 дней</span></p>
-                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+                <p>
+                  <h3>
+                    Модель: <span>DREDMARK 350C</span>
+                  </h3>
+                </p>
+                <p>
+                  Производительность: <span>2000 м³/ч</span>
+                </p>
+                <p>
+                  Объём работ: <span>126 000 м³</span>
+                </p>
+                <p>
+                  Срок: <span>38 дней</span>
+                </p>
+                <p>
+                  Результат: <span>расчистка и углубление 4,6 км канала.</span>
+                </p>
               </li>
             </ul>
           </div>
@@ -395,11 +577,23 @@ const HomeMain = () => {
             <img src={realProject10} alt="" />
             <ul className="homeMain__realProjects-project1-list">
               <li>
-                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
-                <p>Производительность: <span>2000 м³/ч</span></p>
-                <p>Объём работ: <span>126 000 м³</span></p>
-                <p>Срок: <span>38 дней</span></p>
-                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+                <p>
+                  <h3>
+                    Модель: <span>DREDMARK 350C</span>
+                  </h3>
+                </p>
+                <p>
+                  Производительность: <span>2000 м³/ч</span>
+                </p>
+                <p>
+                  Объём работ: <span>126 000 м³</span>
+                </p>
+                <p>
+                  Срок: <span>38 дней</span>
+                </p>
+                <p>
+                  Результат: <span>расчистка и углубление 4,6 км канала.</span>
+                </p>
               </li>
             </ul>
           </div>
@@ -407,11 +601,23 @@ const HomeMain = () => {
             <img src={realProject11} alt="" />
             <ul className="homeMain__realProjects-project1-list">
               <li>
-                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
-                <p>Производительность: <span>2000 м³/ч</span></p>
-                <p>Объём работ: <span>126 000 м³</span></p>
-                <p>Срок: <span>38 дней</span></p>
-                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+                <p>
+                  <h3>
+                    Модель: <span>DREDMARK 350C</span>
+                  </h3>
+                </p>
+                <p>
+                  Производительность: <span>2000 м³/ч</span>
+                </p>
+                <p>
+                  Объём работ: <span>126 000 м³</span>
+                </p>
+                <p>
+                  Срок: <span>38 дней</span>
+                </p>
+                <p>
+                  Результат: <span>расчистка и углубление 4,6 км канала.</span>
+                </p>
               </li>
             </ul>
           </div>
@@ -419,11 +625,23 @@ const HomeMain = () => {
             <img src={realProject12} alt="" />
             <ul className="homeMain__realProjects-project1-list">
               <li>
-                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
-                <p>Производительность: <span>2000 м³/ч</span></p>
-                <p>Объём работ: <span>126 000 м³</span></p>
-                <p>Срок: <span>38 дней</span></p>
-                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+                <p>
+                  <h3>
+                    Модель: <span>DREDMARK 350C</span>
+                  </h3>
+                </p>
+                <p>
+                  Производительность: <span>2000 м³/ч</span>
+                </p>
+                <p>
+                  Объём работ: <span>126 000 м³</span>
+                </p>
+                <p>
+                  Срок: <span>38 дней</span>
+                </p>
+                <p>
+                  Результат: <span>расчистка и углубление 4,6 км канала.</span>
+                </p>
               </li>
             </ul>
           </div>
@@ -431,17 +649,60 @@ const HomeMain = () => {
             <img src={realProject13} alt="" />
             <ul className="homeMain__realProjects-project1-list">
               <li>
-                <p><h3>Модель: <span>DREDMARK 350C</span></h3></p>
-                <p>Производительность: <span>2000 м³/ч</span></p>
-                <p>Объём работ: <span>126 000 м³</span></p>
-                <p>Срок: <span>38 дней</span></p>
-                <p>Результат: <span>расчистка и углубление 4,6 км канала.</span></p>
+                <p>
+                  <h3>
+                    Модель: <span>DREDMARK 350C</span>
+                  </h3>
+                </p>
+                <p>
+                  Производительность: <span>2000 м³/ч</span>
+                </p>
+                <p>
+                  Объём работ: <span>126 000 м³</span>
+                </p>
+                <p>
+                  Срок: <span>38 дней</span>
+                </p>
+                <p>
+                  Результат: <span>расчистка и углубление 4,6 км канала.</span>
+                </p>
               </li>
             </ul>
           </div>
         </div>
       </div>
-
+      <div className="homeMain__contacts" id="forma">
+        <div className="container">
+          {/* <h3>{t("fH1")}</h3> */}
+          <p>{t("fP2")}</p>
+          <form onSubmit={onSubmit}>
+            <input
+              type="text"
+              name="name"
+              placeholder={t("fName")}
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+            <input
+              type="text"
+              name="tel"
+              placeholder={t("fTel")}
+              value={formData.tel}
+              onChange={handleChange}
+              required
+            />
+            <textarea
+              name="message"
+              placeholder={t("fP3")}
+              value={formData.message}
+              onChange={handleChange}
+              required
+            ></textarea>
+            <button type="submit">{t("fButton")}</button>
+          </form>
+        </div>
+      </div>
       <div className="seo">
         <h1>• земснаряд купить</h1>
         <h2>• производство земснарядов</h2>

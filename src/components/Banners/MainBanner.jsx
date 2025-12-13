@@ -1,18 +1,18 @@
+import { useState } from 'react';
 import BannerVozmImg from '../../assets/video/bannerVideo.mp4'
-// import { useState } from 'react'
-// import Modal from '../Modal/Modal'
-// import { useTranslation } from "react-i18next";
-import { Link } from 'react-router-dom';
+import Modal from '../Modal/Modal'
+import { useTranslation } from "react-i18next";
+// import { Link } from 'react-router-dom';
 
 const MainBanner = () => {
-  // const [isModalOpen, setisModalOpen] = useState(false)
-  // const openModalHandler = () => {
-  //   setisModalOpen(true)
-  // }
-  // const closeModalHandler = () => {
-  //   setisModalOpen(false) 
-  // } 
-  // const { t } = useTranslation();
+  const [isModalOpen, setisModalOpen] = useState(false)
+  const openModalHandler = () => {
+    setisModalOpen(true)
+  }
+  const closeModalHandler = () => {
+    setisModalOpen(false) 
+  } 
+  const { t } = useTranslation();
 
   return ( 
     <div className="banner mainBanner">
@@ -22,10 +22,11 @@ const MainBanner = () => {
           <p>DREDMARK</p>
             <h1>Производство земснарядов и насосных станций DREDMARK</h1>
             <p>Оснащаем проекты по дноуглублению, добыче песка, золота и расчистке водоёмов. Земснаряды 200–450 мм “под ключ”.</p>
-            <Link to="/img">Запросить коммерческое предложение</Link>
+            <button onClick={() => setisModalOpen(openModalHandler)} >{t('homeBannersLink')}</button>
+            {isModalOpen && <Modal closeModal={closeModalHandler}/>}
         </div>
     </div>
   )
 } 
  
-export default MainBanner  
+export default MainBanner   

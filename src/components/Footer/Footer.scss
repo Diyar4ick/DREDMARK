@@ -8,11 +8,11 @@
   background: #002d46;
   padding: 70px 0 40px;
 
- 
+  
   .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     // flex-wrap: wrap;
 
     gap: 30px;
@@ -226,112 +226,28 @@
     flex-direction: column;
   }
 
-  &__block3 {
+  &__partners {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 670px;
-
-    @include media(870) {
-      flex-direction: column;
-    }
-
-    h3 {
+    flex-direction: column;
+    gap: 20px;
+    &-title {
       color: white;
       font-size: 25px;
-      padding-bottom: 30px;
-      text-align: center;
+      font-weight: 700;
     }
-
-    p {
+    &-item {
+      p{
+        color: white;
+        font-weight: 700;
+        font-size: 20px;
+      }
+    }
+    &-subtitle {
       color: white;
-      font-size: 20px;
-      padding-bottom: 30px;
-      text-align: left;
-      max-width: 500px;
-      text-align: center;
-    }
-
-    form {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      max-width: 650px;
-      gap: 20px;
-
-      @include media(870) {
-        align-items: center;
-        flex-direction: column;
-      }
-
-      textarea {
-        resize: vertical;
-        width: 650px;
-        height: 300px;
-        border: solid 1px rgb(0, 90, 192);
-        background: #002d46;
-        padding: 10px 15px;
-        font-size: 18px;
-        font-weight: 400;
-        color: white;
-        transition: 0.2s;
-
-        border-radius: 7px;
-
-        @include media(870) {
-          width: 500px;
-        }
-
-        @include media(550) {
-          width: 360px;
-          padding: none;
-        }
-
-        &:hover {
-          border: solid 1px rgb(0, 132, 255);
-        }
-      }
-
-      input {
-        width: 300px;
-        border: solid 1px rgb(0, 90, 192);
-        background: #002d46;
-        padding: 10px 15px;
-        font-size: 18px;
-        font-weight: 400;
-        color: white;
-        border-radius: 7px;
-        transition: 0.2s;
-
-        @include media(550) {
-          width: 360px;
-          padding: none;
-        }
-
-        &:hover {
-          border: solid 1px rgb(0, 132, 255);
-        }
-      }
-
-      button {
-        border: solid 1px rgb(0, 90, 192);
-        background: #002d46;
-        padding: 10px 15px;
-        font-size: 18px;
-        font-weight: 400;
-        color: white;
-        border-radius: 7px;
-        transition: 0.2s;
-        &:hover {
-          background: rgb(0, 90, 192);
-        }
-        @include media(870) {
-          max-height: 50px;
-        }
-      }
+      font-size: 17px;
     }
   }
+  
 }
 
 .ft4 {
