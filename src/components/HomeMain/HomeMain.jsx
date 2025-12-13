@@ -282,7 +282,7 @@ const HomeMain = () => {
 
       <div className="homeMain__realProjects">
         <h2 className="homeMain__realProjects-title">Реальные проекты</h2>
-        <div className="container">
+        <div className="container"> 
           <div className="homeMain__realProjects-project1">
             <img src={realProject1} alt="" />
             <ul className="homeMain__realProjects-project1-list">

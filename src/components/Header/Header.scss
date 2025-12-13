@@ -253,8 +253,8 @@
     z-index: 1000; /* чтобы было поверх остального */
     display: inline-block;
     @include media(1120) {
-      top: 20%;
-    margin-top: 15px;
+      // top: 20%;
+    // margin-top: 10px;
 
     }
     
