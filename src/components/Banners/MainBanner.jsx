@@ -20,8 +20,8 @@ const MainBanner = () => {
         <video src={BannerVozmImg} autoPlay loop muted playsInline/>
         <div className="banner__text">
           <p>DREDMARK</p>
-            <h1>Производство земснарядов и насосных станций DREDMARK</h1>
-            <p>Оснащаем проекты по дноуглублению, добыче песка, золота и расчистке водоёмов. Земснаряды 200–450 мм “под ключ”.</p>
+            <h1>{t('bannerTitle')}</h1>
+            <p>{t('bannerSubtitle')}</p>
             <button onClick={() => setisModalOpen(openModalHandler)} >{t('homeBannersLink')}</button>
             {isModalOpen && <Modal closeModal={closeModalHandler}/>}
         </div>

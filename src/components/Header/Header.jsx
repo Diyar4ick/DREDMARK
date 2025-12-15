@@ -94,7 +94,7 @@ const Header = () => {
           </select>
           <NavLink to='/us' className='link'>{t('navLink4')}</NavLink>
           <NavLink to='/us#fresh-projects' className='freshBtn'>{t('gM3FreshH2')}</NavLink>
-          <NavLink to='#forma' className='freshBtn'>Связаться</NavLink>
+          <NavLink to='#forma' className='freshBtn'>{t('navLin10')}</NavLink>
           {/* <NavLink to='/us#fresh-projects' className='freshBtn'></NavLink> */}
           <NavLink to='/sertificates' className='link'>{t('navLink5')}</NavLink>
 

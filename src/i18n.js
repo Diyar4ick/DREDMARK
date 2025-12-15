@@ -6,26 +6,21 @@ const resources = {
     translation: {
       navLink1: "Главная",
       navLink2: "Перечень продукции",
-      navLink3: "Применение",
       navLink4: "О нас",
       navLink5: "Сертификаты",
       navLink7: "Контакты",
       navLink8: "Наверх",
       navLink9: "Назад",
-      valute: "Перевести в ₽",
-      loading: "Загрузка...",
+      navLin10: "Связаться",
       gallery: "Галерея ▾",
       video: "Видео",
       images: "Изображения",
-      navtranslate: "Выберите язык:",
 
       homeText1:
         "Эффективно восстанавливайте, обслуживайте и развивайте водные пути, реки, озера, побережья, пристани для яхт, водохранилища и промышленные водоемы с помощью многофункционального земснаряда DREDMARK — вашего единого решения для дноуглубительных работ, удаления инвазивной растительности, забивки свай и других работ на мелководье.",
       homeText2: "Узнайте, почему DREDMARK — разумное решение",
-      homeCard1Text: "ЦЕНА",
       homePrice: "От",
       homeCard2Text: "Пример возможностей",
-      homeCard3Text: "КОМПЛЕКТАЦИЯ",
       homeCardsText1: "Амфибия",
       homeCardsText2: "Земснаряд 2000/63",
       homeMainBlock1Text1: "Узбекский регистр судоходства",
@@ -47,16 +42,31 @@ const resources = {
       homeBannerText2: "Выбирайте оборудование компании DREDMARK",
       homeBannersLink: "Смотреть видео",
 
-      homeModelTitle: "Модельный ряд земснарядов", //
-      homeTableTitle1: "Производительность", //
-      homeTableTitle2: "Глубина", //
-      homeTableText1: "компактный земснаряд", //
-      homeTableText2: "универсальный земснаряд", //
-      homeTableText3: "промышленный", //
-      homeTableText4: "фрезерный земснаряд", //
-      homeTableText5: "для тяжелых условий", //
-      homeTableText6: "тяжелая продукция", //
-      homeTableBtn: "Получить цену на нужную модель", //
+      homeModelTitle: "Модельный ряд земснарядов",
+      homeTableTitle1: "Производительность",
+      homeTableTitle2: "Глубина",
+      homeTableText1: "Земснаряд 2000/63 стандартный",
+      homeTableText2: "2500/63 стандартный с Фрезой",
+      homeTableText3: "3000/70 стандартный с фрезерным рыхлителем",
+      homeTableText4: "4000/60 тяжелый земснаряд",
+      homeTableText5: "4500/70 тяжелый с фрезой",
+      homeTableText6: "по пульпе",
+      homeTableBtn: "Получить цену на нужную модель",
+
+      homeRealProjectTitle: "Реальные проекты",
+      homeRealProjectText1: "Срок изготовления",
+      homeRealProjectText2: "Обьем работы",
+      homeRealProjectText3: "Обьем добытого материала",
+      homeRealProjectText4: "Срок",
+      homeRealProjectText5: "Результат",
+      homeRealProjectText6: "Обьем работы",
+      homeRealProjectText7: "добыча ПГС",
+      homeRealProjectText8: "Обьем добытого материала",
+      homeRealProjectText9: "100 000 м3 в месяц.",
+
+      bannerTitle: "Производство земснарядов и насосных станций DREDMARK",
+      bannerSubtitle:
+        "Оснащаем проекты по дноуглублению, добыче песка, золота и расчистке водоёмов. Земснаряды 200–450 мм “под ключ”.",
 
       homeAdvTitle: "Почему выбирают DREDMARK",
       homeAdvText1: "Собственное производство в Узбекистане",
@@ -316,20 +326,17 @@ const resources = {
     translation: {
       navLink1: "Home",
       navLink2: "List of products",
-      navLink3: "Application",
       navLink4: "About Us",
       navLink5: "Certificates",
       navLink7: "Contacts",
       navLink8: "Top",
       navLink9: "Back",
-      valute: "Convert to ₽",
-      loading: "Loading...",
+      navLin10: "Get in touch",
       gallery: "Gallery ▾",
       brochure: "Brochures",
       video: "Video",
       images: "Images",
       caseExamples: "Examples of cases",
-      navtranslate: "Select language:",
       homeText1:
         "Efficiently restore, maintain and develop waterways, rivers, lakes, coastlines, marinas, reservoirs and industrial ponds with the DREDMARK multi-purpose dredger - your one-stop solution for dredging, invasive vegetation removal, piling and other shallow water applications.",
       homeText2: "Find out why DREDMARK is the smart choice",
@@ -360,13 +367,28 @@ const resources = {
       homeModelTitle: "Model range of dredgers",
       homeTableTitle1: "Performance",
       homeTableTitle2: "Depth",
-      homeTableText1: "compact dredger",
-      homeTableText2: "universal dredger",
-      homeTableText3: "industrial",
-      homeTableText4: "cutter dredger",
-      homeTableText5: "for heavy conditions",
-      homeTableText6: "heavy-duty product",
+      homeTableText1: "Standard dredger 2000/63",
+      homeTableText2: "Standard dredger 2500/63 with cutter",
+      homeTableText3: "Standard dredger 3000/70 with cutter suction loosener",
+      homeTableText4: "Heavy-duty dredger 4000/60",
+      homeTableText5: "Heavy-duty dredger 4500/70 with cutter",
+      homeTableText6: "by pulp",
       homeTableBtn: "Get a quote for the required model",
+
+      homeRealProjectTitle: "Real projects",
+      homeRealProjectText1: "Manufacturing time",
+      homeRealProjectText2: "Scope of work",
+      homeRealProjectText3: "Volume of extracted material",
+      homeRealProjectText4: "Duration",
+      homeRealProjectText5: "Result",
+      homeRealProjectText6: "Scope of work",
+      homeRealProjectText7: "Sand and gravel extraction",
+      homeRealProjectText8: "Volume of extracted material",
+      homeRealProjectText9: "100,000 m³ per month.",
+
+      bannerTitle: "Manufacture of Dredgers and Pump Stations DREDMARK",
+      bannerSubtitle:
+        "We equip projects for dredging, sand and gold extraction, and water body cleaning. Turnkey dredgers 200–450 mm.",
 
       homeAdvTitle: "Why choose DREDMARK",
       homeAdvText1: "Own production in Uzbekistan",
@@ -630,20 +652,17 @@ const resources = {
     translation: {
       navLink1: "Uy",
       navLink2: "Mahsulotlar ro'yxati",
-      navLink3: "Ilova",
       navLink4: "Biz Haqimizda",
       navLink5: "Sertificatlar",
       navLink7: "Kontaktlar",
       navLink8: "Tepaga",
       navLink9: "Orqaga",
-      valute: "₽ ga aylantirish",
-      loading: "Yuklanmoqda...",
+      navLin10: "bog'laning",
       gallery: "Galereya ▾",
       brochure: "Broshyuralar",
       video: "Video",
       images: "Rasmlar",
       caseExamples: "Holatlar misollari",
-      navtranslate: "Tilni tanlang:",
       homeText1:
         "Ko'p funktsiyali DREDMARK drenaj yordamida suv yo'llari, daryolar, ko'llar, qirg'oqlar, marinalar, suv omborlari va sanoat suv havzalarini samarali tiklang, saqlang va rivojlantiring - chuqurlashtirish, o'simliklarni invaziv olib tashlash, qoziqlarni yig'ish va boshqa sayoz suvlarni qo'llash uchun yagona yechim.",
       homeText2: "DREDMARK nima uchun aqlli yechim ekanligini bilib oling",
@@ -676,13 +695,29 @@ const resources = {
       homeModelTitle: "Zemsnaryadlar model qatori",
       homeTableTitle1: "Ishlab chiqarish quvvati",
       homeTableTitle2: "Chuqurlik",
-      homeTableText1: "kompakt zemsnaryad",
-      homeTableText2: "universal zemsnaryad",
-      homeTableText3: "sanoat uchun",
-      homeTableText4: "frezerli zemsnaryad",
-      homeTableText5: "og‘ir sharoitlar uchun",
-      homeTableText6: "og‘ir yuk mahsuloti",
+      homeTableText1: "Standart 2000/63 zemsnaryad",
+      homeTableText2: "Freza bilan standart 2500/63 zemsnaryad",
+      homeTableText3: "Frezerli yumshatkich bilan standart 3000/70 zemsnaryad",
+      homeTableText4: "Og‘ir turdagi 4000/60 zemsnaryad",
+      homeTableText5: "Freza bilan og‘ir turdagi 4500/70 zemsnaryad",
+      homeTableText6: "pulpa bo'yicha",
       homeTableBtn: "Kerakli model uchun narx olish",
+
+      homeRealProjectTitle: "Haqiqiy loyihalar",
+      homeRealProjectText1: "Ishlab chiqarish muddati",
+      homeRealProjectText2: "Ish hajmi",
+      homeRealProjectText3: "Qazib olingan material hajmi",
+      homeRealProjectText4: "Muddat",
+      homeRealProjectText5: "Natija",
+      homeRealProjectText6: "Ish hajmi",
+      homeRealProjectText7: "Qum-shag‘al qazib olish",
+      homeRealProjectText8: "Qazib olingan material hajmi",
+      homeRealProjectText9: "Oyiga 100 000 m³.",
+
+      bannerTitle:
+        "DREDMARK zemsnaryadlari va nasos stansiyalarini ishlab chiqarish",
+      bannerSubtitle:
+        "Biz tubni chuqurlashtirish, qum va oltin qazib olish hamda suv havzalarini tozalash loyihalarini jihozlaymiz. 200–450 mm ‘kalit topshirish’ asosidagi zemsnaryadlar.",
 
       homeAdvTitle: "Nima uchun DREDMARKni tanlashadi",
       homeAdvText1: "O‘zbekistonda o‘z ishlab chiqarishi",
