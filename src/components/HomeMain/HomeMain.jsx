@@ -19,8 +19,6 @@ import realProject6 from "../../assets/images/realProject6.jpg";
 import realProject7 from "../../assets/images/realProject7.jpg";
 import realProject8 from "../../assets/images/realProject8.jpg";
 import realProject9 from "../../assets/images/realProject9.jpg";
-import realProject10 from "../../assets/images/realProject10.jpg";
-import realProject11 from "../../assets/images/realProject11.jpg";
 import realProject12 from "../../assets/images/realProject12.jpg";
 import realProject13 from "../../assets/images/realProject13.jpg";
 

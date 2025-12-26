@@ -17,7 +17,7 @@ function App() {
   return (  
      
     <Router>  
-      {/* <ScrollToElement/> */}
+      <ScrollToElement/>
       <Header/>  
       <Routes> 
       <Route path='/' element={<Home/>}/>
